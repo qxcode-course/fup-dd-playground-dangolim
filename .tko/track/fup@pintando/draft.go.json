@@ -42,7 +42,47 @@
         },
         {
             "label": "2026-03-16_18-24-54",
-            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var area float64\n    var p, a, b, c float64\n    fmt.Scan(&area, &a, &b, &c, &p)\n    p= ((a+b+c)/2)\n    area= math.Sqrt(p*(p-a) * (p-b) * (p-c))\n    fmt.Printf(\"%.2f\\n:\",  p, area)\n}\n",
+            "content": "@@ -217,16 +217,17 @@\n (%22%25.2f%5Cn\n+:\n %22,  p, a\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-19-41",
+            "content": "@@ -213,17 +213,17 @@\n intf(%22%25.\n-6\n+2\n f%5Cn%22,  p\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-21-29",
+            "content": "@@ -213,17 +213,17 @@\n intf(%22%25.\n-2\n+6\n f%5Cn%22,  p\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-21-36",
+            "content": "@@ -176,20 +176,23 @@\n t(p*\n- \n (p-a)\n+ *\n  (p-b)\n+ *\n  (p-\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-22-10",
+            "content": "@@ -182,17 +182,14 @@\n p-a)\n-*\n  (p-b)\n- *\n  (p-\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-22-19",
+            "content": "@@ -220,16 +220,19 @@\n .2f%5Cn%22, \n+ p,\n  area)%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-22-47",
+            "content": "@@ -221,13 +221,16 @@\n 2f%5Cn%22,  \n-p\n+area\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-22-55",
+            "content": "@@ -108,16 +108,23 @@\n mt.Scan(\n+&area, \n &a, &b, \n@@ -126,16 +126,19 @@\n  &b, &c,\n+ &p\n )%0A    p=\n@@ -221,16 +221,13 @@\n 2f%5Cn%22,  \n-area\n+p\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-25-33",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var area float64\n    var p, a, b, c float64\n    fmt.Scan(&a, &b, &c,)\n    p= ((a+b+c)/2)\n    area= math.Sqrt(p* (p-a)* (p-b) * (p-c))\n    fmt.Printf(\"%.2f\\n\",  area)\n}\n",
             "lines": "11"
         }
     ]
