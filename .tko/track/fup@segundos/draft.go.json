@@ -1,0 +1,109 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_16-53-35",
+            "content": "@@ -37,17 +37,8 @@\n ) %7B%0A\n-    var %0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_17-20-34",
+            "content": "@@ -45,196 +45,33 @@\n var \n-horas, minutos, segundos%0A    fmt.Scan(&horas, &minutos, &segundos)%0A    horas = segundos/3600%0A    minutos = horas/60%0A    segundos= minutos/60%0A    fmt.Printf(%22%25.2f%5Cn%22, horas:minutos:segundos\n+%0A    fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-16_17-27-07",
+            "content": "@@ -69,13 +69,8 @@\n ndos\n- floa\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_17-27-17",
+            "content": "@@ -66,19 +66,20 @@\n egundos \n-int\n+floa\n %0A    fmt\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_17-27-24",
+            "content": "@@ -212,35 +212,33 @@\n 2f%5Cn%22, horas\n-, \n+:\n minutos\n-, \n+:\n segundos)%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_17-27-40",
+            "content": "@@ -202,16 +202,18 @@\n Printf(%22\n+%25.\n 2f%5Cn%22, h\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_17-27-53",
+            "content": "@@ -37,35 +37,8 @@\n ) %7B%0A\n-    var totalsegundos int %0A\n     \n@@ -84,21 +84,34 @@\n t.Scan(&\n-total\n+horas, &minutos, &\n segundos\n@@ -124,21 +124,16 @@\n horas = \n-total\n segundos\n@@ -142,38 +142,8 @@\n 600%0A\n-    resto= totalsegundos %25 60%0A\n     \n@@ -152,22 +152,21 @@\n nutos = \n-resto \n+horas\n /60%0A    \n@@ -179,16 +179,16 @@\n os= \n-resto %25 \n+minutos/\n 60%0A \n@@ -206,19 +206,12 @@\n tf(%22\n-%25d:%25d,%25d\n+2f\n %5Cn\n- \n %22, h\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_17-36-49",
+            "content": "@@ -166,17 +166,16 @@\n    resto\n-:\n = totals\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-37-15",
+            "content": "@@ -258,20 +258,14 @@\n f(%22%25\n-.2\n d:%25\n-.2\n d,%25\n-.2\n d%5Cn \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-37-53",
+            "content": "@@ -258,14 +258,20 @@\n f(%22%25\n+.2\n d:%25\n+.2\n d,%25\n+.2\n d%5Cn \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-38-14",
+            "content": "@@ -258,17 +258,17 @@\n f(%22%25d:%25d\n-:\n+,\n %25d%5Cn %22, \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-38-43",
+            "content": "@@ -254,10 +254,9 @@\n rint\n-ln\n+f\n (%22%25d\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-40-32",
+            "content": "@@ -253,16 +253,30 @@\n Println(\n+%22%25d:%25d:%25d%5Cn %22,\n  horas, \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-40-50",
+            "content": "@@ -263,17 +263,19 @@\n oras\n-:\n+, \n minutos\n-:\n+, \n segu\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-41-08",
+            "content": "@@ -254,27 +254,26 @@\n rint\n-f\n+ln\n ( horas\n-, \n+:\n minutos\n-, \n+:\n segu\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-41-34",
+            "content": "@@ -256,20 +256,8 @@\n ntf(\n- %22%25d:%25d:%25d%22,\n  hor\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-42-06",
+            "content": "@@ -97,15 +97,11 @@\n dos \n-float64\n+int\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-42-48",
+            "content": "@@ -93,19 +93,23 @@\n egundos \n-int\n+float64\n %0A    fmt\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-42-54",
+            "content": "@@ -185,19 +185,17 @@\n undos %25 \n-360\n+6\n 0%0A    mi\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-45-16",
+            "content": "@@ -268,10 +268,8 @@\n d:%25d\n-%5Cn\n %22, h\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-45-40",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var totalsegundos int \n    var horas, minutos, segundos int\n    fmt.Scan(&totalsegundos)\n    horas = totalsegundos/3600\n    resto:= totalsegundos % 3600\n    minutos = resto /60\n    segundos= resto % 60\n    fmt.Printf( \"%d:%d:%d\\n\", horas, minutos, segundos)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

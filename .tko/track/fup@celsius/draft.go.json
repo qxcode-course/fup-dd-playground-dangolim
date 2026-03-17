@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_17-50-35",
+            "content": "@@ -41,164 +41,28 @@\n     \n-var valor int%0A    var celsius, fahrenheit int%0A    fmt.Scan(&celsius, &fahrenheit, &valor)%0A    fahrenheit:= 1.8 * celsius + 32%0A    fmt.Printf(%22%25.6d%5Cn%22, valor\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_18-01-45",
+            "content": "@@ -167,30 +167,8 @@\n  32%0A\n-    valor= fahrenheit%0A\n     \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_18-02-07",
+            "content": "@@ -144,17 +144,16 @@\n nheit:= \n-(\n 1.8 * ce\n@@ -157,17 +157,16 @@\n  celsius\n-)\n  + 32%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_18-02-44",
+            "content": "@@ -141,16 +141,17 @@\n hrenheit\n+:\n = (1.8 *\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_18-02-55",
+            "content": "@@ -145,16 +145,17 @@\n heit= (1\n+.\n 8 * cels\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_18-03-45",
+            "content": "@@ -145,17 +145,16 @@\n heit= (1\n-.\n 8 * cels\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_18-03-58",
+            "content": "@@ -47,23 +47,19 @@\n r valor \n-float64\n+int\n %0A    var\n@@ -83,15 +83,11 @@\n eit \n-float64\n+int\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_18-04-19",
+            "content": "@@ -213,17 +213,17 @@\n ntf(%22%25.6\n-f\n+d\n %5Cn%22, val\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_18-04-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valor float64\n    var celsius, fahrenheit float64\n    fmt.Scan(&celsius, &fahrenheit, &valor)\n    fahrenheit= (1.8 * celsius) + 32\n    valor= fahrenheit\n    fmt.Printf(\"%.6f\\n\", valor)\n}\n",
+            "lines": "10"
+        }
+    ]
+}
