@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-10-50",
+            "content": "@@ -17,231 +17,52 @@\n ort \n-(%0A    %22fmt%22%0A    %22math%22%0A)%0Afunc main() %7B%0A    var n1, n2  float64%0A    fmt.Scan(&n1, &n2)%0A    if n1 %3E n2 %7B%0A        fmt.Println(n1)%0A    %7D else if n2 %3E n1 %7B%0A        fmt.Println(n2)%0A    %7D else n1==n2 %7B%0A        fmt.Println(n1)%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_17-35-11",
+            "content": "@@ -206,16 +206,17 @@\n  n1==n2 \n+%7B\n %0A       \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-23_17-35-19",
+            "content": "@@ -25,16 +25,27 @@\n   %22fmt%22%0A\n+    %22math%22%0A\n )%0Afunc m\n@@ -199,17 +199,23 @@\n  %7D else \n-%7B\n+n1==n2 \n %0A       \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-23_17-37-32",
+            "content": "package main\nimport (\n    \"fmt\"\n)\nfunc main() {\n    var n1, n2  float64\n    fmt.Scan(&n1, &n2)\n    if n1 > n2 {\n        fmt.Println(n1)\n    } else if n2 > n1 {\n        fmt.Println(n2)\n    } else {\n        fmt.Println(n1)\n    }\n}\n",
+            "lines": "15"
+        }
+    ]
+}
