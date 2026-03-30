@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_02-25-01",
+            "content": "@@ -41,158 +41,28 @@\n     \n-var n1, n2 int%0A    fmt.scan(&n1, &n2)%0A    if n1%257 == 0 %7B%0A        fmt.Printf(%22%25d%22, %22SIm%22)%0A    %7D else if n1%257 != 0%7B%0A        fmt.Printf(%22%25d%22, %22NAO%22)%0A    %7D\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-24_02-37-50",
+            "content": "@@ -68,16 +68,21 @@\n scan(&n1\n+, &n2\n )%0A    if\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_02-38-15",
+            "content": "@@ -43,16 +43,20 @@\n   var n1\n+, n2\n  int%0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_02-38-24",
+            "content": "@@ -56,17 +56,17 @@\n     fmt.\n-S\n+s\n can(&n1)\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_02-38-47",
+            "content": "@@ -102,19 +102,24 @@\n mt.Print\n-ln(\n+f(%22%25d%22, \n %22SIm%22)%0A \n@@ -163,11 +163,16 @@\n rint\n-ln(\n+f(%22%25d%22, \n %22NAO\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_02-39-23",
+            "content": "@@ -112,9 +112,9 @@\n (%22SI\n-M\n+m\n %22)%0A \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_02-39-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1 int\n    fmt.Scan(&n1)\n    if n1%7 == 0 {\n        fmt.Println(\"SIM\")\n    } else if n1%7 != 0{\n        fmt.Println(\"NAO\")\n    }\n}\n",
+            "lines": "11"
+        }
+    ]
+}

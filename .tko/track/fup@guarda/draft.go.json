@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-26-09",
+            "content": "@@ -37,56 +37,8 @@\n ) %7B%0A\n-    var wifi, login, adm float64%0A    fmt.Scan()%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_17-31-27",
+            "content": "@@ -62,12 +62,15 @@\n adm \n- int\n+float64\n %0A   \n@@ -83,178 +83,14 @@\n can(\n-&wifi, &login, &adm)%0A    if !wifi %7B%0A    // you must connect wifi%0A    return%0A%7D  if !login %7B%0A    // you need to login first    %0A%7D if !admm %7B%0A    // you must login as adm%0A%7D%0A\n+)%0A    \n fmt.\n@@ -102,11 +102,13 @@\n ln(%22\n-don\n+qxcod\n e%22)%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-30_17-39-42",
+            "content": "@@ -1,297 +1,124 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var wifi, login, adm  int%0A    fmt.Scan(&wifi, &login, &adm)%0A    if !wifi %7B%0A    // you must connect wifi%0A    return%0A%7D  if !login %7B%0A    // you need to login first   %0A    return %0A%7D if !adm %7B%0A    // you must login as adm%0A    return%0A%7D%0A%0Afmt.Println(%22done%22)%0A%7D\n+@@ -200,27 +200,16 @@%0A first   %0A-%250A    return%0A  %250A%257D if !%0A@@ -248,21 +248,9 @@%0A adm%250A%0A-    return%250A%257D%250A%0A+%257D%0A %250Afmt\n %0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-30_17-40-48",
+            "content": "@@ -108,38 +108,23 @@\n  if \n+!\n wifi\n-== 0\n  %7B%0A    \n-    fmt.Print(%22\n+// \n you \n@@ -140,25 +140,13 @@\n ect \n-to \n wifi\n-%22)   %0A    \n+%0A\n     \n@@ -159,42 +159,27 @@\n %0A%7D  \n-else \n if \n+!\n login\n-==0\n  %7B%0A    \n-fmt.Print(%22\n+// \n you \n@@ -201,12 +201,12 @@\n irst\n-%22)%0A \n+   %0A\n     \n@@ -215,34 +215,29 @@\n turn\n+ \n %0A%7D \n- else %7B%0A    fmt.Print(%22\n+if !adm %7B%0A    // \n you \n@@ -257,17 +257,22 @@\n  adm\n-%22)\n+%0A\n     \n+return\n %0A%7D\n- \n+%0A\n %0Afmt\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_17-49-41",
+            "content": "@@ -158,19 +158,16 @@\n  to wifi\n- %5Cn\n %22)   %0A  \n@@ -239,19 +239,16 @@\n in first\n- %5Cn\n %22)%0A     \n@@ -304,26 +304,12 @@\n  adm\n- %5Cn\n %22)  \n-%0A    return\n   %0A%7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-30_17-50-30",
+            "content": "@@ -158,16 +158,17 @@\n  to wifi\n+ \n %5Cn%22)   %0A\n@@ -242,16 +242,17 @@\n in first\n+ \n %5Cn%22)%0A   \n@@ -306,16 +306,17 @@\n n as adm\n+ \n %5Cn%22)  %0A \n@@ -347,15 +347,13 @@\n ln(%22done\n-%5Cn\n %22)%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_17-50-53",
+            "content": "@@ -292,19 +292,16 @@\n ou must \n-to \n login as\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_17-51-04",
+            "content": "@@ -307,18 +307,16 @@\n n as adm\n-in\n %5Cn%22)  %0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_17-51-18",
+            "content": "@@ -270,19 +270,8 @@\n lse \n-if adm== 0 \n %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_17-52-08",
+            "content": "@@ -272,17 +272,16 @@\n e if adm\n- \n == 0 %7B%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_17-52-34",
+            "content": "@@ -184,16 +184,21 @@\n turn%0A%7D  \n+else \n if login\n@@ -261,16 +261,21 @@\n turn%0A%7D  \n+else \n if adm =\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_17-52-52",
+            "content": "@@ -184,17 +184,16 @@\n turn%0A%7D  \n-%0A\n if login\n@@ -256,17 +256,16 @@\n turn%0A%7D  \n-%0A\n if adm =\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_17-53-08",
+            "content": "@@ -1,367 +1,44 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var wifi, login, adm  int%0A    fmt.Scan(&wifi, &login, &adm)%0A    if wifi== 0 %7B%0A        fmt.Print(%22you must connect to wifi%5Cn%22)   %0A        return%0A%7D  %0Aif login==0 %7B%0A    fmt.Print(%22you need to login first%5Cn%22)%0A     return%0A%7D  %0Aif adm == 0 %7B%0A    fmt.Print(%22you must to login as admin%5Cn%22)  %0A    return  %0A%7D %0Afmt.Println(%22done%5Cn%22)%0A%7D\n+@@ -115,10 +115,9 @@%0A i== %0A-!1%0A+0%0A  %257B%250A \n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_17-54-24",
+            "content": "@@ -115,9 +115,10 @@\n i== \n-1\n+0 \n %7B%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_17-54-29",
+            "content": "@@ -111,18 +111,17 @@\n  wifi== \n-0 \n+1\n %7B%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_17-54-42",
+            "content": "@@ -353,13 +353,15 @@\n ln(%22done\n+%5Cn\n %22)%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-30_17-54-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var wifi, login, adm  int\n    fmt.Scan(&wifi, &login, &adm)\n    if wifi== 0 {\n        fmt.Print(\"you must connect to wifi\\n\")   \n        return\n}  \nif login==0 {\n    fmt.Print(\"you need to login first\\n\")\n     return\n}  \nif adm == 0 {\n    fmt.Print(\"you must to login as admin\\n\")  \n    return  \n} \nfmt.Println(\"done\")\n}\n",
+            "lines": "19"
+        }
+    ]
+}

@@ -13,10 +13,10 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@missão-seleção-1
-- fup@campanha-principal
-- fup@problemas-operações
-- fup@repositorio-de-problemas
+- fup@selecao-1-if_else-if1-base
+- fup@operacoes-basic-base
+- '@fup@operacoes-basic-base_sem_quest'
+- '@fup@selecao-1-if_else-if1-base_sem_quest'
 tasks:
   fup@tres: '{self:1, rate:100, study:10}'
   fup@resto: '{self:1, rate:100, study:20}'
@@ -28,6 +28,12 @@ tasks:
   fup@bala: '{self:1, rate:100, study:20}'
   fup@abs: '{self:1, rate:100, study:15, concept:1}'
   fup@max: '{self:1, rate:100, study:26, concept:1}'
+  fup@ou: '{self:1, rate:100, study:27, concept:1}'
+  fup@positivo: '{self:1, rate:100, study:15}'
+  fup@multiplo: '{self:1, rate:100, study:20, concept:1}'
+  fup@calc: '{self:1, rate:100, study:40, concept:1}'
+  fup@guarda: '{self:1, rate:100, study:30, friend:hannah, concept:1}'
+  fup@quantos: '{rate:100}'
 flags:
   painel: 1
   quests: 0
@@ -36,4 +42,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@ou
+selected: fup@quantos

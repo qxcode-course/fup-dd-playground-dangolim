@@ -1,12 +1,11 @@
 package main
 import "fmt"
 func main() {
-    var n1 float64
+    var n1 int
     fmt.Scan(&n1)
-    if n1 == 3 || n1 == 5 {
+    if n1%7 == 0 {
         fmt.Println("SIM")
-    } else if n1 != 3 || n1 != 5 {
+    } else if n1%7 != 0{
         fmt.Println("NAO")
     }
-    
 }

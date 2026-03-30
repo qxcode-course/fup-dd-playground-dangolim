@@ -7,8 +7,23 @@
         },
         {
             "label": "2026-03-23_17-49-58",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1 int\n    fmt.Scan(&n1)\n    if n1==\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -48,15 +48,11 @@\n  n1 \n-float64\n+int\n %0A   \n@@ -81,117 +81,33 @@\n n1==\n- 3 %7C%7C n== 5 %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else n1 != 3 %7C%7C n1 != 5 %7B%0A        fmt.Println(%22NAO%22)%0A    %7D%0A    \n+%0A    fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
             "lines": "8"
+        },
+        {
+            "label": "2026-03-23_18-04-58",
+            "content": "@@ -79,17 +79,16 @@\n    if n1\n- \n == 3 %7C%7C \n@@ -88,17 +88,16 @@\n = 3 %7C%7C n\n- \n == 5 %7B%0A \n@@ -133,19 +133,16 @@\n  %7D else \n-if \n n1 != 3 \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_18-05-31",
+            "content": "@@ -89,17 +89,16 @@\n = 3 %7C%7C n\n-1\n  == 5 %7B%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_18-05-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1 float64\n    fmt.Scan(&n1)\n    if n1 == 3 || n1 == 5 {\n        fmt.Println(\"SIM\")\n    } else if n1 != 3 || n1 != 5 {\n        fmt.Println(\"NAO\")\n    }\n    \n}\n",
+            "lines": "12"
         }
     ]
 }

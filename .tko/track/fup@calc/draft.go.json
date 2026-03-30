@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_02-42-07",
+            "content": "@@ -37,96 +37,8 @@\n ) %7B%0A\n-    var n1, n2, resultado int%0A    fmt.Scan(&n1, &n2, &resultado)%0A    resultado= n1 + n2%0A\n     \n@@ -54,17 +54,14 @@\n ln(%22\n-resultado\n+qxcode\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-24_02-51-51",
+            "content": "@@ -49,17 +49,25 @@\n n1, n2, \n-2\n+resultado\n  int%0A   \n@@ -91,16 +91,32 @@\n 2, &\n-2)%0A    2\n+resultado)%0A    resultado\n = n1\n@@ -138,14 +138,22 @@\n rintln(%22\n-2\n+resultado\n %22)%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_02-52-22",
+            "content": "@@ -49,21 +49,17 @@\n n1, n2, \n-resul\n+2\n  int%0A   \n@@ -83,24 +83,16 @@\n 2, &\n-resul\n+2\n )%0A    \n-resul\n+2\n = n1\n@@ -118,13 +118,9 @@\n ln(%22\n-resul\n+2\n %22)%0A%7D\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_02-52-53",
+            "content": "@@ -107,9 +107,11 @@\n = n1\n-/\n+ + \n n2%0A \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_02-53-30",
+            "content": "@@ -49,17 +49,21 @@\n n1, n2, \n-/\n+resul\n  int%0A   \n@@ -87,23 +87,29 @@\n 2, &\n-/\n+resul\n )%0A    \n-/\n+resul\n = n1\n- + \n+/\n n2%0A \n@@ -124,14 +124,18 @@\n rintln(%22\n-/\n+resul\n %22)%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_02-56-59",
+            "content": "@@ -47,37 +47,15 @@\n r n1\n- int%0A    var n2 int%0A    var x\n+, n2, /\n  int\n@@ -83,17 +83,16 @@\n 2, &\n-x \n+/\n )%0A    \n-x\n+/\n = n1\n@@ -118,9 +118,9 @@\n ln(%22\n-x\n+/\n %22)%0A%7D\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_02-58-32",
+            "content": "@@ -136,13 +136,15 @@\n Println(\n-x\n+%22x%22\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_03-06-32",
+            "content": "@@ -77,14 +77,11 @@\n r x \n-str\n in\n-g\n+t\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_03-09-00",
+            "content": "@@ -116,56 +116,18 @@\n     \n-if x == %22+%22 %7B%0A        fmt.Println(n1 + n2)%0A    %7D\n+x= n1 + n2\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_03-11-41",
+            "content": "@@ -159,59 +159,8 @@\n n2)%0A\n-    %7D else x == %22-%22 %7B%0A        fmt.println(n1 - n2)%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_03-13-04",
+            "content": "@@ -170,22 +170,8 @@\n lse \n-if %7B%0A         \n x ==\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-24_03-13-29",
+            "content": "@@ -169,16 +169,26 @@\n else if \n+%7B%0A        \n  x == %22-\n@@ -188,17 +188,16 @@\n x == %22-%22\n- \n  %7B%0A     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-24_03-13-56",
+            "content": "@@ -186,33 +186,33 @@\n   %7B%0A        fmt.\n-P\n+p\n rintln(n1 - n2)%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-24_03-14-20",
+            "content": "@@ -233,13 +233,13 @@\n Println(\n-+\n+x\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-24_03-16-31",
+            "content": "@@ -233,15 +233,13 @@\n Println(\n-%22+%22\n++\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-24_03-16-39",
+            "content": "@@ -101,16 +101,21 @@\n &n1, &n2\n+, &x \n )%0A    if\n@@ -137,19 +137,29 @@\n     \n-x = \n+ fmt.Println(\n n1 + n2\n+)\n %0A   \n@@ -194,107 +194,28 @@\n     \n-x = n1 - n2%0A    %7D else if x == %22*%22 %7B%0A        x = n1 * n2 %0A    %7D else if x== %22/%22 %7B%0A        x = n1/\n+fmt.Println(n1 - \n n2\n+)\n %0A   \n@@ -234,14 +234,14 @@\n rintln(%22\n-x\n++\n %22)%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-24_03-20-46",
+            "content": "@@ -84,31 +84,8 @@\n ing%0A\n-    var resultado int %0A\n     \n@@ -105,12 +105,8 @@\n  &n2\n-, &x\n )%0A  \n@@ -128,25 +128,18 @@\n %0A       \n-resultado\n+x \n = n1 + n\n@@ -171,33 +171,25 @@\n   %7B%0A        \n-resultado\n+x\n  = n1 - n2%0A \n@@ -216,33 +216,25 @@\n %22 %7B%0A        \n-resultado\n+x\n  = n1 * n2 %0A\n@@ -244,25 +244,24 @@\n  %7D else if x\n- \n == %22/%22 %7B%0A   \n@@ -265,25 +265,17 @@\n         \n-resultado\n+x\n  = n1/n2\n@@ -301,17 +301,11 @@\n tln(\n-resultado\n+%22x%22\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-24_03-22-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1 int\n    var n2 int\n    var x string\n    var resultado int \n    fmt.Scan(&n1, &n2, &x)\n    if x == \"+\" {\n       resultado= n1 + n2\n    } else if  x == \"-\"  {\n        resultado = n1 - n2\n    } else if x == \"*\" {\n        resultado = n1 * n2 \n    } else if x == \"/\" {\n        resultado = n1/n2\n    }\n    fmt.Println(resultado)\n}\n",
+            "lines": "19"
+        }
+    ]
+}
