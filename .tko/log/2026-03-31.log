@@ -1,0 +1,44 @@
+2026-03-31 16:56:13, MOVE, v:1, k:fup@quantos, mode:PICK
+2026-03-31 16:56:15, MOVE, v:1, k:fup@quantos, mode:BACK
+2026-03-31 16:56:29, MOVE, v:1, k:fup@quebrada, mode:PICK
+2026-03-31 16:56:31, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:0, size:5
+2026-03-31 16:56:31, EXEC, v:1, k:fup@quebrada, mode:FULL, rate:0, size:5
+2026-03-31 16:57:02, MOVE, v:1, k:fup@quebrada, mode:BACK
+2026-03-31 16:57:24, SELF, v:1, k:fup@quebrada, self:1, rate:100, study:30, concept:1
+2026-03-31 16:59:16, MOVE, v:1, k:fup@quantos, mode:PICK
+2026-03-31 16:59:18, EXEC, v:1, k:fup@quantos, mode:FULL, rate:100
+2026-03-31 16:59:19, MOVE, v:1, k:fup@quantos, mode:BACK
+2026-03-31 16:59:50, SELF, v:1, k:fup@quantos, self:1, rate:100, study:25, friend:hannah, concept:1
+2026-03-31 16:59:54, MOVE, v:1, k:fup@impar, mode:DOWN
+2026-03-31 16:59:56, MOVE, v:1, k:fup@impar, mode:PICK
+2026-03-31 16:59:57, EXEC, v:1, k:fup@impar, mode:FULL, rate:0, size:5
+2026-03-31 17:00:02, EXEC, v:1, k:fup@impar, mode:FREE
+2026-03-31 17:00:20, EXEC, v:1, k:fup@impar, mode:FREE
+2026-03-31 17:00:39, EXEC, v:1, k:fup@impar, mode:FREE
+2026-03-31 17:01:04, EXEC, v:1, k:fup@impar, mode:FREE
+2026-03-31 17:01:18, MOVE, v:1, k:fup@impar, mode:BACK
+2026-03-31 17:01:23, MOVE, v:1, k:fup@round, mode:DOWN
+2026-03-31 17:01:24, MOVE, v:1, k:fup@round, mode:PICK
+2026-03-31 17:01:25, EXEC, v:1, k:fup@round, mode:FULL, rate:0, size:5
+2026-03-31 17:01:26, EXEC, v:1, k:fup@round, mode:FREE
+2026-03-31 17:01:29, MOVE, v:1, k:fup@round, mode:BACK
+2026-03-31 17:01:32, MOVE, v:1, k:fup@impar, mode:PICK
+2026-03-31 17:01:53, EXEC, v:1, k:fup@impar, mode:FULL, rate:0
+2026-03-31 17:16:52, EXEC, v:1, k:fup@impar, mode:FULL, rate:100, size:17
+2026-03-31 17:17:11, MOVE, v:1, k:fup@impar, mode:BACK
+2026-03-31 17:17:36, SELF, v:1, k:fup@impar, self:1, rate:100, study:20, friend:hannah
+2026-03-31 17:17:46, MOVE, v:1, k:fup@round, mode:PICK
+2026-03-31 17:19:47, EXEC, v:1, k:fup@round, mode:FULL, rate:0
+2026-03-31 17:47:49, EXEC, v:1, k:fup@round, mode:FULL, rate:100, size:18
+2026-03-31 17:48:16, MOVE, v:1, k:fup@round, mode:BACK
+2026-03-31 17:48:46, SELF, v:1, k:fup@round, self:1, rate:100, study:20, friend:hanna
+2026-03-31 17:50:24, MOVE, v:1, k:fup@mumia, mode:DOWN
+2026-03-31 17:50:25, MOVE, v:1, k:fup@mumia, mode:PICK
+2026-03-31 17:50:27, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:5
+2026-03-31 18:07:30, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:18
+2026-03-31 18:07:35, EXEC, v:1, k:fup@mumia, mode:FREE
+2026-03-31 18:09:21, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:20
+2026-03-31 18:10:33, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:18
+2026-03-31 18:10:51, EXEC, v:1, k:fup@mumia, mode:FULL, rate:22, size:18
+2026-03-31 18:11:02, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:18
+2026-03-31 18:15:08, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:11

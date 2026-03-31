@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-50-27",
+            "content": "@@ -39,273 +39,37 @@\n %7B%0A  \n-var mario string%0A  var x int %0A  fmt.Scan(&mario, &x)%0A  if x%3C12 %7B%0A    fmt.Println(%22crianca%22)%0A  %7D else if x%3C17 %7B%0A    fmt.Println(%22jovem%22)%0A  %7D else if x%3C65 %7B%0A    fmt.Println(%22adulto%22)%0A  %7D else if x%3C1000 %7B%0A    fmt.Println(%22idoso%22)%0A  %7D else %7B%0A    fmt.Println(%22mumia%22)%0A  %7D\n+  fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_18-07-30",
+            "content": "@@ -275,18 +275,8 @@\n lse \n-if x%3E1000 \n %7B%0A  \n@@ -302,55 +302,8 @@\n a%22)%0A\n-  %7D else %7B%0A    fmt.Println(%22mario eh crianca%22)%0A\n   %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-31_18-09-21",
+            "content": "@@ -97,14 +97,12 @@\n  if \n-(\n x%3C12\n-)\n  %7B%0A \n@@ -143,14 +143,12 @@\n  if \n-(\n x%3C17\n-)\n  %7B%0A \n@@ -187,14 +187,12 @@\n  if \n-(\n x%3C65\n-)\n  %7B%0A \n@@ -232,16 +232,14 @@\n  if \n-(\n x%3C1000\n-)\n  %7B%0A \n@@ -269,15 +269,24 @@\n %0A  %7D\n- \n  else \n+if x%3E1000 \n %7B%0A  \n@@ -308,14 +308,61 @@\n mumia%22)%0A\n+  %7D else %7B%0A    fmt.Println(%22mario eh crianca%22)%0A\n   %7D%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-31_18-10-33",
+            "content": "@@ -123,17 +123,8 @@\n ln(%22\n-mario eh \n cria\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-31_18-10-51",
+            "content": "@@ -119,16 +119,25 @@\n rintln(%22\n+mario eh \n crianca%22\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-31_18-11-02",
+            "content": "@@ -137,11 +137,184 @@\n   %7D \n- %0A  %7D%0A\n+else if (x%3C17) %7B%0A    fmt.Println(%22jovem%22)%0A  %7D else if (x%3C65) %7B%0A    fmt.Println(%22adulto%22)%0A  %7D else if (x%3C1000) %7B%0A    fmt.Println(%22idoso%22)%0A  %7D  else %7B%0A    fmt.Println(%22mumia%22)%0A  %7D%0A%7D\n %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-31_18-15-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n  var mario string\n  var x int \n  fmt.Scan(&mario, &x)\n  if (x<12) {\n    fmt.Println(\"crianca\")\n  }  \n  }\n\n",
+            "lines": "11"
+        }
+    ]
+}
