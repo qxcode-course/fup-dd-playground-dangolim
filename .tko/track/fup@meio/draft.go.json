@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-22-17",
+            "content": "@@ -41,122 +41,35 @@\n     \n-var x, y, z int%0A    fmt.Scan(&x, &y, &z)%0A    if (x %3E y && x %3C z) %7C%7C (x %3E z && x %3C y) %7B%0A        fmt.Println(x)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_17-31-37",
+            "content": "@@ -156,79 +156,7 @@\n    %7D\n- else  if (y %3E x  && y %3C z) %7C%7C (y %3E z && y %3C x) %7B%0A        fmt.Println(y)\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-07_17-32-26",
+            "content": "@@ -229,11 +229,6 @@\n (y)%0A\n-%7D   %0A\n %7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_17-32-49",
+            "content": "@@ -229,88 +229,11 @@\n (y)%0A\n-    %7D else  if (z %3E y && z %3C x) %7C%7C (x %3E z && y %3C z) %7B%0A        fmt.Println(z)  %0A    %7D\n+%7D   %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_17-34-40",
+            "content": "@@ -313,8 +313,4 @@\n    %7D\n-%0A%7D  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_17-34-56",
+            "content": "@@ -265,13 +265,13 @@\n %7C%7C (\n-z %3E x\n+x %3E z\n  && \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_17-36-15",
+            "content": "@@ -235,16 +235,57 @@\n   %7D else\n+  if (z %3E y && z %3C x) %7C%7C (z %3E x && y %3C z)\n  %7B%0A     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_17-36-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var x, y, z int\n    fmt.Scan(&x, &y, &z)\n    if (x > y && x < z) || (x > z && x < y) {\n        fmt.Println(x)\n    } else  if (y > x  && y < z) || (y > z && y < x) {\n        fmt.Println(y)\n    } else {\n        fmt.Println(z)  \n    }\n}  ",
+            "lines": "13"
+        }
+    ]
+}

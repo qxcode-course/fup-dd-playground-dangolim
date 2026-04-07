@@ -32,8 +32,158 @@
         },
         {
             "label": "2026-03-31_18-15-08",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n  var mario string\n  var x int \n  fmt.Scan(&mario, &x)\n  if (x<12) {\n    fmt.Println(\"crianca\")\n  }  \n  }\n\n",
+            "content": "@@ -123,17 +123,8 @@\n ln(%22\n-maria eh \n cria\n",
             "lines": "11"
+        },
+        {
+            "label": "2026-04-07_16-51-12",
+            "content": "@@ -123,17 +123,17 @@\n ln(%22mari\n-o\n+a\n  eh cria\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_16-51-20",
+            "content": "@@ -97,12 +97,14 @@\n  if \n+(\n x%3C12\n+)\n  %7B%0A \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_16-51-38",
+            "content": "@@ -88,18 +88,16 @@\n io, &x)%0A\n-  \n   if x%3C1\n@@ -100,18 +100,16 @@\n  x%3C12 %7B%0A\n-  \n     fmt.\n@@ -142,208 +142,12 @@\n )%0A  \n-  %7D else if x%3C18 %7B%0A      fmt.Println(%22jovem%22)   %0A    %7D else  if x%3C65 %7B%0A      fmt.Println(%22adulto%22)   %0A    %7D else if x%3C1000 %7B%0A      fmt.Println(%22idoso%22)   %0A    %7D else %7B%0A      fmt.Println(%22mumia%22)   %0A  \n+%7D  %0A\n   %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_16-55-45",
+            "content": "@@ -349,10 +349,6 @@\n    %7D\n-%0A  %7D\n %0A%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_16-55-57",
+            "content": "@@ -290,16 +290,8 @@\n ln(%22\n-jose eh \n idos\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-56-17",
+            "content": "@@ -184,19 +184,8 @@\n ln(%22\n-mariana eh \n jove\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-56-31",
+            "content": "@@ -185,16 +185,18 @@\n n(%22maria\n+na\n  eh jove\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-56-43",
+            "content": "@@ -189,10 +189,8 @@\n aria\n-na\n  eh \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-56-51",
+            "content": "@@ -247,19 +247,8 @@\n ln(%22\n- marina eh \n adul\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-57-10",
+            "content": "@@ -239,24 +239,25 @@\n mt.Println(%22\n+ \n marina eh ad\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-57-21",
+            "content": "@@ -251,10 +251,10 @@\n mari\n-o\n n\n+a\n  eh \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-58-26",
+            "content": "@@ -125,12 +125,22 @@\n ln(%22\n+mario eh \n cria\n+n\n ca%22)\n@@ -180,16 +180,27 @@\n rintln(%22\n+mariana eh \n jovem%22) \n@@ -243,16 +243,26 @@\n rintln(%22\n+marion eh \n adulto%22)\n@@ -307,16 +307,24 @@\n rintln(%22\n+jose eh \n idoso%22) \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-59-10",
+            "content": "@@ -125,17 +125,16 @@\n ln(%22cria\n-n\n ca%22)%0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-59-20",
+            "content": "@@ -64,15 +64,12 @@\n r x \n-float64\n+int \n %0A  f\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-00-20",
+            "content": "@@ -60,19 +60,23 @@\n   var x \n-int\n+float64\n %0A  fmt.S\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-00-28",
+            "content": "@@ -124,17 +124,8 @@\n ln(%22\n-mario eh \n cria\n@@ -174,17 +174,8 @@\n ln(%22\n-maria eh \n jove\n@@ -226,18 +226,8 @@\n ln(%22\n-marion eh \n adul\n@@ -280,20 +280,8 @@\n ln(%22\n-marilene eh \n idos\n@@ -323,23 +323,8 @@\n ln(%22\n-maridracula eh \n mumi\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-03-55",
+            "content": "@@ -358,16 +358,17 @@\n Println(\n+%22\n maridrac\n@@ -379,16 +379,17 @@\n eh mumia\n+%22\n )   %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-05-26",
+            "content": "@@ -354,25 +354,24 @@\n fmt.Println(\n-%22\n maridracula \n@@ -378,17 +378,16 @@\n eh mumia\n-%22\n )   %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-05-37",
+            "content": "@@ -75,16 +75,24 @@\n mt.Scan(\n+&mario, \n &x)%0A    \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-07-05",
+            "content": "@@ -33,16 +33,35 @@\n ain() %7B%0A\n+  var mario string%0A\n   var x \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-07-16",
+            "content": "@@ -37,27 +37,8 @@\n ) %7B%0A\n-  var mario string%0A\n   va\n@@ -57,21 +57,17 @@\n t.Scan(&\n-mario\n+x\n )%0A    if\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_17-08-36",
+            "content": "@@ -39,17 +39,21 @@\n %7B%0A  var \n-y\n+mario\n  string%0A\n@@ -76,17 +76,21 @@\n t.Scan(&\n-y\n+mario\n )%0A    if\n@@ -119,13 +119,14 @@\n tln(\n-y,  %22\n+%22mario\n  eh \n@@ -158,17 +158,8 @@\n %3C18 \n-&& x%3E=12 \n %7B%0A  \n@@ -170,28 +170,30 @@\n fmt.Println(\n-y, %22\n+%22maria\n  eh jovem%22) \n@@ -219,16 +219,8 @@\n %3C65 \n-&& x%3E=18\n %7B%0A  \n@@ -239,13 +239,15 @@\n tln(\n- y, %22\n+%22marion\n  eh \n@@ -283,17 +283,8 @@\n 000 \n-&& x%3E=65 \n %7B%0A  \n@@ -302,15 +302,18 @@\n ntln\n-y (y, %22\n+(%22marilene\n  eh \n@@ -358,12 +358,20 @@\n tln(\n-y, %22\n+%22maridracula\n  eh \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-13-22",
+            "content": "@@ -311,16 +311,17 @@\n .Println\n+y\n  (y, %22 e\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-13-30",
+            "content": "@@ -303,32 +303,33 @@\n      fmt.Println\n+ \n (y, %22 eh idoso%22)\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-13-36",
+            "content": "@@ -112,16 +112,17 @@\n ln(y,  %22\n+ \n eh crian\n@@ -178,16 +178,17 @@\n tln(y, %22\n+ \n eh jovem\n@@ -246,16 +246,17 @@\n ln( y, %22\n+ \n eh adult\n@@ -316,16 +316,17 @@\n tln(y, %22\n+ \n eh idoso\n@@ -366,16 +366,17 @@\n tln(y, %22\n+ \n eh mumia\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-13-52",
+            "content": "@@ -235,24 +235,25 @@\n fmt.Println(\n+ \n y, %22eh adult\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-14-56",
+            "content": "@@ -84,17 +84,16 @@\n    if x%3C\n-=\n 12 %7B%0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-15-15",
+            "content": "@@ -75,12 +75,8 @@\n can(\n-&x, \n &y)%0A\n@@ -84,16 +84,17 @@\n    if x%3C\n+=\n 12 %7B%0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-19-12",
+            "content": "@@ -76,13 +76,13 @@\n an(&\n-y, &x\n+x, &y\n )%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-19-40",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n  var y string\n  var x int\n  fmt.Scan(&y, &x)\n    if x<12 {\n      fmt.Println(y,  \"eh crianca\")\n    } else if x<18 && x>=12 {\n      fmt.Println(y, \"eh jovem\")   \n    } else  if x<65 && x>=18{\n      fmt.Println(y, \"eh adulto\")   \n    } else if x<1000 && x>=65 {\n      fmt.Println(y, \"eh idoso\")   \n    } else {\n      fmt.Println(y, \"eh mumia\")   \n    }\n  }\n\n",
+            "lines": "19"
         }
     ]
 }

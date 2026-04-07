@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-37-36",
+            "content": "@@ -41,271 +41,35 @@\n     \n-var p1, p2, r, p, s int%0A    fmt.Scan(&p1, &p2, &r, &p, &s)%0A    if (p1 == s && p2 ==p ) %7C%7C (p1==r && p2 == s%7B%0A        fmt.Println(p1)%0A    %7D else if (p2 == s && p1 == p) %7C%7C (p2 == r && p1==s) %7B%0A        fmt.Println(p2)%0A    %7D else %7B%0A        fmt.Println(%22empate%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_17-53-58",
+            "content": "@@ -144,17 +144,16 @@\n  p2 == s\n-)\n %7B%0A      \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_17-57-42",
+            "content": "@@ -47,16 +47,25 @@\n r p1, p2\n+, r, p, s\n  int%0A   \n@@ -82,16 +82,28 @@\n &p1, &p2\n+, &r, &p, &s\n )%0A    if\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_18-00-51",
+            "content": "@@ -79,36 +79,8 @@\n p2)%0A\n-    r:= 0%0A    p:=1%0A    s:=2%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_18-02-45",
+            "content": "@@ -52,14 +52,11 @@\n  p2 \n-str\n in\n-g\n+t\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_18-03-42",
+            "content": "@@ -48,19 +48,22 @@\n  p1, p2 \n+str\n in\n-t\n+g\n %0A    fmt\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_18-05-16",
+            "content": "@@ -45,17 +45,13 @@\n var \n-jog1, jog\n+p1, p\n 2 in\n@@ -115,20 +115,19 @@\n if (\n-jog1\n+p1 \n == s && \n jog2\n@@ -122,20 +122,19 @@\n == s && \n-jog2\n+p2 \n ==p ) %7C%7C\n@@ -139,19 +139,17 @@\n %7C%7C (\n-jog\n+p\n 1==r && \n jog2\n@@ -144,20 +144,19 @@\n 1==r && \n-jog2\n+p2 \n == s)%7B%0A \n@@ -174,19 +174,17 @@\n Println(\n-jog\n+p\n 1)%0A    %7D\n@@ -197,20 +197,19 @@\n if (\n-jog2\n+p2 \n == s && \n jog1\n@@ -204,19 +204,17 @@\n == s && \n-jog\n+p\n 1 == p) \n@@ -217,19 +217,17 @@\n  p) %7C%7C (\n-jog\n+p\n 2 == r &\n@@ -228,19 +228,17 @@\n == r && \n-jog\n+p\n 1==s) %7B%0A\n@@ -261,11 +261,9 @@\n tln(\n-jog\n+p\n 2)%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_18-06-33",
+            "content": "@@ -74,18 +74,14 @@\n an(&\n-jog\n+p\n 1, &\n-jog\n+p\n 2)%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_18-06-47",
+            "content": "@@ -56,14 +56,11 @@\n og2 \n-str\n in\n-g\n+t\n %0A   \n@@ -87,36 +87,8 @@\n g2)%0A\n-    fmt.Println(jog1, jog2)%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_18-08-01",
+            "content": "@@ -117,19 +117,16 @@\n og2)%0A   \n- //\n  r:= 0%0A \n@@ -127,19 +127,16 @@\n := 0%0A   \n- //\n  p:=1%0A  \n@@ -136,19 +136,16 @@\n p:=1%0A   \n- //\n  s:=2%0A  \n@@ -145,19 +145,16 @@\n s:=2%0A   \n- //\n  if (jog\n@@ -197,27 +197,24 @@\n g2== s)%7B%0A   \n- //\n      fmt.Pri\n@@ -223,27 +223,24 @@\n ln(jog1)%0A   \n- //\n  %7D else if (\n@@ -289,27 +289,24 @@\n g1==s) %7B%0A   \n- //\n      fmt.Pri\n@@ -319,19 +319,16 @@\n og2)%0A   \n- //\n  %7D else \n@@ -332,19 +332,16 @@\n se %7B%0A   \n- //\n      fmt\n@@ -366,11 +366,8 @@\n %0A   \n- //\n  %7D%0A%7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-07_18-08-14",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var jog1\n@@ -59,17 +59,20 @@\n  string%0A\n-%09\n+    \n fmt.Scan\n@@ -86,17 +86,20 @@\n  &jog2)%0A\n-%09\n+    \n fmt.Prin\n@@ -118,47 +118,60 @@\n g2)%0A\n-%09r := %22R%22%0A%09p := %22P%22%0A%09s := %22S%22%0A%09\n+    // r:= 0%0A    // p:=1%0A    // s:=2%0A    // \n if (jog1\n  == \n@@ -170,21 +170,20 @@\n jog1\n- \n == \n-p\n+s\n  && jog2\n  == \n@@ -178,21 +178,20 @@\n  && jog2\n- \n ==\n- \n p\n+ \n ) %7C%7C (jo\n@@ -192,20 +192,18 @@\n %7C%7C (jog1\n- \n ==\n- \n r && jog\n@@ -203,27 +203,34 @@\n  && jog2\n- \n == s)\n- \n %7B%0A\n-%09%09\n+    //     \n fmt.Prin\n@@ -239,17 +239,23 @@\n n(jog1)%0A\n-%09\n+    // \n %7D else i\n@@ -261,17 +261,16 @@\n if (jog2\n- \n == s && \n@@ -305,19 +305,26 @@\n jog1\n- \n ==\n- \n s) %7B%0A\n-%09%09\n+    //     \n fmt.\n@@ -337,17 +337,23 @@\n n(jog2)%0A\n-%09\n+    // \n %7D else %7B\n@@ -357,10 +357,19 @@\n e %7B%0A\n-%09%09\n+    //     \n fmt.\n@@ -390,9 +390,15 @@\n e%22)%0A\n-%09\n+    // \n %7D%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-07_18-10-20",
+            "content": "@@ -145,55 +145,84 @@\n %09if \n+(\n jog1\n+ \n ==\n-jog2 %7B%0A        fmt.Println(%22empate%22)%0A    \n+ p && jog2 == p) %7C%7C (jog1 == r && jog2 == s) %7B%0A%09%09fmt.Println(jog1)%0A%09\n %7D el\n@@ -235,25 +235,27 @@\n (jog\n-1\n+2\n  == \n-r\n+s\n  && jog\n-2==s\n+1 == p\n ) %7C%7C\n@@ -263,37 +263,33 @@\n (jog\n-1==s\n+2 == r\n  && jog\n-2\n+1\n  == \n-p\n+s\n ) %7B%0A\n-        \n+%09%09\n fmt.\n@@ -303,15 +303,12 @@\n (jog\n-1)%0A    \n+2)%0A%09\n %7D el\n@@ -316,16 +316,10 @@\n e %7B%0A\n-        \n+%09%09\n fmt.\n@@ -330,18 +330,19 @@\n tln(\n-jog2)%0A    \n+%22empate%22)%0A%09\n %7D%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_18-13-21",
+            "content": "@@ -251,33 +251,8 @@\n  p) \n-%7C%7C (jog1== p && jog2== r)\n %7B%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_18-14-34",
+            "content": "@@ -141,17 +141,16 @@\n %22S%22%0A%09if \n-(\n jog1==jo\n@@ -151,17 +151,16 @@\n g1==jog2\n-)\n  %7B%0A     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_18-15-45",
+            "content": "@@ -142,20 +142,16 @@\n S%22%0A%09\n-    \n if (jog1\n  == \n@@ -150,77 +150,16 @@\n jog1\n- \n ==\n- r && jog2==s) %7C%7C (jog1==s && jog2 == p) %7C%7C (jog1== p && jog2== r)\n+jog2) \n %7B%0A  \n@@ -180,14 +180,17 @@\n tln(\n-jog1) \n+%22empate%22)\n %0A   \n@@ -204,17 +204,17 @@\n  if (jog\n-2\n+1\n  == r &&\n@@ -217,18 +217,17 @@\n r && jog\n-1 \n+2\n ==s) %7C%7C \n@@ -230,17 +230,17 @@\n  %7C%7C (jog\n-2\n+1\n ==s && j\n@@ -241,17 +241,17 @@\n s && jog\n-1\n+2\n  == p) %7C\n@@ -256,17 +256,17 @@\n  %7C%7C (jog\n-2\n+1\n == p && \n@@ -268,17 +268,17 @@\n p && jog\n-1\n+2\n == r)%7B%0A \n@@ -299,17 +299,17 @@\n ntln(jog\n-2\n+1\n )%0A    %7D \n@@ -331,30 +331,26 @@\n fmt.Println(\n-%22empate%22\n+jog2\n )%0A    %7D%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_18-17-26",
+            "content": "@@ -82,16 +82,41 @@\n  &jog2)%0A\n+%09fmt.Println(jog1, jog2)%0A\n %09r := %22R\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_18-19-31",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar jog1, jog2 string\n\tfmt.Scan(&jog1, &jog2)\n\tr := \"R\"\n\tp := \"P\"\n\ts := \"S\"\n\t    if (jog1 == r && jog2==s) || (jog1==s && jog2 == p) || (jog1== p && jog2== r){\n        fmt.Println(jog1) \n    } else if (jog2 == r && jog1 ==s) || (jog2==s && jog1 == p) || (jog2== p && jog1== r){\n        fmt.Println(jog2)\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}
