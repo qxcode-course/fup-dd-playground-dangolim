@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_18-10-58",
+            "content": "@@ -40,200 +40,36 @@\n %0A   \n-var m, a, b, int%0A   fmt.Scan(&m, &a, &b )%0A   c= (a + b) %25 m%0A   maior := a %0A    if b %3E maior %7B%0A        maior = B%0A    %7D else if c %3E maior %7B%0A        maior = c%0A    %7D%0A   fmt.Println(maior)     %0A   %7D\n+ fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_18-20-49",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -33,17 +33,19 @@\n ain() %7B%0A\n-%09\n+   \n var m, a\n@@ -51,14 +51,17 @@\n a, b\n+,\n  int%0A\n-%09\n+   \n fmt.\n@@ -79,14 +79,15 @@\n , &b\n+ \n )%0A\n-%09c :\n+   c\n = (a\n@@ -96,17 +96,19 @@\n  b) %25 m%0A\n-%09\n+   \n maior :=\n@@ -109,18 +109,22 @@\n ior := a\n-%0A%09\n+ %0A    \n if b %3E m\n@@ -130,26 +130,32 @@\n maior %7B%0A\n-%09%09\n+        \n maior = \n b%0A%09%7D els\n@@ -150,11 +150,14 @@\n r = \n-b%0A%09\n+B%0A    \n %7D el\n@@ -178,10 +178,16 @@\n r %7B%0A\n-%09%09\n+        \n maio\n@@ -196,12 +196,17 @@\n = c%0A\n-%09%7D%0A%09\n+    %7D%0A   \n fmt.\n@@ -219,11 +219,21 @@\n n(maior)\n+     %0A   %7D\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_18-21-25",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -82,20 +82,16 @@\n c :=\n- m -\n  (a + b)\n %0A   \n@@ -90,13 +90,14 @@\n + b)\n-%0A    \n+ %25 m%0A%09\n maio\n@@ -133,18 +133,22 @@\n r = b%0A%09%7D\n-%0A%09\n+ else \n if c %3E m\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_18-22-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar m, a, b int\n\tfmt.Scan(&m, &a, &b)\n\tc := m - (a + b)\n    maior := a\n\tif b > maior {\n\t\tmaior = b\n\t}\n\tif c > maior {\n\t\tmaior = c\n\t}\n\tfmt.Println(maior)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

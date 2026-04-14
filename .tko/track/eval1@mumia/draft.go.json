@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-49-11",
+            "content": "@@ -41,324 +41,35 @@\n     \n-var mario string%0A    var x int%0A    fmt.Scan(&x)%0A    if x%3C12 %7B%0A        fmt.Println(%22crianca%22)%0A    %7D else if x=12 && x%3C18 %7B%0A        fmt.Println(%22jovem%22)%0A    %7D else if x=18 && x%3C65 %7B%0A        fmt.Println(%22adulto%22)%0A    %7D else if x=65 && x%3C1000 %7B%0A        fmt.Println(%22idoso%22)%0A    %7D else %7B%0A        fmt.Println(%22mumia%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-54-11",
+            "content": "@@ -146,17 +146,16 @@\n se if x=\n-=\n 12 && x%3C\n@@ -159,16 +159,16 @@\n  x%3C18 %7B%0A\n+\n         \n@@ -204,17 +204,16 @@\n se if x=\n-=\n 18 && x%3C\n@@ -243,24 +243,24 @@\n n(%22adulto%22)%0A\n+\n     %7D else i\n@@ -263,17 +263,16 @@\n se if x=\n-=\n 65 && x%3C\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-55-07",
+            "content": "@@ -124,17 +124,8 @@\n ln(%22\n-mario eh \n cria\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-55-20",
+            "content": "@@ -33,16 +33,37 @@\n ain() %7B%0A\n+    var mario string%0A\n     var \n@@ -120,16 +120,25 @@\n rintln(%22\n+mario eh \n crianca%22\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-55-35",
+            "content": "@@ -37,28 +37,8 @@\n ) %7B%0A\n-    var nome string%0A\n     \n@@ -65,14 +65,8 @@\n an(&\n-nome,&\n x)%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-56-43",
+            "content": "@@ -86,17 +86,16 @@\n n(&nome,\n- \n &x)%0A    \n@@ -100,16 +100,8 @@\n   if\n- x==0 &&\n  x%3C1\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-59-52",
+            "content": "@@ -138,18 +138,8 @@\n ln(%22\n- mario eh \n cria\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_18-00-42",
+            "content": "@@ -133,23 +133,24 @@\n Println(\n-nome, %22\n+%22 mario \n eh crian\n@@ -208,18 +208,9 @@\n tln(\n-nome, %22eh \n+%22\n jove\n@@ -263,25 +263,17 @@\n Println(\n-nome, %22eh\n+%22\n adulto%22)\n@@ -329,17 +329,9 @@\n tln(\n-nome, %22eh\n+%22\n idos\n@@ -371,17 +371,9 @@\n tln(\n-nome,%22eh \n+%22\n mumi\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_18-02-47",
+            "content": "@@ -134,24 +134,25 @@\n rintln(nome,\n+ \n %22eh crianca%22\n@@ -204,24 +204,25 @@\n rintln(nome,\n+ \n %22eh jovem%22)%0A\n@@ -276,20 +276,20 @@\n ln(nome,\n+ \n %22eh\n- \n adulto%22)\n@@ -346,20 +346,20 @@\n ln(nome,\n+ \n %22eh\n- \n idoso%22)%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_18-03-11",
+            "content": "@@ -97,16 +97,24 @@\n )%0A    if\n+ x==0 &&\n  x%3C12 %7B%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_18-04-57",
+            "content": "@@ -103,10 +103,9 @@\n if x\n-%3E=\n+%3C\n 12 %7B\n@@ -168,17 +168,17 @@\n =12 && x\n-%3E\n+%3C\n 18 %7B%0A   \n@@ -235,17 +235,17 @@\n =18 && x\n-%3E\n+%3C\n 65 %7B%0A   \n@@ -307,9 +307,9 @@\n && x\n-%3E\n+%3C\n 1000\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_18-06-19",
+            "content": "@@ -99,17 +99,18 @@\n     if x\n-%3C\n+%3E=\n 12 %7B%0A   \n@@ -169,17 +169,17 @@\n =12 && x\n-%3C\n+%3E\n 18 %7B%0A   \n@@ -236,17 +236,17 @@\n =18 && x\n-%3C\n+%3E\n 65 %7B%0A   \n@@ -308,9 +308,9 @@\n && x\n-%3C\n+%3E\n 1000\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_18-07-06",
+            "content": "@@ -159,17 +159,16 @@\n lse if x\n-%3E\n ==12 && \n@@ -174,16 +174,16 @@\n  x%3C18 %7B%0A\n+\n         \n@@ -226,17 +226,16 @@\n lse if x\n-%3E\n ==18 && \n@@ -275,24 +275,24 @@\n eh adulto%22)%0A\n+\n     %7D else i\n@@ -298,9 +298,8 @@\n if x\n-%3E\n ==65\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_18-09-16",
+            "content": "@@ -161,16 +161,17 @@\n e if x%3E=\n+=\n 12 && x%3C\n@@ -175,16 +175,16 @@\n  x%3C18 %7B%0A\n-\n         \n@@ -229,16 +229,17 @@\n e if x%3E=\n+=\n 18 && x%3C\n@@ -277,24 +277,24 @@\n eh adulto%22)%0A\n-\n     %7D else i\n@@ -298,16 +298,17 @@\n e if x%3E=\n+=\n 65 && x%3C\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_18-09-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nome string\n    var x int\n    fmt.Scan(&nome, &x)\n    if x<12 {\n        fmt.Println(nome,\"eh crianca\")\n    } else if x>=12 && x<18 {\n        fmt.Println(nome,\"eh jovem\")\n    } else if x>=18 && x<65 {\n        fmt.Println(nome,\"eh adulto\")\n    } else if x>=65 && x<1000 {\n        fmt.Println(nome,\"eh idoso\")\n    } else {\n        fmt.Println(nome,\"eh mumia\")\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}

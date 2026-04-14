@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-08_12-55-40",
+            "content": "@@ -41,295 +41,35 @@\n     \n-var n1, n2, n3 int%0A    fmt.Scan(&n1, &n2, &n3)%0A    if (n1+n2)/2 %3E= 7 %7B%0A        fmt.Println(%22aprovado%22)%0A    %7D else if (n1+n2)/2 %3C 4 %7B%0A        fmt.Println(%22reprovado%22)%0A    %7D else if (n1+n2)/2 %3E=4 %7C%7C %3C7 %7B%0A        fmt.Println(%22prova final%22)%0A    %7D else %7B%0A        fmt.Println(%22reprovado%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-08_13-05-27",
+            "content": "@@ -235,20 +235,10 @@\n %3E=4 \n-&& (n1+n2)/2\n+%7C%7C\n  %3C7 \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-06-56",
+            "content": "@@ -274,19 +274,13 @@\n ln(%22\n-a\n prova\n-do na\n  fin\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-07-12",
+            "content": "@@ -329,32 +329,23 @@\n n(%22reprovado\n- na final\n %22)%0A    %7D%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-07-22",
+            "content": "@@ -217,17 +217,16 @@\n else if \n-(\n (n1+n2)/\n@@ -250,14 +250,8 @@\n 2 %3C7\n-) %3E= 5\n  %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-08-36",
+            "content": "@@ -235,14 +235,12 @@\n  %3E=4\n-)\n  && \n-(\n (n1+\n@@ -248,16 +248,21 @@\n 2)/2 %3C7)\n+ %3E= 5\n  %7B%0A     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-09-41",
+            "content": "@@ -47,17 +47,20 @@\n r n1, n2\n- \n+, n3\n  int%0A   \n@@ -77,17 +77,21 @@\n &n1, &n2\n- \n+, &n3\n )%0A    if\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-11-38",
+            "content": "@@ -229,14 +229,11 @@\n %3E=4)\n-= 5 %7C%7C\n+ &&\n  ((n\n@@ -247,11 +247,8 @@\n  %3C7)\n-=5 \n  %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-14-01",
+            "content": "@@ -202,32 +202,33 @@\n )%0A    %7D else if \n+(\n (n1+n2)/2%3C4 && (\n@@ -224,14 +224,21 @@\n 2)/2\n-%3C4 && \n+ %3E=4)= 5 %7C%7C (\n (n1+\n@@ -246,10 +246,15 @@\n 2)/2\n-%3E7\n+ %3C7)=5 \n  %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-16-16",
+            "content": "@@ -210,17 +210,16 @@\n else if \n-(\n (n1+n2)/\n@@ -223,13 +223,25 @@\n 2)/2\n-) = 5\n+%3C4 && (n1+n2)/2%3E7\n  %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-16-56",
+            "content": "@@ -202,32 +202,33 @@\n )%0A    %7D else if \n+(\n (n1+n2)/2%3E=5 %7B%0A \n@@ -220,18 +220,20 @@\n n1+n2)/2\n-%3E=\n+) = \n 5 %7B%0A    \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-17-23",
+            "content": "@@ -220,18 +220,18 @@\n 1+n2)/2%3E\n- 7\n+=5\n  %7B%0A     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-20-47",
+            "content": "@@ -51,12 +51,8 @@\n , n2\n-, n3\n   in\n@@ -78,13 +78,8 @@\n  &n2\n-, &n3\n  )%0A \n@@ -210,17 +210,16 @@\n else if \n-(\n (n1+n2)/\n@@ -223,15 +223,11 @@\n 2)/2\n- == n3)\n+%3E 7\n  %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-25-31",
+            "content": "@@ -90,24 +90,18 @@\n 3 )%0A    \n-media :=\n+if\n  (n1+n2)\n@@ -107,22 +107,8 @@\n )/2 \n-%0A    if media \n %3E= 7\n@@ -156,21 +156,25 @@\n else if \n-media\n+(n1+n2)/2\n  %3C 4 %7B%0A \n@@ -220,69 +220,28 @@\n lse \n-%7B%0A        novamedia := (media+n3\n+if ((n1+n2\n )/2 \n-%0A    %7D   if novamedia %3E=5\n+== n3)\n  %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_13-35-41",
+            "content": "@@ -272,16 +272,18 @@\n )/2 %0A   \n+ %7D\n    if no\n@@ -400,9 +400,8 @@\n     %7D%0A%7D%0A\n-%7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-08_13-36-47",
+            "content": "@@ -399,9 +399,8 @@\n    %7D%0A%7D%0A%7D\n-%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_16-43-14",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, n3  int\n    fmt.Scan(&n1, &n2, &n3 )\n    media := (n1+n2)/2 \n    if media >= 7 {\n        fmt.Println(\"aprovado\")\n    } else if media < 4 {\n        fmt.Println(\"reprovado\")\n    } else {\n        novamedia := (media+n3)/2 \n      if novamedia >=5 {\n        fmt.Println(\"aprovado na final\")\n    } else {\n        fmt.Println(\"reprovado na final\")\n    }\n}\n}\n",
+            "lines": "19"
+        }
+    ]
+}

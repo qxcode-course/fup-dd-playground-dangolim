@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-46-09",
+            "content": "@@ -37,11 +37,39 @@\n ) %7B%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_18-24-06",
+            "content": "@@ -17,19 +17,14 @@\n ort \n-(%0A%09\n %22fmt%22%0A\n-)%0A\n func\n@@ -37,182 +37,11 @@\n ) %7B%0A\n-%09var A, B int%0A%09fmt.Scan(&A, &B)%0A%09if A %3E B %7B%0A%09%09fmt.Println(%22invalido%22)%0A%09%09return%0A%09%7D %0A%09soma := 0%0A%09for i := A; i %3C= B; i++ %7B%0A%09%09if i%252 == 0 %7B%0A%09%09%09soma += i%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(soma)\n+    \n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_18-25-36",
+            "content": "package main\nimport (\n\t\"fmt\"\n)\nfunc main() {\n\tvar A, B int\n\tfmt.Scan(&A, &B)\n\tif A > B {\n\t\tfmt.Println(\"invalido\")\n\t\treturn\n\t} \n\tsoma := 0\n\tfor i := A; i <= B; i++ {\n\t\tif i%2 == 0 {\n\t\t\tsoma += i\n\t\t}\n\t}\n\tfmt.Println(soma)\n}\n",
+            "lines": "19"
+        }
+    ]
+}

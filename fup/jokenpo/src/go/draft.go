@@ -9,9 +9,9 @@ func main() {
 	p := "P"
 	s := "S"
 	    if (jog1 == r && jog2==s) || (jog1==s && jog2 == p) || (jog1== p && jog2== r){
-        fmt.Println(jog1) 
+        fmt.Println("jog1") 
     } else if (jog2 == r && jog1 ==s) || (jog2==s && jog1 == p) || (jog2== p && jog1== r){
-        fmt.Println(jog2)
+        fmt.Println("jog2")
     } else {
         fmt.Println("empate")
     }
