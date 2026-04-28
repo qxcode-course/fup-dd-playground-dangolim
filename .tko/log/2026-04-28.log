@@ -1,0 +1,69 @@
+2026-04-28 16:47:46, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-04-28 16:47:47, EXEC, v:1, k:sandbox@user_001, mode:FULL, size:72, fail:COMP
+2026-04-28 16:47:50, EXEC, v:1, k:sandbox@user_001, mode:FULL, fail:COMP
+2026-04-28 16:48:25, EXEC, v:1, k:sandbox@user_001, mode:FULL, size:76, fail:COMP
+2026-04-28 16:50:14, MOVE, v:1, k:sandbox@user_001, mode:BACK
+2026-04-28 16:50:29, MOVE, v:1, k:fup@semana, mode:PICK
+2026-04-28 16:50:31, EXEC, v:1, k:fup@semana, mode:FULL, rate:100
+2026-04-28 16:50:32, MOVE, v:1, k:fup@semana, mode:BACK
+2026-04-28 16:50:35, MOVE, v:1, k:fup@varetas, mode:DOWN
+2026-04-28 16:50:35, MOVE, v:1, k:fup@varetas, mode:PICK
+2026-04-28 16:50:39, EXEC, v:1, k:fup@varetas, mode:FULL, rate:0, size:5
+2026-04-28 16:48:24, MOVE, v:1, k:sandbox@user_001, mode:EDIT
+2026-04-28 16:50:30, MOVE, v:1, k:fup@semana, mode:EDIT
+2026-04-28 16:50:35, MOVE, v:1, k:fup@varetas, mode:EDIT
+2026-04-28 16:50:35, MOVE, v:1, k:fup@varetas, mode:EDIT
+2026-04-28 16:50:35, MOVE, v:1, k:fup@varetas, mode:EDIT
+2026-04-28 16:50:36, MOVE, v:1, k:fup@varetas, mode:EDIT
+2026-04-28 16:53:25, EXEC, v:1, k:fup@varetas, mode:FULL, size:18, fail:COMP
+2026-04-28 16:53:31, EXEC, v:1, k:fup@varetas, mode:FULL, rate:100, size:18
+2026-04-28 16:53:39, MOVE, v:1, k:fup@varetas, mode:BACK
+2026-04-28 16:53:51, SELF, v:1, k:fup@varetas, self:1, rate:100, study:10
+2026-04-28 16:54:03, MOVE, v:1, k:fup@bhaskara, mode:DOWN
+2026-04-28 16:54:05, MOVE, v:1, k:fup@bhaskara, mode:PICK
+2026-04-28 16:54:06, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:0, size:5
+2026-04-28 16:56:32, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:85, size:27
+2026-04-28 16:57:28, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:85, size:25
+2026-04-28 16:53:29, MOVE, v:1, k:fup@varetas, mode:EDIT
+2026-04-28 16:53:30, MOVE, v:1, k:fup@varetas, mode:EDIT
+2026-04-28 16:54:03, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-04-28 16:54:03, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-04-28 16:57:24, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-04-28 16:57:28, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-04-28 16:57:46, EXEC, v:1, k:fup@bhaskara, mode:FULL, size:25, fail:COMP
+2026-04-28 16:57:59, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:85, size:25
+2026-04-28 17:02:38, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-04-28 16:57:59, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-04-28 17:03:14, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:42, size:32
+2026-04-28 17:03:41, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:42
+2026-04-28 17:04:25, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:42
+2026-04-28 17:06:38, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:85, size:31
+2026-04-28 17:07:28, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:85, size:31
+2026-04-28 17:07:27, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-04-28 17:07:28, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-04-28 17:08:40, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:85, size:26
+2026-04-28 17:10:29, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:85, size:25
+2026-04-28 17:12:03, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:100, size:30
+2026-04-28 17:12:14, MOVE, v:1, k:fup@bhaskara, mode:BACK
+2026-04-28 17:12:30, SELF, v:1, k:fup@bhaskara, self:1, rate:100, study:15, friend:hanna, concept:1
+2026-04-28 17:12:12, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-04-28 17:12:03, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-04-28 17:14:23, MOVE, v:1, k:fup@cortada, mode:DOWN
+2026-04-28 17:14:27, MOVE, v:1, k:fup@cortada, mode:PICK
+2026-04-28 17:14:29, EXEC, v:1, k:fup@cortada, mode:FULL, rate:0, size:5
+2026-04-28 17:17:02, MOVE, v:1, k:fup@cortada, mode:BACK
+2026-04-28 17:17:10, MOVE, v:1, k:fup@cortada, mode:PICK
+2026-04-28 17:17:11, EXEC, v:1, k:fup@cortada, mode:FULL, rate:0
+2026-04-28 17:14:23, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-04-28 17:14:23, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-04-28 17:14:23, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-04-28 17:17:10, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-04-28 17:21:10, EXEC, v:1, k:fup@cortada, mode:FULL, rate:0, size:14
+2026-04-28 17:22:05, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-04-28 17:21:09, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-04-28 17:25:46, EXEC, v:1, k:fup@cortada, mode:FULL, rate:0, size:14
+2026-04-28 17:25:44, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-04-28 17:25:46, MOVE, v:1, k:fup@cortada, mode:EDIT
+2026-04-28 17:29:24, EXEC, v:1, k:fup@cortada, mode:FREE
+2026-04-28 17:29:50, MOVE, v:1, k:fup@cortada, mode:PICK
+2026-04-28 17:29:51, EXEC, v:1, k:fup@cortada, mode:FULL, rate:0

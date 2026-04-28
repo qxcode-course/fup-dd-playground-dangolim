@@ -22,15 +22,16 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if1
-- fup@base
-- eval1@teste-1
+- fup@games
+- sandbox@sandbox
 - fup@if2
+- fup@list
 flags:
-  inbox: inbox
+  inbox: all
   panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@semana
+selected: fup@cortada
+selected_index: 9
