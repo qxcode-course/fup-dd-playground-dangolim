@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-01_00-39-11",
+            "content": "@@ -41,184 +41,35 @@\n     \n-var c, a int%0A    fmt.Scan(&c, &a)%0A    alunosporviagem:= c - 1%0A    viagens := a / alunosporviagem %0A    if a%25alunosporviagem !=0 %7B%0A        viagens++%0A    %7D%0A    fmt.Println(viagens\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-01_00-42-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c, a int\n    fmt.Scan(&c, &a)\n    alunosporviagem:= c - 1\n    viagens := a / alunosporviagem \n    if a%alunosporviagem !=0 {\n        viagens++\n    }\n    fmt.Println(viagens)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-01_00-46-22",
+            "content": "@@ -41,279 +41,35 @@\n     \n-var n, x, y, s int%0A    var c string%0A    fmt.Scan(&n, &x, &y, &c, &s)%0A    switch c %7B%0A    case %22u%22:%0A        y= (y-s%25n + n) %25 n%0A    case %22d%22:%0A        y = (y + s) %25 n%0A    case %22l%22:%0A        x = (x - s%25n + n) %25 n%0A    case %22r%22:%0A        x = (x + s) %25 n%0A    %7D%0A    fmt.Println(x, y\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-01_00-51-04",
+            "content": "@@ -10,28 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-)%0A%0A\n func\n@@ -37,42 +37,48 @@\n ) %7B%0A\n-%09\n+    \n var \n-N, X, Y, S\n+n, x, y, s\n  int%0A\n-%09\n+    \n var \n-C\n+c\n  string%0A\n %0A%09fm\n@@ -73,18 +73,20 @@\n  string%0A\n-%0A%09\n+    \n fmt.Scan\n@@ -91,213 +91,213 @@\n an(&\n-N)%0A%09fmt.Scan(&X)%0A%09fmt.Scan(&Y)%0A%09fmt.Scan(&C)%0A%09fmt.Scan(&S)%0A%0A%09\n+n, &x, &y, &c, &s)%0A    \n switch \n-C %7B%0A%09\n+c %7B%0A    \n case %22\n-U%22:%0A%09%09Y = (Y - S%25N + N\n+u%22:%0A        y= (y-s%25n + n\n ) %25 \n-N%0A%09\n+n%0A    \n case %22\n-D%22:%0A%09%09Y\n+d%22:%0A        y\n  = (\n-Y + S\n+y + s\n ) %25 \n-N%0A%09\n+n%0A    \n case %22\n-L%22:%0A%09%09X\n+l%22:%0A        x\n  = (\n-X - S%25N + N\n+x - s%25n + n\n ) %25 \n-N%0A%09\n+n%0A    \n case %22\n-R%22:%0A%09%09X\n+r%22:%0A        x\n  = (\n-X + S\n+x + s\n ) %25 \n-N%0A%09%7D%0A%0A%09\n+n%0A    %7D%0A    \n fmt.\n@@ -308,12 +308,12 @@\n tln(\n-X, Y\n+x, y\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-01_00-52-03",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar N, X, Y, S int\n\tvar C string\n\n\tfmt.Scan(&N)\n\tfmt.Scan(&X)\n\tfmt.Scan(&Y)\n\tfmt.Scan(&C)\n\tfmt.Scan(&S)\n\n\tswitch C {\n\tcase \"U\":\n\t\tY = (Y - S%N + N) % N\n\tcase \"D\":\n\t\tY = (Y + S) % N\n\tcase \"L\":\n\t\tX = (X - S%N + N) % N\n\tcase \"R\":\n\t\tX = (X + S) % N\n\t}\n\n\tfmt.Println(X, Y)\n}\n",
+            "lines": "29"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-01_00-29-27",
+            "content": "@@ -28,357 +28,48 @@\n unc \n-cabe(x, y, h, 1 int) bool %7B %0A    return (x %3C= h && y %3C= 1) %7C%7C (x %3C= 1 && y %3C= h)%0A%7D %0Afunc main() %7B%0A    var a, b, c int%0A    var h, l int%0A    fmt.Scan(&a)%0A     fmt.Scan(&b)%0A      fmt.Scan(&c)%0A       fmt.Scan(&h)%0A        fmt.Scan(&l)%0Aif cabe(a, b, h, l) %7C%7C cabe(a, c, h, l) %7C%7C cabe(b, c, h, l) %7B%0A    fmt.Println(%22S%22)%0A%7D     else %7B%0A    fmt.Println(%22N\n+main() %7B%0A    fmt.Println(%22Hello, World!\n %22)%0A%7D%0A\n-%7D%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-01_00-35-27",
+            "content": "@@ -375,9 +375,10 @@\n N%22)%0A%7D%0A%7D%0A\n+%7D\n %0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-01_00-35-33",
+            "content": "@@ -373,10 +373,11 @@\n (%22N%22)%0A%7D%0A\n+%7D\n %0A%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-01_00-35-52",
+            "content": "@@ -17,20 +17,14 @@\n ort \n-(%0A%09\n %22fmt%22%0A\n-)%0A%0A\n func\n@@ -38,17 +38,17 @@\n , y, h, \n-l\n+1\n  int) bo\n@@ -51,18 +51,22 @@\n ) bool %7B\n-%0A%09\n+ %0A    \n return (\n@@ -80,17 +80,17 @@\n && y %3C= \n-l\n+1\n ) %7C%7C (x \n@@ -92,17 +92,17 @@\n %7C (x %3C= \n-l\n+1\n  && y %3C=\n@@ -106,17 +106,17 @@\n  %3C= h)%0A%7D\n-%0A\n+ \n %0Afunc ma\n@@ -126,41 +126,49 @@\n ) %7B%0A\n-%09\n+    \n var \n-A, B, C\n+a, b, c\n  int%0A\n-%09\n+    \n var \n-H, L\n+h, l\n  int%0A\n-%0A%09\n+    \n fmt.\n@@ -177,12 +177,16 @@\n an(&\n-A)%0A%09\n+a)%0A     \n fmt.\n@@ -195,12 +195,17 @@\n an(&\n-B)%0A%09\n+b)%0A      \n fmt.\n@@ -214,12 +214,18 @@\n an(&\n-C)%0A%09\n+c)%0A       \n fmt.\n@@ -234,12 +234,19 @@\n an(&\n-H)%0A%09\n+h)%0A        \n fmt.\n@@ -255,21 +255,19 @@\n an(&\n-L\n+l\n )%0A\n-%0A%09\n if cabe(\n A, B\n@@ -266,18 +266,18 @@\n abe(\n-A, B, H, L\n+a, b, h, l\n ) %7C%7C\n@@ -286,18 +286,18 @@\n abe(\n-A, C, H, L\n+a, c, h, l\n ) %7C%7C\n@@ -306,24 +306,26 @@\n abe(\n-B, C, H, L\n+b, c, h, l\n ) %7B%0A\n-%09%09\n+    \n fmt.\n@@ -341,18 +341,21 @@\n S%22)%0A\n-%09\n %7D\n+    \n  else %7B%0A\n %09%09fm\n@@ -354,10 +354,12 @@\n e %7B%0A\n-%09%09\n+    \n fmt.\n@@ -375,10 +375,8 @@\n N%22)%0A\n-%09\n %7D%0A\n-%7D\n %0A%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-01_00-38-36",
+            "content": "package main\nimport (\n\t\"fmt\"\n)\n\nfunc cabe(x, y, h, l int) bool {\n\treturn (x <= h && y <= l) || (x <= l && y <= h)\n}\n\nfunc main() {\n\tvar A, B, C int\n\tvar H, L int\n\n\tfmt.Scan(&A)\n\tfmt.Scan(&B)\n\tfmt.Scan(&C)\n\tfmt.Scan(&H)\n\tfmt.Scan(&L)\n\n\tif cabe(A, B, H, L) || cabe(A, C, H, L) || cabe(B, C, H, L) {\n\t\tfmt.Println(\"S\")\n\t} else {\n\t\tfmt.Println(\"N\")\n\t}\n}\n\n",
+            "lines": "26"
+        }
+    ]
+}

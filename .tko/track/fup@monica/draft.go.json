@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-01_00-23-35",
+            "content": "@@ -41,215 +41,35 @@\n     \n-var m, a, b int%0A    fmt.Scan(&m)%0A    fmt.Scan(&a)%0A    fmt.Scan(&b)%0A    c:= m - a - b%0A    maior:= a%0A    if b %3E maior %7B%0A        maior = b%0A    %7D %0A    if c %3E maior %7B%0A        maior = c%0A    %7D%0A    fmt.Println(maior\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-01_00-28-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m, a, b int\n    fmt.Scan(&m)\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    c:= m - a - b\n    maior:= a\n    if b > maior {\n        maior = b\n    } \n    if c > maior {\n        maior = c\n    }\n    fmt.Println(maior)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

@@ -1,9 +1,19 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+)
+
 func main() {
-    var b, t int
-    fmt.Scan(&b)
-    fmt.Scan(&t)
-    if b + t < 160 {
-        
-    }
+	var B, T int
+	fmt.Scan(&B)
+	fmt.Scan(&T)
+
+	if B+T > 160 {
+		fmt.Println(1)
+	} else if B+T < 160 {
+		fmt.Println(2)
+	} else {
+		fmt.Println(0)
+	}
+}

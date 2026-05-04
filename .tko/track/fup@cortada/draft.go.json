@@ -12,8 +12,108 @@
         },
         {
             "label": "2026-04-28_17-25-46",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var b, t int\n    fmt.Scan(&b)\n    fmt.Scan(&t)\n    if b + t < 160 {\n        fmt.Println(1)\n    } else if b + t > 160 {\n        fmt.Println(2)\n    } else {\n        fmt.Println(3)\n    }\n}\n",
+            "content": "@@ -1,98 +1,76 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var b, t int%0A\n+@@ -113,15 +113,118 @@%0A         %0A-%250A\n     \n+%0A+\n fmt.\n-Scan(&b)%0A    fmt.Scan(&t)%0A   \n+Println(1)%250A    %257D else\n  if \n@@ -79,24 +79,30 @@\n + t \n-%3C\n+%253E\n  160 \n-%7B%0A\n+%257B%250A\n         \n %0A   \n@@ -101,11 +101,84 @@\n     \n-%0A    %7D\n+fmt.Println(2)%250A    %257D else %257B%250A        fmt.Println(3)%250A    %257D%250A%0A %257D%250A\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_17-35-04",
+            "content": "@@ -103,14 +103,25 @@\n t %3C 160 \n+%7B\n %0A    \n+    %0A    %7D\n %0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-28_17-35-20",
+            "content": "@@ -107,40 +107,8 @@\n 160 \n-%7B%0A        fmt.Println(%22A%22)%0A    %7D\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-28_17-36-10",
+            "content": "@@ -136,10 +136,13 @@\n )%0A    %7D%0A\n-%7D\n+    \n %0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-28_17-36-26",
+            "content": "@@ -126,17 +126,17 @@\n rintln(%22\n-1\n+A\n %22)%0A    %7D\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-28_17-36-39",
+            "content": "@@ -134,99 +134,8 @@\n 1%22)%0A\n-    %7D else if b + t %3E 160 %7B%0A        fmt.Println(%222%22)%0A    %7D else %7B%0A        fmt.Println(%223%22)%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-28_17-37-43",
+            "content": "@@ -99,17 +99,18 @@\n b + t %3C \n-7\n+16\n 0 %7B%0A    \n@@ -156,9 +156,10 @@\n t %3E \n-7\n+16\n 0 %7B%0A\n",
             "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-38-04",
+            "content": "@@ -99,19 +99,17 @@\n b + t %3C \n-560\n+7\n 0 %7B%0A    \n@@ -155,11 +155,9 @@\n t %3E \n-560\n+7\n 0 %7B%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-52-35",
+            "content": "@@ -101,9 +101,9 @@\n + t \n-%3E\n+%3C\n  560\n@@ -143,33 +143,33 @@\n %7D else if b + t \n-%3C\n+%3E\n  5600 %7B%0A        \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-56-20",
+            "content": "@@ -92,29 +92,22 @@\n     \n- %0A    if  160 -\n+if b +\n  t %3E \n-8\n+560\n 0 %7B%0A\n@@ -149,19 +149,19 @@\n  if \n-160 -\n+b +\n  t %3C \n-8\n+560\n 0 %7B%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_18-20-40",
+            "content": "@@ -107,26 +107,16 @@\n 60 - t %3E\n- 80 && b %3C\n  80 %7B%0A  \n@@ -169,17 +169,8 @@\n  80 \n-&& b %3C 80\n %7B%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-21-52",
+            "content": "@@ -92,68 +92,9 @@\n     \n-area := 160 * 70 %0A    area2:=  ((160-b) + (160-t) * 70 )/2 %0A\n+ \n %0A   \n@@ -180,17 +180,17 @@\n 80 && b \n-%3E\n+%3C\n  80%7B%0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-23-18",
+            "content": "@@ -83,16 +83,80 @@\n Scan(&t)\n+%0A    area := 160 * 70 %0A    area2:=  ((160-b) + (160-t) * 70 )/2 \n %0A%0A    if\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_18-23-28",
+            "content": "@@ -97,23 +97,27 @@\n if  \n-b ==\n+160 - t %3E\n  80 && \n-t ==\n+b %3C\n  80 \n@@ -139,17 +139,17 @@\n rintln(%22\n-0\n+1\n %22)%0A    %7D\n@@ -157,16 +157,21 @@\n else if \n+160 -\n  t %3C 80 \n@@ -175,17 +175,17 @@\n 80 && b \n-%3C\n+%3E\n  80%7B%0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-24-47",
+            "content": "@@ -235,9 +235,9 @@\n ln(%22\n-1\n+3\n %22)%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-24-55",
+            "content": "@@ -212,27 +212,8 @@\n lse \n-if t %3E 80 && b %3C 80\n %7B%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-25-39",
+            "content": "@@ -158,17 +158,17 @@\n if  t %3C \n-4\n+8\n 0 && b %3C\n@@ -219,9 +219,9 @@\n t %3E \n-4\n+8\n 0 &&\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-26-09",
+            "content": "@@ -157,16 +157,26 @@\n  if  t %3C\n+ 40 && b %3C\n  80%7B%0A   \n@@ -214,16 +214,26 @@\n e if t %3E\n+ 40 && b %3C\n  80%7B%0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_18-26-58",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var b, t\n@@ -50,17 +50,20 @@\n , t int%0A\n-%09\n+    \n fmt.Scan\n@@ -67,17 +67,20 @@\n can(&b)%0A\n-%09\n+    \n fmt.Scan\n@@ -89,12 +89,16 @@\n t)%0A%0A\n-%09\n+    \n if \n+ \n b ==\n@@ -110,26 +110,32 @@\n & t == 80 %7B%0A\n-%09%09\n+        \n fmt.Println(\n@@ -139,17 +139,20 @@\n ln(%220%22)%0A\n-%09\n+    \n %7D else i\n@@ -157,29 +157,25 @@\n  if \n+ \n t %3C 80\n- && b %3C 80 %7B%0A%09%09\n+%7B%0A        \n fmt.\n@@ -187,17 +187,20 @@\n ln(%222%22)%0A\n-%09\n+    \n %7D else i\n@@ -211,23 +211,18 @@\n %3E 80\n- && b %3C 80 %7B%0A%09%09\n+%7B%0A        \n fmt.\n@@ -238,9 +238,12 @@\n 1%22)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-01_00-19-17",
+            "content": "@@ -18,18 +18,13 @@\n ort \n-(%0A%09\n %22fmt%22\n-%0A)\n %0A%0Afu\n@@ -44,12 +44,12 @@\n var \n-B, T\n+b, t\n  int\n@@ -60,17 +60,17 @@\n t.Scan(&\n-B\n+b\n )%0A%09fmt.S\n@@ -78,24 +78,33 @@\n an(&\n-T\n+t\n )%0A%0A%09if \n-B+T %3E 16\n+b == 80 && t == 8\n 0 %7B%0A\n@@ -117,17 +117,19 @@\n Println(\n-1\n+%220%22\n )%0A%09%7D els\n@@ -137,16 +137,23 @@\n  if \n-B+T %3C 16\n+t %3C 80 && b %3C 8\n 0 %7B%0A\n@@ -170,9 +170,11 @@\n tln(\n-2\n+%222%22\n )%0A%09%7D\n@@ -179,16 +179,36 @@\n %09%7D else \n+if t %3E 80 && b %3C 80 \n %7B%0A%09%09fmt.\n@@ -215,16 +215,18 @@\n Println(\n-0\n+%221%22\n )%0A%09%7D%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-01_00-21-55",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar B, T int\n\tfmt.Scan(&B)\n\tfmt.Scan(&T)\n\n\tif B+T > 160 {\n\t\tfmt.Println(1)\n\t} else if B+T < 160 {\n\t\tfmt.Println(2)\n\t} else {\n\t\tfmt.Println(0)\n\t}\n}\n",
+            "lines": "19"
         }
     ]
 }

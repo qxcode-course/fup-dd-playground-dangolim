@@ -1,0 +1,27 @@
+2026-05-04 16:50:45, SELF, v:1, k:fup@game10, self:1, study:20, concept:1
+2026-05-04 16:51:02, SELF, v:1, k:fup@drone, self:1, study:20, concept:1
+2026-05-04 16:51:06, MOVE, v:1, k:fup@drone, mode:PICK
+2026-05-04 16:51:08, EXEC, v:1, k:fup@drone, mode:FULL, rate:100
+2026-05-04 16:51:09, MOVE, v:1, k:fup@drone, mode:BACK
+2026-05-04 16:51:16, MOVE, v:1, k:fup@teleferico, mode:PICK
+2026-05-04 16:51:18, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:100
+2026-05-04 16:51:18, EXEC, v:1, k:fup@teleferico, mode:FULL, rate:100
+2026-05-04 16:51:19, MOVE, v:1, k:fup@teleferico, mode:BACK
+2026-05-04 16:51:21, MOVE, v:1, k:fup@goiabas, mode:PICK
+2026-05-04 16:51:22, EXEC, v:1, k:fup@goiabas, mode:FULL, rate:100
+2026-05-04 16:51:23, MOVE, v:1, k:fup@goiabas, mode:BACK
+2026-05-04 16:51:25, MOVE, v:1, k:fup@cobra, mode:PICK
+2026-05-04 16:51:26, EXEC, v:1, k:fup@cobra, mode:FULL, rate:100
+2026-05-04 16:51:27, MOVE, v:1, k:fup@cobra, mode:BACK
+2026-05-04 16:51:29, MOVE, v:1, k:fup@game10, mode:PICK
+2026-05-04 16:51:30, EXEC, v:1, k:fup@game10, mode:FULL, rate:100
+2026-05-04 16:51:31, MOVE, v:1, k:fup@game10, mode:BACK
+2026-05-04 16:51:38, MOVE, v:1, k:fup@bhaskara, mode:PICK
+2026-05-04 16:51:40, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:100
+2026-05-04 16:51:41, MOVE, v:1, k:fup@bhaskara, mode:BACK
+2026-05-04 16:51:08, MOVE, v:1, k:fup@drone, mode:EDIT
+2026-05-04 16:51:18, MOVE, v:1, k:fup@teleferico, mode:EDIT
+2026-05-04 16:51:22, MOVE, v:1, k:fup@goiabas, mode:EDIT
+2026-05-04 16:51:26, MOVE, v:1, k:fup@cobra, mode:EDIT
+2026-05-04 16:51:30, MOVE, v:1, k:fup@game10, mode:EDIT
+2026-05-04 16:51:40, MOVE, v:1, k:fup@bhaskara, mode:EDIT

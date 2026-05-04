@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-01_00-54-15",
+            "content": "@@ -10,28 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-)%0A%0A\n func\n@@ -37,141 +37,39 @@\n ) %7B%0A\n-%09var N, D, A int%0A%0A%09fmt.Scan(&N)%0A%09fmt.Scan(&D)%0A%09fmt.Scan(&A)%0A%0A%09if D %3E= A %7B%0A%09%09fmt.Println(D - A)%0A%09%7D else %7B%0A%09%09fmt.Println((N - A) + D)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-01_00-55-27",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar N, D, A int\n\n\tfmt.Scan(&N)\n\tfmt.Scan(&D)\n\tfmt.Scan(&A)\n\n\tif D >= A {\n\t\tfmt.Println(D - A)\n\t} else {\n\t\tfmt.Println((N - A) + D)\n\t}\n}\n",
+            "lines": "19"
+        }
+    ]
+}
