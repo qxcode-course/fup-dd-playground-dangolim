@@ -1,0 +1,94 @@
+2026-05-12 17:00:31, MOVE, v:1, k:fup@loop_ii, mode:PICK
+2026-05-12 17:00:39, EXEC, v:1, k:fup@loop_ii, mode:FULL, rate:100
+2026-05-12 17:00:44, MOVE, v:1, k:fup@loop_ii, mode:BACK
+2026-05-12 17:00:56, SELF, v:1, k:fup@loop_ii, self:1, rate:100, study:20, concept:1
+2026-05-12 17:01:02, MOVE, v:1, k:fup@loop_v, mode:PICK
+2026-05-12 17:01:34, MOVE, v:1, k:fup@sapatos, mode:DOWN
+2026-05-12 17:01:35, MOVE, v:1, k:fup@sapatos, mode:PICK
+2026-05-12 17:01:37, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:0, size:5
+2026-05-12 17:00:39, MOVE, v:1, k:fup@loop_ii, mode:EDIT
+2026-05-12 17:01:03, MOVE, v:1, k:fup@loop_v, mode:EDIT
+2026-05-12 17:01:34, MOVE, v:1, k:fup@sapatos, mode:EDIT
+2026-05-12 17:01:34, MOVE, v:1, k:fup@sapatos, mode:EDIT
+2026-05-12 17:01:34, MOVE, v:1, k:fup@sapatos, mode:EDIT
+2026-05-12 17:01:36, MOVE, v:1, k:fup@sapatos, mode:EDIT
+2026-05-12 17:01:34, MOVE, v:1, k:fup@sapatos, mode:EDIT
+2026-05-12 17:01:34, MOVE, v:1, k:fup@sapatos, mode:EDIT
+2026-05-12 17:06:23, MOVE, v:1, k:fup@sapatos, mode:EDIT
+2026-05-12 17:01:36, MOVE, v:1, k:fup@sapatos, mode:EDIT
+2026-05-12 17:08:27, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:0, size:17
+2026-05-12 17:08:32, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:71, size:17
+2026-05-12 17:08:42, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:100, size:17
+2026-05-12 17:08:46, MOVE, v:1, k:fup@sapatos, mode:BACK
+2026-05-12 17:09:05, SELF, v:1, k:fup@pares, self:1, study:15, concept:1
+2026-05-12 17:09:10, MOVE, v:1, k:fup@sapatos, mode:PICK
+2026-05-12 17:09:11, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:100
+2026-05-12 17:09:14, MOVE, v:1, k:fup@sapatos, mode:BACK
+2026-05-12 17:09:20, MOVE, v:1, k:fup@pares, mode:DOWN
+2026-05-12 17:09:20, MOVE, v:1, k:fup@pares, mode:PICK
+2026-05-12 17:09:21, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:5
+2026-05-12 17:08:40, MOVE, v:1, k:fup@sapatos, mode:EDIT
+2026-05-12 17:09:11, MOVE, v:1, k:fup@sapatos, mode:EDIT
+2026-05-12 17:09:19, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-05-12 17:09:19, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-05-12 17:09:21, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-05-12 17:11:00, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-05-12 17:14:56, EXEC, v:1, k:fup@pares, mode:FULL, size:17, fail:COMP
+2026-05-12 17:15:11, EXEC, v:1, k:fup@pares, mode:FULL, size:17, fail:COMP
+2026-05-12 17:15:31, EXEC, v:1, k:fup@pares, mode:FULL, rate:100, size:17
+2026-05-12 17:15:35, MOVE, v:1, k:fup@pares, mode:BACK
+2026-05-12 17:15:48, SELF, v:1, k:fup@pares, self:1, rate:100, study:15, concept:1
+2026-05-12 17:15:52, MOVE, v:1, k:fup@sapatos, mode:PICK
+2026-05-12 17:15:53, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:100
+2026-05-12 17:15:59, MOVE, v:1, k:fup@sapatos, mode:BACK
+2026-05-12 17:16:11, SELF, v:1, k:fup@sapatos, self:1, rate:100, study:15, concept:1, refactor:1
+2026-05-12 17:16:19, MOVE, v:1, k:fup@filhos, mode:DOWN
+2026-05-12 17:16:20, MOVE, v:1, k:fup@filhos, mode:PICK
+2026-05-12 17:16:21, EXEC, v:1, k:fup@filhos, mode:FULL, rate:0, size:5
+2026-05-12 17:15:31, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-05-12 17:15:31, MOVE, v:1, k:fup@pares, mode:EDIT
+2026-05-12 17:15:53, MOVE, v:1, k:fup@sapatos, mode:EDIT
+2026-05-12 17:16:19, MOVE, v:1, k:fup@filhos, mode:EDIT
+2026-05-12 17:16:19, MOVE, v:1, k:fup@filhos, mode:EDIT
+2026-05-12 17:16:19, MOVE, v:1, k:fup@filhos, mode:EDIT
+2026-05-12 17:16:21, MOVE, v:1, k:fup@filhos, mode:EDIT
+2026-05-12 17:36:18, MOVE, v:1, k:fup@filhos, mode:EDIT
+2026-05-12 17:38:07, EXEC, v:1, k:fup@filhos, mode:FULL, rate:100, size:9
+2026-05-12 17:38:14, MOVE, v:1, k:fup@filhos, mode:BACK
+2026-05-12 17:38:25, SELF, v:1, k:fup@filhos, self:1, rate:100, study:15, concept:1
+2026-05-12 17:38:29, MOVE, v:1, k:fup@ceu, mode:DOWN
+2026-05-12 17:38:30, MOVE, v:1, k:fup@ceu, mode:PICK
+2026-05-12 17:37:55, MOVE, v:1, k:fup@filhos, mode:EDIT
+2026-05-12 17:38:07, MOVE, v:1, k:fup@filhos, mode:EDIT
+2026-05-12 17:38:29, MOVE, v:1, k:fup@ceu, mode:EDIT
+2026-05-12 17:38:29, MOVE, v:1, k:fup@ceu, mode:EDIT
+2026-05-12 17:41:18, MOVE, v:1, k:fup@ceu, mode:EDIT
+2026-05-12 17:42:15, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:43:26, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:44:05, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:44:19, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:44:34, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:44:44, EXEC, v:1, k:fup@ceu, mode:FULL, size:15, fail:COMP
+2026-05-12 17:44:50, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:15
+2026-05-12 17:45:27, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:21
+2026-05-12 17:46:00, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:24
+2026-05-12 17:46:24, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:46:24, MOVE, v:1, k:fup@ceu, mode:EDIT
+2026-05-12 17:46:24, MOVE, v:1, k:fup@ceu, mode:EDIT
+2026-05-12 17:49:42, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:49:57, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:50:16, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:50:56, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:51:02, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:51:19, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:51:24, MOVE, v:1, k:fup@ceu, mode:EDIT
+2026-05-12 17:51:19, MOVE, v:1, k:fup@ceu, mode:EDIT
+2026-05-12 17:51:38, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:51:42, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-12 17:52:31, EXEC, v:1, k:fup@ceu, mode:FULL, rate:80, size:18
+2026-05-12 17:52:59, EXEC, v:1, k:fup@ceu, mode:FULL, size:18, fail:COMP
+2026-05-12 17:53:06, EXEC, v:1, k:fup@ceu, mode:FULL, rate:20, size:18
+2026-05-12 17:53:19, EXEC, v:1, k:fup@ceu, mode:FULL, rate:100, size:18
+2026-05-12 17:53:30, MOVE, v:1, k:fup@ceu, mode:BACK
+2026-05-12 17:54:00, SELF, v:1, k:fup@ceu, self:1, rate:100, study:20, concept:1
+2026-05-12 17:54:09, SELF, v:1, k:fup@ceu, self:1, rate:100, study:20, friend:daniel, concept:1

@@ -1,0 +1,114 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_17-42-15",
+            "content": "@@ -194,17 +194,17 @@\n intln(%22c\n-e\n+%C3%A9\n u%22)%0A    \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-43-26",
+            "content": "@@ -163,9 +163,9 @@\n f i \n-!\n+=\n =  1\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-44-05",
+            "content": "@@ -108,17 +108,17 @@\n    if i \n-!\n+=\n = N %7B%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-44-19",
+            "content": "@@ -89,10 +89,10 @@\n  %3C= \n-9 \n+10\n ; i+\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-44-34",
+            "content": "@@ -209,16 +209,49 @@\n       %7D \n+else %7B%0A            fmt.Println(i)\n %0A       \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-44-44",
+            "content": "@@ -207,16 +207,18 @@\n         \n+%7D \n %0A       \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-12_17-44-50",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,21 +37,26 @@\n ) %7B%0A\n-%09\n+    \n var \n-n\n+N\n  int%0A\n-%0A%09\n+    \n fmt.\n@@ -65,36 +65,15 @@\n an(&\n-n)%0A%0A%09// imprime de 0 at%C3%A9 9%0A%09\n+N)%0A    \n for \n@@ -90,16 +90,17 @@\n %3C= 9\n+ \n ; i++ %7B%0A\n %09%09if\n@@ -99,18 +99,24 @@\n + %7B%0A\n-%09%09\n+        \n if i != \n n %7B%0A\n@@ -115,98 +115,77 @@\n  != \n-n %7B%0A%09%09%09fmt.Println(i)%0A%09%09%7D%0A%09%7D%0A%0A%09// imprime %22ceu%22 se a pedra n%C3%A3o caiu no 10%0A%09if n\n+N %7B%0A            continue%0A        %7D%0A        if i\n  !=\n+ \n  10 %7B%0A\n-%09%09\n+            \n fmt.\n@@ -203,9 +203,31 @@\n u%22)%0A\n-%09\n+        %0A        %7D%0A    \n %7D%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-12_17-45-27",
+            "content": "@@ -62,16 +62,39 @@\n an(&n)%0A%0A\n+%09// imprime de 0 at%C3%A9 9%0A\n %09for i :\n@@ -107,61 +107,24 @@\n  %3C= \n-10\n+9\n ; i++ %7B\n-%0A%0A%09%09// n%C3%A3o imprime o n%C3%BAmero da pedra\n %0A%09%09if i \n == n\n@@ -119,17 +119,17 @@\n %0A%09%09if i \n-=\n+!\n = n %7B%0A%09%09\n@@ -133,57 +133,89 @@\n %0A%09%09%09\n-continue%0A%09%09%7D%0A%0A%09%09// 10 vira %22ceu%22%0A%09\n+fmt.Println(i)%0A%09%09%7D%0A%09%7D%0A%0A%09// imprime %22ceu%22 se a pedra n%C3%A3o caiu no 10%0A\n %09if \n-i =\n+n !\n = 10 %7B%0A\n-%09\n %09%09fm\n@@ -235,41 +235,8 @@\n u%22)%0A\n-%09%09%7D else %7B%0A%09%09%09fmt.Println(i)%0A%09%09%7D%0A\n %09%7D%0A%7D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-12_17-46-00",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -20,16 +20,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -46,16 +46,17 @@\n r n int%0A\n+%0A\n %09fmt.Sca\n@@ -61,16 +61,17 @@\n can(&n)%0A\n+%0A\n %09for i :\n@@ -94,35 +94,93 @@\n + %7B%0A\n-%09%09if i == n %7B%0A%09%09%09return%0A%09%09%7D\n+%0A%09%09// n%C3%A3o imprime o n%C3%BAmero da pedra%0A%09%09if i == n %7B%0A%09%09%09continue%0A%09%09%7D%0A%0A%09%09// 10 vira %22ceu%22\n %0A%09%09i\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-12_17-46-24",
+            "content": "@@ -93,17 +93,17 @@\n %0A%09%09if i \n-!\n+=\n = n %7B%0A%09%09\n@@ -125,9 +125,9 @@\n f i \n-!\n+=\n = 10\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-49-42",
+            "content": "@@ -93,17 +93,17 @@\n %0A%09%09if i \n-=\n+!\n = n %7B%0A%09%09\n@@ -121,17 +121,17 @@\n %0A%09%09if i \n-=\n+!\n = 10 %7B%0A%09\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-49-57",
+            "content": "@@ -174,16 +174,18 @@\n mt.Print\n+ln\n (i)%0A%09%09%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-50-16",
+            "content": "@@ -107,16 +107,14 @@\n %0A%09%09%09\n-continue\n+return\n %0A%09%09%7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-50-56",
+            "content": "@@ -176,18 +176,16 @@\n mt.Print\n-ln\n (i)%0A%09%09%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-51-02",
+            "content": "@@ -143,16 +143,18 @@\n mt.Print\n+ln\n (%22ceu%22)%0A\n@@ -176,16 +176,18 @@\n mt.Print\n+ln\n (i)%0A%09%09%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-51-19",
+            "content": "@@ -180,13 +180,8 @@\n nt(i\n- , %22%22\n )%0A%09%09\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-51-38",
+            "content": "@@ -180,17 +180,16 @@\n nt(i , %22\n- \n %22)%0A%09%09%7D%0A%09\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-51-42",
+            "content": "@@ -62,28 +62,8 @@\n &n)%0A\n-    fmt.Print(%22%5B %22)%0A\n %09for\n@@ -195,28 +195,6 @@\n %0A%09%7D%0A\n-    fmt.Println(%22 %5D%22)%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-12_17-52-31",
+            "content": "@@ -227,16 +227,16 @@\n Println(\n-(\n %22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_17-52-59",
+            "content": "@@ -227,15 +227,16 @@\n Println(\n+(\n %22%5D%22)%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_17-53-06",
+            "content": "@@ -168,17 +168,16 @@\n int(%22ceu\n- \n %22)%0A%09%09%7D e\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_17-53-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n    fmt.Print(\"[ \")\n\tfor i := 0; i <= 10; i++ {\n\t\tif i == n {\n\t\t\tcontinue\n\t\t}\n\t\tif i == 10 {\n\t\t\tfmt.Print(\"ceu \")\n\t\t} else {\n\t\t\tfmt.Print(i , \" \")\n\t\t}\n\t}\n    fmt.Println(\"]\")\n}\n",
+            "lines": "18"
+        }
+    ]
+}
