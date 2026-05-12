@@ -25,3 +25,40 @@
 2026-05-04 16:51:26, MOVE, v:1, k:fup@cobra, mode:EDIT
 2026-05-04 16:51:30, MOVE, v:1, k:fup@game10, mode:EDIT
 2026-05-04 16:51:40, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-05-04 17:37:37, MOVE, v:1, k:fup@xuxa, mode:DOWN
+2026-05-04 17:37:38, MOVE, v:1, k:fup@xuxa, mode:PICK
+2026-05-04 17:37:45, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0, size:5
+2026-05-04 17:37:37, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 17:37:37, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 17:37:45, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 17:42:19, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 17:47:28, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 17:49:45, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0, size:13
+2026-05-04 17:50:25, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0, size:13
+2026-05-04 17:50:24, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 17:50:25, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 17:53:24, EXEC, v:1, k:fup@xuxa, mode:FULL, size:13, fail:COMP
+2026-05-04 17:54:25, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0, size:13
+2026-05-04 17:56:12, MOVE, v:1, k:fup@xuxa, mode:PICK
+2026-05-04 17:56:13, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0, size:13
+2026-05-04 17:56:18, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0
+2026-05-04 17:56:19, EXEC, v:1, k:fup@xuxa, mode:FREE
+2026-05-04 18:01:05, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0
+2026-05-04 18:01:05, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 18:01:19, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0
+2026-05-04 18:02:03, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:33, size:13
+2026-05-04 18:03:12, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:33, size:13
+2026-05-04 18:03:12, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 18:03:11, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 18:09:43, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:33
+2026-05-04 18:10:49, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0, size:14
+2026-05-04 18:10:49, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 18:11:09, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 18:11:34, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0, size:14
+2026-05-04 18:11:58, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0, size:14
+2026-05-04 18:12:07, EXEC, v:1, k:fup@xuxa, mode:FREE
+2026-05-04 18:13:32, EXEC, v:1, k:fup@xuxa, mode:FREE, size:15
+2026-05-04 18:13:40, EXEC, v:1, k:fup@xuxa, mode:FULL, size:15, fail:COMP
+2026-05-04 18:14:00, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:0, size:14
+2026-05-04 18:14:00, MOVE, v:1, k:fup@xuxa, mode:EDIT
+2026-05-04 18:14:00, MOVE, v:1, k:fup@xuxa, mode:EDIT

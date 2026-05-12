@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-04_17-37-45",
+            "content": "@@ -28,297 +28,48 @@\n unc \n-inverterFrase(s string) string %7B%0A    runes:= %5B%5Drune(s)%0A    for i, j := 0, len(runes)-1; i%3Cj; i, j = i+1, j-1 %7B%0A        runes%5Bi%5D, runes%5Bj%5D = runes%5Bj%5D, runes%5Bi%5D%0A    %7D%0A    return string(runes)%0A%7D%0A    func main()%7B%0A        frase := %22gosto de abacaxi%22%0A        fmt.Println(inverterFrase(frase))%0A    \n+main() %7B%0A    fmt.Println(%22Hello, World!%22)%0A\n %7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-04_17-49-45",
+            "content": "@@ -255,43 +255,24 @@\n := %22\n-o cheiro de pipoca ta rolando no ar\n+gosto de abacaxi\n %22%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-04_17-50-25",
+            "content": "@@ -92,16 +92,17 @@\n or i, j \n+:\n = 0, len\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-04_17-53-24",
+            "content": "@@ -92,17 +92,16 @@\n or i, j \n-:\n = 0, len\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-04_17-54-25",
+            "content": "@@ -249,16 +249,17 @@\n frase :=\n+ \n %22o cheir\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-04_17-56-13",
+            "content": "@@ -117,9 +117,9 @@\n 1; i\n-%3E\n+%3C\n j; i\n@@ -129,14 +129,14 @@\n  = i\n--\n++\n 1, j\n-+\n+-\n 1 %7B%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-04_18-02-03",
+            "content": "@@ -149,17 +149,17 @@\n   runes%5B\n-j\n+i\n %5D, runes\n@@ -159,17 +159,17 @@\n , runes%5B\n-i\n+j\n %5D = rune\n@@ -166,25 +166,25 @@\n %5Bj%5D = runes%5B\n-i\n+j\n %5D, runes%5Bj%5D%0A\n@@ -180,17 +180,17 @@\n , runes%5B\n-j\n+i\n %5D%0A    %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-04_18-03-12",
+            "content": "@@ -245,49 +245,53 @@\n     \n-var \n frase \n-string%0A        fmt.Scan(&frase)\n+:=%22o cheiro de pipoca ta rolando no ar%22\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-04_18-10-49",
+            "content": "@@ -117,9 +117,9 @@\n 1; i\n-%3C\n+%3E\n j; i\n@@ -129,14 +129,14 @@\n  = i\n-+\n+-\n 1, j\n--\n++\n 1 %7B%0A\n@@ -149,17 +149,17 @@\n   runes%5B\n-i\n+j\n %5D, runes\n@@ -159,17 +159,17 @@\n , runes%5B\n-j\n+i\n %5D = rune\n@@ -166,25 +166,25 @@\n %5Bi%5D = runes%5B\n-j\n+i\n %5D, runes%5Bi%5D%0A\n@@ -180,17 +180,17 @@\n , runes%5B\n-i\n+j\n %5D%0A    %7D%0A\n@@ -257,17 +257,16 @@\n e string\n- \n %0A       \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-04_18-11-34",
+            "content": "@@ -304,21 +304,36 @@\n Println(\n+inverterFrase(\n frase)\n+)\n %0A    %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-04_18-11-58",
+            "content": "@@ -23,25 +23,8 @@\n mt%22%0A\n-import %22strings%22%0A\n func\n@@ -272,17 +272,16 @@\n    fmt.S\n-s\n can(&fra\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-04_18-13-32",
+            "content": "@@ -294,16 +294,17 @@\n t.Sscan(\n+&\n frase)%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-04_18-13-40",
+            "content": "@@ -19,16 +19,33 @@\n t %22fmt%22%0A\n+import %22strings%22%0A\n func inv\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-04_18-14-00",
+            "content": "@@ -10,41 +10,20 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)\n+%22fmt%22\n %0Afun\n@@ -245,132 +245,43 @@\n     \n-scanner := bufio.NewScanner(os.Stdin)%0A        var frase string %0A        frase = scanner.Text()%0A        frase = inverterFrase\n+var frase string %0A        fmt.Sscan\n (fra\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-05_17-20-43",
+            "content": "@@ -330,31 +330,8 @@\n ng %0A\n-        scanner.Scan()%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-21-56",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc inverterFrase(s string) string {\n    runes:= []rune(s)\n    for i, j := 0, len(runes)-1; i<j; i, j = i+1, j-1 {\n        runes[i], runes[j] = runes[j], runes[i]\n    }\n    return string(runes)\n}\n    func main(){\n        scanner := bufio.NewScanner(os.Stdin)\n        var frase string \n        scanner.Scan()\n        frase = scanner.Text()\n        frase = inverterFrase(frase)\n        fmt.Println(frase)\n    }\n",
+            "lines": "22"
+        }
+    ]
+}
