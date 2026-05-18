@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-17_15-58-10",
+            "content": "@@ -41,339 +41,35 @@\n     \n-var n, pe int%0A    fmt.Scan(&n, &pe)%0A    atual := pe%0A    for i := 0; i %3C= 9; i++ %7B%0A        if i == n %7B%0A            continue%0A        %7D%0A        fmt.Printf(%22%5B%25d%25s%5D%5Cn%22, i, atual)%0A        if atual == %22d%22 %7B%0A            atual = %22e%22%0A        %7D else %7B%0A            atual = %22d%22%0A        %7D%0A    %7D%0A    if n != 10 %7B%0A        fmt.Println(%22%5Bceu%5D%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-17_16-31-29",
+            "content": "@@ -215,17 +215,8 @@\n al)%0A\n-        %0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-17_16-32-16",
+            "content": "@@ -37,64 +37,52 @@\n ) %7B%0A\n-%09var N int%0A%09var pe string%0A%09fmt.Scan(&N)%0A%09fmt.Scan(\n+    var n, pe int%0A    fmt.Scan(&n, \n &pe)%0A\n-%09\n+    \n atua\n@@ -89,17 +89,20 @@\n l := pe%0A\n-%09\n+    \n for i :=\n@@ -123,19 +123,24 @@\n + %7B%0A\n-%0A%09%09\n+        \n if i == \n N %7B%0A\n@@ -139,30 +139,51 @@\n  == \n-N %7B%0A%09%09%09continue%0A%09%09%7D%0A%09%09\n+n %7B%0A            continue%0A        %7D%0A        \n fmt.\n@@ -211,19 +211,33 @@\n  atual)%0A\n-%0A%09%09\n+        %0A        \n if atual\n@@ -246,19 +246,28 @@\n = %22d%22 %7B%0A\n-%09%09%09\n+            \n atual = \n@@ -270,18 +270,24 @@\n l = %22e%22%0A\n-%09%09\n+        \n %7D else %7B\n@@ -291,35 +291,56 @@\n e %7B%0A\n-%09%09%09atual = %22d%22%0A%09%09%7D%0A%09%7D%0A%09if N\n+            atual = %22d%22%0A        %7D%0A    %7D%0A    if n\n  != \n@@ -348,10 +348,16 @@\n 0 %7B%0A\n-%09%09\n+        \n fmt.\n@@ -377,9 +377,12 @@\n %5D%22)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-17_16-33-08",
+            "content": "@@ -307,28 +307,6 @@\n %0A%09%7D%0A\n-    fmt.Println(%22 %5D%22)%0A\n %7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-17_16-33-44",
+            "content": "@@ -297,18 +297,38 @@\n n(%22%5B\n- \n ceu\n- \n %5D%22)%0A%09%7D%0A\n+    fmt.Println(%22 %5D%22)%0A\n %7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-17_16-34-07",
+            "content": "@@ -101,17 +101,16 @@\n l := pe%0A\n-%0A\n %09for i :\n@@ -159,17 +159,16 @@\n nue%0A%09%09%7D%0A\n-%0A\n %09%09fmt.Pr\n@@ -177,13 +177,16 @@\n tf(%22\n+%5B\n %25d%25s\n- \n+%5D%5Cn\n %22, i\n@@ -292,32 +292,23 @@\n rint\n-(%22\n+ln(%22%5B \n ceu\n+ %5D\n %22)%0A%09%7D%0A\n-%09fmt.Println()%0A\n %7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-17_16-35-25",
+            "content": "@@ -101,20 +101,16 @@\n l := pe%0A\n-    \n %0A%09for i \n@@ -133,31 +133,8 @@\n + %7B%0A\n-        fmt.Print(%22%5B %22)\n %0A%09%09i\n@@ -315,14 +315,8 @@\n tln(\n-%22 %5D%22, \n )%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-17_16-36-38",
+            "content": "@@ -338,13 +338,18 @@\n Println(\n+%22 %5D%22,\n  )%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-17_16-36-50",
+            "content": "@@ -109,23 +109,8 @@\n     \n-fmt.Print(%22%5B %22)\n %0A%09fo\n@@ -141,16 +141,31 @@\n         \n+fmt.Print(%22%5B %22)\n %0A%09%09if i \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-17_16-37-05",
+            "content": "@@ -342,13 +342,8 @@\n tln(\n-%22 %5D%22,\n  )%0A%7D\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-17_16-37-26",
+            "content": "@@ -342,12 +342,14 @@\n tln(%22 %5D%22\n+, \n )%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-17_16-37-34",
+            "content": "@@ -339,14 +339,15 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-17_16-37-44",
+            "content": "@@ -319,17 +319,16 @@\n int(%22ceu\n- \n %22)%0A%09%7D%0A%09f\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-17_16-37-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar N int\n\tvar pe string\n\tfmt.Scan(&N)\n\tfmt.Scan(&pe)\n\tatual := pe\n    fmt.Print(\"[ \")\n\tfor i := 0; i <= 9; i++ {\n        \n\t\tif i == N {\n\t\t\tcontinue\n\t\t}\n\n\t\tfmt.Printf(\"%d%s \", i, atual)\n\n\t\tif atual == \"d\" {\n\t\t\tatual = \"e\"\n\t\t} else {\n\t\t\tatual = \"d\"\n\t\t}\n\t}\n\tif N != 10 {\n\t\tfmt.Print(\"ceu \")\n\t}\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "28"
+        }
+    ]
+}
