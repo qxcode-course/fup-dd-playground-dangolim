@@ -1,3 +1,56 @@
 2026-05-18 16:55:59, MOVE, v:1, k:fup@concentra, mode:PICK
 2026-05-18 16:56:00, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0
 2026-05-18 16:56:00, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 16:59:48, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:05:01, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:22
+2026-05-18 17:05:21, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:22
+2026-05-18 17:05:25, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:22
+2026-05-18 17:05:52, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:22
+2026-05-18 17:05:50, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:05:51, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:06:29, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:22
+2026-05-18 17:06:34, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:22
+2026-05-18 17:11:19, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:06:34, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:12:19, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:28
+2026-05-18 17:13:47, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:28
+2026-05-18 17:15:46, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:33
+2026-05-18 17:15:58, EXEC, v:1, k:fup@concentra, mode:FULL, size:29, fail:COMP
+2026-05-18 17:16:05, EXEC, v:1, k:fup@concentra, mode:FULL, size:29, fail:COMP
+2026-05-18 17:16:14, EXEC, v:1, k:fup@concentra, mode:FULL, size:29, fail:COMP
+2026-05-18 17:16:14, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:15:46, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:16:26, EXEC, v:1, k:fup@concentra, mode:FULL, size:29, fail:COMP
+2026-05-18 17:16:35, EXEC, v:1, k:fup@concentra, mode:FULL, size:29, fail:COMP
+2026-05-18 17:16:49, EXEC, v:1, k:fup@concentra, mode:FULL, fail:COMP
+2026-05-18 17:17:01, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-05-18 17:17:02, EXEC, v:1, k:fup@concentra, mode:FULL, size:29, fail:COMP
+2026-05-18 17:17:14, EXEC, v:1, k:fup@concentra, mode:FULL, size:29, fail:COMP
+2026-05-18 17:17:25, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:28
+2026-05-18 17:17:43, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:28
+2026-05-18 17:17:43, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:17:43, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:44:23, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:28
+2026-05-18 17:44:40, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:28
+2026-05-18 17:44:58, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:28
+2026-05-18 17:46:40, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:28
+2026-05-18 17:46:39, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:46:40, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:47:00, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:28
+2026-05-18 17:47:06, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:28
+2026-05-18 17:47:13, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:28
+2026-05-18 17:49:45, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:15
+2026-05-18 17:50:12, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:15
+2026-05-18 17:50:23, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:15
+2026-05-18 17:50:49, EXEC, v:1, k:fup@concentra, mode:FULL, rate:40, size:15
+2026-05-18 17:51:09, EXEC, v:1, k:fup@concentra, mode:FULL, rate:40, size:15
+2026-05-18 17:51:48, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:15
+2026-05-18 17:51:47, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:51:48, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:52:23, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:15
+2026-05-18 17:52:39, EXEC, v:1, k:fup@concentra, mode:FULL, rate:40, size:15
+2026-05-18 17:54:56, EXEC, v:1, k:fup@concentra, mode:FULL, rate:100, size:17
+2026-05-18 17:55:01, MOVE, v:1, k:fup@concentra, mode:BACK
+2026-05-18 17:55:16, SELF, v:1, k:fup@concentra, self:1, rate:100, study:30, friend:hanna, concept:1
+2026-05-18 17:54:54, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-18 17:54:56, MOVE, v:1, k:fup@concentra, mode:EDIT

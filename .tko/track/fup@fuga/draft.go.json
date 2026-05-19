@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_16-59-52",
+            "content": "@@ -41,192 +41,35 @@\n     \n-var h, p, f, d int%0A    fmt.Scan(&h, &p, &f, &d)%0A    for f != h && f != p %7B%0A        f = ( f + d + 16) %25 16 %0A    %7D%0A    if f == h %7B%0A        fmt.Println(%22s%22)%0A%7D else %7B%0A    fmt.Println(%22n%22)%0A%7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_17-07-16",
+            "content": "@@ -187,17 +187,17 @@\n rintln(%22\n-S\n+s\n %22)%0A%7D els\n@@ -221,9 +221,9 @@\n ln(%22\n-N\n+n\n %22)%0A%7D\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-19_17-07-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var h, p, f, d int\n    fmt.Scan(&h, &p, &f, &d)\n    for f != h && f != p {\n        f = ( f + d + 16) % 16 \n    }\n    if f == h {\n        fmt.Println(\"S\")\n} else {\n    fmt.Println(\"N\")\n}\n}\n",
+            "lines": "14"
+        }
+    ]
+}

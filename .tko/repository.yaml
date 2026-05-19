@@ -20,14 +20,14 @@ sources:
   quests: null
 expanded:
 - sandbox@sandbox
-- fup@for2
 - fup@string
+- fup@for2
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@concentra
-selected_index: 10
+selected: fup@spok
+selected_index: 13
