@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_14-21-17",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,210 +37,39 @@\n ) %7B%0A\n-%09var n, f, c int%0A%09fmt.Scan(&n)%0A%0A%09for f = 2; n != 1; %7B%0A%09%09if n%25f == 0 %7B%0A%09%09%09n /= f%0A%09%09%09c++%0A%09%09%7D else %7B%0A%09%09%09if c %3E 0 %7B%0A%09%09%09%09fmt.Println(f, c)%0A%09%09%09%7D%0A%09%09%09f++%0A%09%09%09c = 0%0A%09%09%7D%0A%09%7D%0A%0A    %0A%0A%09if c %3E 0 %7B%0A%09%09fmt.Println(f, c)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_14-26-52",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, f, c int\n\tfmt.Scan(&n)\n\n\tfor f = 2; n != 1; {\n\t\tif n%f == 0 {\n\t\t\tn /= f\n\t\t\tc++\n\t\t} else {\n\t\t\tif c > 0 {\n\t\t\t\tfmt.Println(f, c)\n\t\t\t}\n\t\t\tf++\n\t\t\tc = 0\n\t\t}\n\t}\n\n    \n\n\tif c > 0 {\n\t\tfmt.Println(f, c)\n\t}\n}\n",
+            "lines": "27"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_14-20-29",
+            "content": "@@ -99,16 +99,63 @@\n %7B%0A%09%09\n+fmt.Printf(%22%25d %25d%5Cn%22, pos, pos+S)%0A%0A%09%09pos += S%0A%0A%09%09\n if pos\n-+S\n  %3E= \n@@ -176,18 +176,16 @@\n ntln(pos\n-+S\n , %22saiu%22\n@@ -204,56 +204,8 @@\n %09%7D%0A%0A\n-%09%09fmt.Printf(%22%25d %25d%5Cn%22, pos, pos+S)%0A%0A%09%09pos += S%0A\n %09%09po\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-31_14-20-55",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -20,16 +20,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -57,269 +57,94 @@\n nt%0A%09\n-_, errP := fmt.Scan(&P)%0A%09_, errS := fmt.Scan(&S)%0A%09_, errE := fmt.Scan(&E)%0A%09if errP != nil %7C%7C errS != nil %7C%7C errE != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09posicaoAtual := 0%0A%0A%09for %7B%0A%09%09aterrissagem := posicaoAtual + S%0A%09%09if aterrissagem %3E= P %7B%0A%09%09%09fmt.Printf(%22%25d saiu%5Cn%22, aterrissagem\n+fmt.Scan(&P, &S, &E)%0A%0A%09pos := 0%0A%0A%09for %7B%0A%09%09if pos+S %3E= P %7B%0A%09%09%09fmt.Println(pos+S, %22saiu%22\n )%0A%09%09\n@@ -154,16 +154,17 @@\n eak%0A%09%09%7D%0A\n+%0A\n %09%09fmt.Pr\n@@ -186,64 +186,37 @@\n  pos\n-icaoAtual, aterrissagem)%0A%09%09posicaoAtual = aterrissagem\n+, pos+S)%0A%0A%09%09pos += S%0A%09%09pos\n  -\n+=\n  E%0A%09\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-31_14-24-56",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -42,61 +42,244 @@\n var \n-p, s, e, x\n+P, S, E\n  int%0A%09\n-fmt.Scan(&p, &s, &e)%0A%0A%09for x+s %3C p\n+_, errP := fmt.Scan(&P)%0A%09_, errS := fmt.Scan(&S)%0A%09_, errE := fmt.Scan(&E)%0A%09if errP != nil %7C%7C errS != nil %7C%7C errE != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09posicaoAtual := 0%0A%0A%09for %7B%0A%09%09aterrissagem := posicaoAtual + S%0A%09%09if aterrissagem %3E= P\n  %7B%0A\n+%09\n %09%09fm\n@@ -289,36 +289,51 @@\n rint\n-ln(x, x+s)%0A%09%09x += s - e%0A%09%7D%0A%0A\n+f(%22%25d saiu%5Cn%22, aterrissagem)%0A%09%09%09break%0A%09%09%7D%0A%09\n %09fmt\n@@ -342,20 +342,84 @@\n rint\n-ln(x, %22saiu%22)\n+f(%22%25d %25d%5Cn%22, posicaoAtual, aterrissagem)%0A%09%09posicaoAtual = aterrissagem - E%0A%09%7D\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-31_14-25-14",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar p, s, e, x int\n\tfmt.Scan(&p, &s, &e)\n\n\tfor x+s < p {\n\t\tfmt.Println(x, x+s)\n\t\tx += s - e\n\t}\n\n\tfmt.Println(x, \"saiu\")\n}\n",
+            "lines": "15"
+        }
+    ]
+}

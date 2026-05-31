@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_14-19-11",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,219 +23,53 @@\n mt%22%0A\n-%0Afunc inverter(n int) int %7B%0A%09inv := 0%0A%0A%09for n %3E 0 %7B%0A%09%09inv = inv*10 + n%2510%0A%09%09n /= 10%0A%09%7D%0A%0A%09return inv%0A%7D%0A%0Afunc main() %7B%0A%09var n int%0A%09fmt.Scan(&n)%0A%0A%09if n == inverter(n) %7B%0A%09%09fmt.Println(1)%0A%09%7D else %7B%0A%09%09fmt.Println(0)%0A%09%7D\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_14-19-41",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc inverter(n int) int {\n\tinv := 0\n\n\tfor n > 0 {\n\t\tinv = inv*10 + n%10\n\t\tn /= 10\n\t}\n\n\treturn inv\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tif n == inverter(n) {\n\t\tfmt.Println(1)\n\t} else {\n\t\tfmt.Println(0)\n\t}\n}\n",
+            "lines": "25"
+        }
+    ]
+}

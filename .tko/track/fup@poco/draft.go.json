@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_14-15-43",
+            "content": "@@ -37,247 +37,39 @@\n ) %7B%0A\n-%09var P, S, E int%0A%0A%09fmt.Scan(&P)%0A%09fmt.Scan(&S)%0A%09fmt.Scan(&E)%0A%0A%09pos := 0%0A%0A%09for %7B%0A%09%09// salto%0A%09%09pos += S%0A%09%09fmt.Println(pos)%0A%09%09if pos %3E= P %7B%0A%09%09%09break%0A%09%09%7D%0A%09%09pos -= E%0A%09%09fmt.Println(pos)%0A%0A%09%09// morreu afogado%0A%09%09if pos %3C 0 %7B%0A%09%09%09break%0A%09%09%7D%0A%09%09S -= 10%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_14-16-56",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -50,16 +50,17 @@\n , E int%0A\n+%0A\n %09fmt.Sca\n@@ -67,14 +67,34 @@\n n(&P\n-, &S, \n+)%0A%09fmt.Scan(&S)%0A%09fmt.Scan(\n &E)%0A\n@@ -118,18 +118,16 @@\n %7B%0A%09%09\n-ant := pos\n+// salto\n %0A%09%09p\n@@ -144,35 +144,29 @@\n fmt.Println(\n-ant, \n pos)%0A\n-%0A\n %09%09if pos %3E= \n@@ -185,21 +185,8 @@\n %0A%09%09%7D\n-%0A%0A%09%09ant = pos\n %0A%09%09p\n@@ -211,18 +211,33 @@\n tln(\n-ant, \n pos)%0A\n+%0A%09%09// morreu afogado\n %0A%09%09i\n@@ -261,17 +261,16 @@\n eak%0A%09%09%7D%0A\n-%0A\n %09%09S -= 1\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-31_14-17-43",
+            "content": "@@ -95,19 +95,19 @@\n for %7B%0A%09%09\n-ini\n+ant\n  := pos%0A\n@@ -117,17 +117,16 @@\n os += S%0A\n-%0A\n %09%09fmt.Pr\n@@ -135,11 +135,11 @@\n tln(\n-ini\n+ant\n , po\n@@ -178,16 +178,53 @@\n %0A%0A%09%09\n-pos -= E\n+ant = pos%0A%09%09pos -= E%0A%09%09fmt.Println(ant, pos)%0A\n %0A%09%09i\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-31_14-18-08",
+            "content": "@@ -99,53 +99,55 @@\n %7B%0A%09%09\n-fmt.Printf(%22%25d %25d%5Cn%22, pos, pos+S)%0A%0A%09%09pos += S\n+ini := pos%0A%09%09pos += S%0A%0A%09%09fmt.Println(ini, pos)%0A\n %0A%09%09i\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-31_14-18-40",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar P, S, E int\n\tfmt.Scan(&P, &S, &E)\n\n\tpos := 0\n\n\tfor {\n\t\tfmt.Printf(\"%d %d\\n\", pos, pos+S)\n\n\t\tpos += S\n\t\tif pos >= P {\n\t\t\tbreak\n\t\t}\n\n\t\tpos -= E\n\t\tif pos < 0 {\n\t\t\tbreak\n\t\t}\n\n\t\tS -= 10\n\t}\n}\n",
+            "lines": "26"
+        }
+    ]
+}
