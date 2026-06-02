@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-05-05_18-02-30",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -10,329 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09in := bufio.NewReader(os.Stdin)%0A%0A%09s, _ := in.ReadString('%5Cn')%0A%09s = strings.TrimSpace(s)%0A%0A%09var i, q int%0A%09fmt.Fscan(in, &i, &q)%0A%0A%09if i %3C 0 %7C%7C i %3E= len(s) %7C%7C q %3C= 0 %7B%0A%09%09fmt.Println(%22%22)%0A%09%09return%0A%09%7D%0A%0A%09f := i + q%0A%09if f %3E len(s) %7B%0A%09%09f = len(s)%0A%09%7D%0A%0A%09fmt.Println(s%5Bi:f%5D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-31_14-52-24",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\ts, _ := in.ReadString('\\n')\n\ts = strings.TrimSpace(s)\n\n\tvar i, q int\n\tfmt.Fscan(in, &i, &q)\n\n\tif i < 0 || i >= len(s) || q <= 0 {\n\t\tfmt.Println(\"\")\n\t\treturn\n\t}\n\n\tf := i + q\n\tif f > len(s) {\n\t\tf = len(s)\n\t}\n\n\tfmt.Println(s[i:f])\n}\n",
+            "lines": "30"
         }
     ]
 }

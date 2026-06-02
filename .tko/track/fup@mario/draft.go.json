@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_17-26-07",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,304 +37,39 @@\n ) %7B%0A\n-%09var n, maior int%0A%09fmt.Scan(&n)%0A%0A%09v := make(%5B%5Dint, n)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&v%5Bi%5D)%0A%0A%09%09if v%5Bi%5D %3E maior %7B%0A%09%09%09maior = v%5Bi%5D%0A%09%09%7D%0A%09%7D%0A%0A%09for i := maior; i %3E= 1; i-- %7B%0A%09%09for j := 0; j %3C n; j++ %7B%0A%09%09%09if v%5Bj%5D %3E= i %7B%0A%09%09%09%09fmt.Print(%22#%22)%0A%09%09%09%7D else %7B%0A%09%09%09%09fmt.Print(%22_%22)%0A%09%09%09%7D%0A%09%09%7D%0A%09%09fmt.Println()%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_17-47-02",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, maior int\n\tfmt.Scan(&n)\n\n\tv := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&v[i])\n\n\t\tif v[i] > maior {\n\t\t\tmaior = v[i]\n\t\t}\n\t}\n\n\tfor i := maior; i >= 1; i-- {\n\t\tfor j := 0; j < n; j++ {\n\t\t\tif v[j] >= i {\n\t\t\t\tfmt.Print(\"#\")\n\t\t\t} else {\n\t\t\t\tfmt.Print(\"_\")\n\t\t\t}\n\t\t}\n\t\tfmt.Println()\n\t}\n}\n",
+            "lines": "29"
+        }
+    ]
+}

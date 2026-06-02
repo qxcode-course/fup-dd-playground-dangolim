@@ -19,7 +19,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@string
+- fup@list
 flags:
   inbox: all
   panel: skills
@@ -27,5 +27,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@substring
-selected_index: 12
+selected: fup@repetidos
+selected_index: 16

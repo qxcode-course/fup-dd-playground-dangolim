@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_18-25-59",
+            "content": "@@ -10,822 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09in := bufio.NewReader(os.Stdin)%0A%0A%09var t int%0A%09fmt.Fscan(in, &t)%0A%0A%09for i := 0; i %3C t; i++ %7B%0A%09%09var ultron, pessoa string%0A%0A%09%09fmt.Fscan(in, &ultron)%0A%09%09fmt.Fscan(in, &pessoa)%0A%0A%09%09ultron = strings.ToLower(ultron)%0A%09%09pessoa = strings.ToLower(pessoa)%0A%0A%09%09// Guarda as letras do c%C3%B3digo do Ultron%0A%09%09letras := make(map%5Brune%5Dbool)%0A%0A%09%09for _, c := range ultron %7B%0A%09%09%09letras%5Bc%5D = true%0A%09%09%7D%0A%0A%09%09// Conta quantas letras da pessoa pertencem ao c%C3%B3digo do Ultron%0A%09%09correspondencias := 0%0A%0A%09%09for _, c := range pessoa %7B%0A%09%09%09if letras%5Bc%5D %7B%0A%09%09%09%09correspondencias++%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09percentual := float64(correspondencias) / float64(len(pessoa))%0A%0A%09%09if percentual == 1.0 %7B%0A%09%09%09fmt.Println(%22chefe%22)%0A%09%09%7D else if percentual %3E 0.5 %7B%0A%09%09%09fmt.Println(%22ultron%22)%0A%09%09%7D else %7B%0A%09%09%09fmt.Println(%22pessoa%22)%0A%09%09%7D%0A%09%7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_18-47-29",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\tvar t int\n\tfmt.Fscan(in, &t)\n\n\tfor i := 0; i < t; i++ {\n\t\tvar ultron, pessoa string\n\n\t\tfmt.Fscan(in, &ultron)\n\t\tfmt.Fscan(in, &pessoa)\n\n\t\tultron = strings.ToLower(ultron)\n\t\tpessoa = strings.ToLower(pessoa)\n\n\t\t// Guarda as letras do c\u00f3digo do Ultron\n\t\tletras := make(map[rune]bool)\n\n\t\tfor _, c := range ultron {\n\t\t\tletras[c] = true\n\t\t}\n\n\t\t// Conta quantas letras da pessoa pertencem ao c\u00f3digo do Ultron\n\t\tcorrespondencias := 0\n\n\t\tfor _, c := range pessoa {\n\t\t\tif letras[c] {\n\t\t\t\tcorrespondencias++\n\t\t\t}\n\t\t}\n\n\t\tpercentual := float64(correspondencias) / float64(len(pessoa))\n\n\t\tif percentual == 1.0 {\n\t\t\tfmt.Println(\"chefe\")\n\t\t} else if percentual > 0.5 {\n\t\t\tfmt.Println(\"ultron\")\n\t\t} else {\n\t\t\tfmt.Println(\"pessoa\")\n\t\t}\n\t}\n}\n",
+            "lines": "51"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_16-06-54",
+            "content": "@@ -10,523 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09in := bufio.NewReader(os.Stdin)%0A%0A%09texto, _ := in.ReadString('%5Cn')%0A%09antiga, _ := in.ReadString('%5Cn')%0A%09nova, _ := in.ReadString('%5Cn')%0A%0A%09texto = strings.TrimSpace(texto)%0A%09antiga = strings.TrimSpace(antiga)%0A%09nova = strings.TrimSpace(nova)%0A%0A%09res := %22%22%0A%0A%09for i := 0; i %3C len(texto); %7B%0A%09%09if i+len(antiga) %3C= len(texto) && texto%5Bi:i+len(antiga)%5D == antiga %7B%0A%09%09%09res += nova%0A%09%09%09i += len(antiga)%0A%09%09%7D else %7B%0A%09%09%09res += string(texto%5Bi%5D)%0A%09%09%09i++%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(res\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_16-40-17",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\ttexto, _ := in.ReadString('\\n')\n\tantiga, _ := in.ReadString('\\n')\n\tnova, _ := in.ReadString('\\n')\n\n\ttexto = strings.TrimSpace(texto)\n\tantiga = strings.TrimSpace(antiga)\n\tnova = strings.TrimSpace(nova)\n\n\tres := \"\"\n\n\tfor i := 0; i < len(texto); {\n\t\tif i+len(antiga) <= len(texto) && texto[i:i+len(antiga)] == antiga {\n\t\t\tres += nova\n\t\t\ti += len(antiga)\n\t\t} else {\n\t\t\tres += string(texto[i])\n\t\t\ti++\n\t\t}\n\t}\n\n\tfmt.Println(res)\n}\n",
+            "lines": "34"
+        }
+    ]
+}

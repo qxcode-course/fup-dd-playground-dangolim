@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_19-53-10",
+            "content": "@@ -10,859 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22unicode%22%0A)%0Afunc main() %7B%0A    reader := bufio.NewReader(os.Stdin)%0A%0A    var n int%0A    fmt.Fscanln(reader, &n)%0A%0A    for i := 0; i %3C n; i++ %7B%0A        texto, _ := reader.ReadString('%5Cn')%0A        runas := %5B%5Drune(texto)%0A        maiuscula := false%0A        for _, c := range runas %7B%0A            if unicode.IsLetter(c) %7B%0A                if unicode.IsUpper(c) %7B%0A                    maiuscula = true%0A                %7D%0A                break%0A            %7D%0A        %7D%0A        for _, c := range runas %7B%0A            if c == ' ' %7C%7C c == '%5Cn' %7B%0A                fmt.Printf(%22%25c%22, c)%0A                continue%0A            %7D%0A            if maiuscula %7B%0A                fmt.Printf(%22%25c%22, unicode.ToUpper(c))%0A            %7D else %7B%0A                fmt.Printf(%22%25c%22, unicode.ToLower(c))%0A            %7D%0A            maiuscula = !maiuscula%0A        %7D%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_20-09-16",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"unicode\"\n)\nfunc main() {\n    reader := bufio.NewReader(os.Stdin)\n\n    var n int\n    fmt.Fscanln(reader, &n)\n\n    for i := 0; i < n; i++ {\n        texto, _ := reader.ReadString('\\n')\n        runas := []rune(texto)\n        maiuscula := false\n        for _, c := range runas {\n            if unicode.IsLetter(c) {\n                if unicode.IsUpper(c) {\n                    maiuscula = true\n                }\n                break\n            }\n        }\n        for _, c := range runas {\n            if c == ' ' || c == '\\n' {\n                fmt.Printf(\"%c\", c)\n                continue\n            }\n            if maiuscula {\n                fmt.Printf(\"%c\", unicode.ToUpper(c))\n            } else {\n                fmt.Printf(\"%c\", unicode.ToLower(c))\n            }\n            maiuscula = !maiuscula\n        }\n    }\n}\n",
+            "lines": "40"
+        }
+    ]
+}

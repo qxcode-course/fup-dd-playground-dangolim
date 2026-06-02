@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_18-50-17",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\tvar t int\n\tfmt.Fscan(in, &t)\n\n\tfor i := 0; i < t; i++ {\n\t\tvar ultron, pessoa string\n\n\t\tfmt.Fscan(in, &ultron)\n\t\tfmt.Fscan(in, &pessoa)\n\n\t\tultron = strings.ToLower(ultron)\n\t\tpessoa = strings.ToLower(pessoa)\n\n\t\t// Guarda as letras do c\u00f3digo do Ultron\n\t\tletras := make(map[rune]bool)\n\n\t\tfor _, c := range ultron {\n\t\t\tletras[c] = true\n\t\t}\n\n\t\t// Conta quantas letras da pessoa pertencem ao c\u00f3digo do Ultron\n\t\tcorrespondencias := 0\n\n\t\tfor _, c := range pessoa {\n\t\t\tif letras[c] {\n\t\t\t\tcorrespondencias++\n\t\t\t}\n\t\t}\n\n\t\tpercentual := float64(correspondencias) / float64(len(pessoa))\n\n\t\tif percentual == 1.0 {\n\t\t\tfmt.Println(\"chefe\")\n\t\t} else if percentual > 0.5 {\n\t\t\tfmt.Println(\"ultron\")\n\t\t} else {\n\t\t\tfmt.Println(\"pessoa\")\n\t\t}\n\t}\n}\n",
+            "lines": "51"
+        }
+    ]
+}

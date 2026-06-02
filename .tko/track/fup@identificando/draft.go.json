@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_19-16-01",
+            "content": "@@ -10,512 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A%09%22unicode%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%09frase, _ := reader.ReadString('%5Cn')%0A%09frase = strings.TrimSpace(frase)%0A%09elementos := strings.Fields(frase)%0A%09for i, e := range elementos %7B%0A%09%09tipo := %22int%22%0A%09%09for _, c := range e %7B%0A%09%09%09if unicode.IsLetter(c) %7B%0A%09%09%09%09tipo = %22str%22%0A%09%09%09%09break%0A%09%09%09%7D%0A%09%09%7D%0A%09%09if tipo != %22str%22 %7B%0A%09%09%09if strings.Contains(e, %22.%22) %7B%0A%09%09%09%09tipo = %22float%22%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09if i %3E 0 %7B%0A%09%09%09fmt.Print(%22 %22)%0A%09%09%7D%0A%0A%09%09fmt.Print(tipo)%0A%09%7D%0A%0A%09fmt.Println(\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_19-52-54",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n\t\"unicode\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\tfrase, _ := reader.ReadString('\\n')\n\tfrase = strings.TrimSpace(frase)\n\telementos := strings.Fields(frase)\n\tfor i, e := range elementos {\n\t\ttipo := \"int\"\n\t\tfor _, c := range e {\n\t\t\tif unicode.IsLetter(c) {\n\t\t\t\ttipo = \"str\"\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\t\tif tipo != \"str\" {\n\t\t\tif strings.Contains(e, \".\") {\n\t\t\t\ttipo = \"float\"\n\t\t\t}\n\t\t}\n\n\t\tif i > 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\n\t\tfmt.Print(tipo)\n\t}\n\n\tfmt.Println()\n}\n",
+            "lines": "38"
+        }
+    ]
+}

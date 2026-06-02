@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_15-13-16",
+            "content": "@@ -10,334 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc main() %7B%0A%09in := bufio.NewReader(os.Stdin)%0A%0A%09s, _ := in.ReadString('%5Cn')%0A%0A%09v, c := %22%22, %22%22%0A%0A%09for _, l := range s %7B%0A%09%09if l == 'a' %7C%7C l == 'e' %7C%7C l == 'i' %7C%7C l == 'o' %7C%7C l == 'u' %7B%0A%09%09%09v += string(l)%0A%09%09%7D else if l %3E= 'a' && l %3C= 'z' %7B%0A%09%09%09c += string(l)%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(v)%0A%09fmt.Println(c\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_15-31-41",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\ts, _ := in.ReadString('\\n')\n\n\tv, c := \"\", \"\"\n\n\tfor _, l := range s {\n\t\tif l == 'a' || l == 'e' || l == 'i' || l == 'o' || l == 'u' {\n\t\t\tv += string(l)\n\t\t} else if l >= 'a' && l <= 'z' {\n\t\t\tc += string(l)\n\t\t}\n\t}\n\n\tfmt.Println(v)\n\tfmt.Println(c)\n}\n",
+            "lines": "26"
+        }
+    ]
+}

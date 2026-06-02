@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_15-32-01",
+            "content": "@@ -10,336 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22unicode%22%0A)%0A%0Afunc main() %7B%0A%09in := bufio.NewReader(os.Stdin)%0A%0A%09s, _ := in.ReadString('%5Cn')%0A%0A%09for _, c := range s %7B%0A%09%09if unicode.IsLower(c) %7B%0A%09%09%09fmt.Print(string(unicode.ToUpper(c)))%0A%09%09%7D else if unicode.IsUpper(c) %7B%0A%09%09%09fmt.Print(string(unicode.ToLower(c)))%0A%09%09%7D else %7B%0A%09%09%09fmt.Print(string(c))%0A%09%09%7D%0A%09%7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_15-48-12",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"unicode\"\n)\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\ts, _ := in.ReadString('\\n')\n\n\tfor _, c := range s {\n\t\tif unicode.IsLower(c) {\n\t\t\tfmt.Print(string(unicode.ToUpper(c)))\n\t\t} else if unicode.IsUpper(c) {\n\t\t\tfmt.Print(string(unicode.ToLower(c)))\n\t\t} else {\n\t\t\tfmt.Print(string(c))\n\t\t}\n\t}\n}\n",
+            "lines": "24"
+        }
+    ]
+}

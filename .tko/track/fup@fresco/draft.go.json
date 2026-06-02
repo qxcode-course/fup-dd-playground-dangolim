@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_16-40-24",
+            "content": "@@ -10,582 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc vogal(c byte) bool %7B%0A%09return strings.ContainsRune(%22aeiou%22, rune(c))%0A%7D%0A%0Afunc main() %7B%0A%09in := bufio.NewReader(os.Stdin)%0A%0A%09s, _ := in.ReadString('%5Cn')%0A%09s = strings.TrimSpace(s)%0A%0A%09p := strings.Split(s, %22 %22)%0A%0A%09res := p%5B0%5D%0A%0A%09for i := 1; i %3C len(p); i++ %7B%0A%09%09a := res%5Blen(res)-1%5D%0A%09%09b := p%5Bi%5D%5B0%5D%0A%0A%09%09if vogal(a) && vogal(b) %7B%0A%09%09%09j := 0%0A%0A%09%09%09// remove apenas as vogais repetidas do in%C3%ADcio%0A%09%09%09for j %3C len(p%5Bi%5D) && vogal(p%5Bi%5D%5Bj%5D) && p%5Bi%5D%5Bj%5D == a %7B%0A%09%09%09%09j++%0A%09%09%09%7D%0A%0A%09%09%09res += p%5Bi%5D%5Bj:%5D%0A%09%09%7D else %7B%0A%09%09%09res += %22 %22 + p%5Bi%5D%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(res\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_17-05-15",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc vogal(c byte) bool {\n\treturn strings.ContainsRune(\"aeiou\", rune(c))\n}\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\ts, _ := in.ReadString('\\n')\n\ts = strings.TrimSpace(s)\n\n\tp := strings.Split(s, \" \")\n\n\tres := p[0]\n\n\tfor i := 1; i < len(p); i++ {\n\t\ta := res[len(res)-1]\n\t\tb := p[i][0]\n\n\t\tif vogal(a) && vogal(b) {\n\t\t\tj := 0\n\n\t\t\t// remove apenas as vogais repetidas do in\u00edcio\n\t\t\tfor j < len(p[i]) && vogal(p[i][j]) && p[i][j] == a {\n\t\t\t\tj++\n\t\t\t}\n\n\t\t\tres += p[i][j:]\n\t\t} else {\n\t\t\tres += \" \" + p[i]\n\t\t}\n\t}\n\n\tfmt.Println(res)\n}\n",
+            "lines": "43"
+        }
+    ]
+}

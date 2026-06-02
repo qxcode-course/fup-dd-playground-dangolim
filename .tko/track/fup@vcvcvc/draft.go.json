@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_18-04-46",
+            "content": "@@ -10,464 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A%09%22unicode%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%09frase, _ := reader.ReadString('%5Cn')%0A%0A%09frase = strings.TrimRight(frase, %22%5Cn%22)%0A%0A%09for _, ch := range frase %7B%0A%0A%09%09if ch == ' ' %7B%0A%09%09%09fmt.Print(%22 %22)%0A%09%09%7D else %7B%0A%09%09%09letra := unicode.ToLower(ch)%0A%0A%09%09%09if letra == 'a' %7C%7C letra == 'e' %7C%7C letra == 'i' %7C%7C letra == 'o' %7C%7C letra == 'u' %7B%0A%09%09%09%09fmt.Print(%22v%22)%0A%09%09%09%7D else %7B%0A%09%09%09%09fmt.Print(%22c%22)%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_18-25-50",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n\t\"unicode\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\tfrase, _ := reader.ReadString('\\n')\n\n\tfrase = strings.TrimRight(frase, \"\\n\")\n\n\tfor _, ch := range frase {\n\n\t\tif ch == ' ' {\n\t\t\tfmt.Print(\" \")\n\t\t} else {\n\t\t\tletra := unicode.ToLower(ch)\n\n\t\t\tif letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' {\n\t\t\t\tfmt.Print(\"v\")\n\t\t\t} else {\n\t\t\t\tfmt.Print(\"c\")\n\t\t\t}\n\t\t}\n\t}\n\n\tfmt.Println()\n}\n",
+            "lines": "33"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_14-52-36",
+            "content": "@@ -41,343 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    led := map%5Brune%5Dint%7B%0A        '0': 6, '1': 2, '2': 5, '3': 5, '4': 4, '5':5, '6':6, '7':3, '8':7, '9': 6,%0A    %7D%0A    for ; n %3E 0; n-- %7B%0A        var s string %0A        fmt.Scan(&s)%0A        total := 0%0A        for _, c := range s %7B%0A            total += led%5Bc%5D%0A        %7D%0A        fmt.Println(total, %22leds%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_15-12-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    led := map[rune]int{\n        '0': 6, '1': 2, '2': 5, '3': 5, '4': 4, '5':5, '6':6, '7':3, '8':7, '9': 6,\n    }\n    for ; n > 0; n-- {\n        var s string \n        fmt.Scan(&s)\n        total := 0\n        for _, c := range s {\n            total += led[c]\n        }\n        fmt.Println(total, \"leds\")\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}

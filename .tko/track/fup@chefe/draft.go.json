@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_18-51-03",
+            "content": "@@ -10,956 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09// L%C3%AA c%C3%B3digo do Ultron%0A%09ultron, _ := reader.ReadString('%5Cn')%0A%09ultron = strings.TrimSpace(strings.ToLower(ultron))%0A%0A%09// L%C3%AA linha com as pessoas%0A%09linha, _ := reader.ReadString('%5Cn')%0A%09linha = strings.TrimSpace(strings.ToLower(linha))%0A%0A%09pessoas := strings.Split(linha, %22 %22)%0A%0A%09// Guarda letras do Ultron%0A%09letras := make(map%5Brune%5Dbool)%0A%0A%09for _, c := range ultron %7B%0A%09%09letras%5Bc%5D = true%0A%09%7D%0A%0A%09var resposta %5B%5Dstring%0A%0A%09for _, pessoa := range pessoas %7B%0A%0A%09%09correspondencias := 0%0A%0A%09%09for _, c := range pessoa %7B%0A%09%09%09if letras%5Bc%5D %7B%0A%09%09%09%09correspondencias++%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09percentual := float64(correspondencias) / float64(len(pessoa))%0A%0A%09%09if percentual == 1.0 %7B%0A%09%09%09resposta = append(resposta, %22chefe%22)%0A%09%09%7D else if percentual %3E 0.5 %7B%0A%09%09%09resposta = append(resposta, %22ultron%22)%0A%09%09%7D else %7B%0A%09%09%09resposta = append(resposta, %22pessoa%22)%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(strings.Join(resposta, %22 %22)\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_19-15-50",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\t// L\u00ea c\u00f3digo do Ultron\n\tultron, _ := reader.ReadString('\\n')\n\tultron = strings.TrimSpace(strings.ToLower(ultron))\n\n\t// L\u00ea linha com as pessoas\n\tlinha, _ := reader.ReadString('\\n')\n\tlinha = strings.TrimSpace(strings.ToLower(linha))\n\n\tpessoas := strings.Split(linha, \" \")\n\n\t// Guarda letras do Ultron\n\tletras := make(map[rune]bool)\n\n\tfor _, c := range ultron {\n\t\tletras[c] = true\n\t}\n\n\tvar resposta []string\n\n\tfor _, pessoa := range pessoas {\n\n\t\tcorrespondencias := 0\n\n\t\tfor _, c := range pessoa {\n\t\t\tif letras[c] {\n\t\t\t\tcorrespondencias++\n\t\t\t}\n\t\t}\n\n\t\tpercentual := float64(correspondencias) / float64(len(pessoa))\n\n\t\tif percentual == 1.0 {\n\t\t\tresposta = append(resposta, \"chefe\")\n\t\t} else if percentual > 0.5 {\n\t\t\tresposta = append(resposta, \"ultron\")\n\t\t} else {\n\t\t\tresposta = append(resposta, \"pessoa\")\n\t\t}\n\t}\n\n\tfmt.Println(strings.Join(resposta, \" \"))\n}\n",
+            "lines": "54"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-31_17-05-23",
+            "content": "@@ -10,298 +10,65 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09in := bufio.NewReader(os.Stdin)%0A%0A%09s, _ := in.ReadString('%5Cn')%0A%09s = strings.TrimSpace(s)%0A%0A%09p := strings.Split(s, %22 %22)%0A%0A%09for i := 0; i %3C len(p)-1; i++ %7B%0A%09%09if p%5Bi%5D %3E p%5Bi+1%5D %7B%0A%09%09%09fmt.Println(%22nao%22)%0A%09%09%09return%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(%22sim\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-31_17-25-49",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\ts, _ := in.ReadString('\\n')\n\ts = strings.TrimSpace(s)\n\n\tp := strings.Split(s, \" \")\n\n\tfor i := 0; i < len(p)-1; i++ {\n\t\tif p[i] > p[i+1] {\n\t\t\tfmt.Println(\"nao\")\n\t\t\treturn\n\t\t}\n\t}\n\n\tfmt.Println(\"sim\")\n}\n",
+            "lines": "26"
+        }
+    ]
+}
