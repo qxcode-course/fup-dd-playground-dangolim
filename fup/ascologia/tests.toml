@@ -1,0 +1,63 @@
+[[tests]]
+input = '''
+David
+'''
+output = '''
+38
+'''
+
+[[tests]]
+input = '''
+Scya
+'''
+output = '''
+0
+'''
+
+[[tests]]
+input = '''
+Ana
+'''
+output = '''
+22
+'''
+
+[[tests]]
+input = '''
+BruNa
+'''
+output = '''
+22
+'''
+
+[[tests]]
+input = '''
+Marcos
+'''
+output = '''
+13
+'''
+
+[[tests]]
+input = '''
+andre
+'''
+output = '''
+22
+'''
+
+[[tests]]
+input = '''
+CumpadreWashington
+'''
+output = '''
+25
+'''
+
+[[tests]]
+input = '''
+Fernando
+'''
+output = '''
+13
+'''

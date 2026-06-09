@@ -1,0 +1,5 @@
+2026-06-09 17:01:40, MOVE, v:1, k:fup@loop_v, mode:PICK
+2026-06-09 17:02:11, MOVE, v:1, k:fup@loop_v, mode:PICK
+2026-06-09 17:09:29, MOVE, v:1, k:fup@troco, mode:DOWN
+2026-06-09 17:09:29, MOVE, v:1, k:fup@troco, mode:PICK
+2026-06-09 17:09:31, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:5

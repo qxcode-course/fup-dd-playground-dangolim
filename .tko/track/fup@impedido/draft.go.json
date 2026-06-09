@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-01-53",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,155 +37,39 @@\n ) %7B%0A\n-%09var L, R, D int%0A%0A%09fmt.Scan(&L)%0A%09fmt.Scan(&R)%0A%09fmt.Scan(&D)%0A%0A%09if (R %3E 50) && (L %3C R) && (R %3E D) %7B%0A%09%09fmt.Println(%22S%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22N%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-05-06",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar L, R, D int\n\n\tfmt.Scan(&L)\n\tfmt.Scan(&R)\n\tfmt.Scan(&D)\n\n\tif (R > 50) && (L < R) && (R > D) {\n\t\tfmt.Println(\"S\")\n\t} else {\n\t\tfmt.Println(\"N\")\n\t}\n}\n",
+            "lines": "17"
+        }
+    ]
+}

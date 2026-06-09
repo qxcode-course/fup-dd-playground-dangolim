@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-06-41",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,152 +37,39 @@\n ) %7B%0A\n-%09var n int%0A%0A%09fmt.Scan(&n)%0A%0A%09if n %3E 0 %7B%0A%09%09fmt.Println(%22positivo%22)%0A%09%7D else if n == 0 %7B%0A%09%09fmt.Println(%22nulo%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22negativo%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-07-04",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\n\tfmt.Scan(&n)\n\n\tif n > 0 {\n\t\tfmt.Println(\"positivo\")\n\t} else if n == 0 {\n\t\tfmt.Println(\"nulo\")\n\t} else {\n\t\tfmt.Println(\"negativo\")\n\t}\n}\n",
+            "lines": "17"
+        }
+    ]
+}

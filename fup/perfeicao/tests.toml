@@ -1,0 +1,55 @@
+[[tests]]
+input = '''
+Dhaquison
+'''
+output = '''
+Dhaquisonn
+'''
+
+[[tests]]
+input = '''
+Alfredo
+'''
+output = '''
+Alfredoc
+'''
+
+[[tests]]
+input = '''
+Maikou
+'''
+output = '''
+sem sorte
+'''
+
+[[tests]]
+input = '''
+Davidp
+'''
+output = '''
+Davidpd
+'''
+
+[[tests]]
+input = '''
+Ana
+'''
+output = '''
+sem sorte
+'''
+
+[[tests]]
+input = '''
+David
+'''
+output = '''
+Davidp
+'''
+
+[[tests]]
+input = '''
+Ticiany
+'''
+output = '''
+sem sorte
+'''

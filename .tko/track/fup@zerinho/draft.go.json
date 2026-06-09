@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-16-04",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,287 +37,39 @@\n ) %7B%0A\n-%09var a, b, c int%0A%0A%09fmt.Scan(&a, &b, &c)%0A%0A%09if a == b && b == c %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D else if a != b && a != c %7B%0A%09%09fmt.Println(%22jog1%22)%0A%09%7D else if b != a && b != c %7B%0A%09%09fmt.Println(%22jog2%22)%0A%09%7D else if c != a && c != b %7B%0A%09%09fmt.Println(%22jog3%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-16-28",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b, c int\n\n\tfmt.Scan(&a, &b, &c)\n\n\tif a == b && b == c {\n\t\tfmt.Println(\"empate\")\n\t} else if a != b && a != c {\n\t\tfmt.Println(\"jog1\")\n\t} else if b != a && b != c {\n\t\tfmt.Println(\"jog2\")\n\t} else if c != a && c != b {\n\t\tfmt.Println(\"jog3\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "21"
+        }
+    ]
+}

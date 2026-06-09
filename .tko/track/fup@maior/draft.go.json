@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-09-17",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,291 +37,39 @@\n ) %7B%0A\n-%09var chute, valorReal float64%0A%09var escolha rune%0A%0A%09fmt.Scan(&chute)%0A%09fmt.Scan(&escolha)%0A%09fmt.Scan(&valorReal)%0A%0A%09if chute == valorReal %7C%7C%0A%09%09(escolha == 'M' && valorReal %3C chute) %7C%7C%0A%09%09(escolha == 'm' && valorReal %3E chute) %7B%0A%09%09fmt.Println(%22primeiro%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22segundo%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-09-40",
+            "content": "@@ -52,16 +52,20 @@\n e, valor\n+Real\n  float64\n@@ -104,26 +104,50 @@\n hute\n-, &escolha, \n+)%0A%09fmt.Scan(&escolha)%0A%09fmt.Scan(\n &valor\n+Real\n )%0A%0A%09\n@@ -163,16 +163,20 @@\n == valor\n+Real\n  %7C%7C%0A%09%09(e\n@@ -186,17 +186,17 @@\n lha == '\n-m\n+M\n ' && val\n@@ -197,16 +197,20 @@\n && valor\n+Real\n  %3C chute\n@@ -221,33 +221,33 @@\n %0A%09%09(escolha == '\n-M\n+m\n ' && valor %3E chu\n@@ -240,16 +240,20 @@\n && valor\n+Real\n  %3E chute\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-03_18-10-27",
+            "content": "@@ -66,18 +66,23 @@\n 64%0A%09var \n-op\n+escolha\n  rune%0A%0A%09\n@@ -99,18 +99,23 @@\n chute, &\n-op\n+escolha\n , &valor\n@@ -138,20 +138,27 @@\n valor %7C%7C\n- (op\n+%0A%09%09(escolha\n  == 'm' \n@@ -181,12 +181,19 @@\n ) %7C%7C\n- (op\n+%0A%09%09(escolha\n  == \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-03_18-10-58",
+            "content": "@@ -73,14 +73,12 @@\n  op \n-string\n+rune\n %0A%0A%09f\n@@ -140,11 +140,11 @@\n  == \n-%22m%22\n+'m'\n  && \n@@ -172,11 +172,11 @@\n  == \n-%22M%22\n+'M'\n  && \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-03_18-11-58",
+            "content": "@@ -155,9 +155,9 @@\n lor \n-%3E\n+%3C\n  chu\n@@ -175,33 +175,33 @@\n == %22M%22 && valor \n-%3C\n+%3E\n  chute) %7B%0A%09%09fmt.\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-03_18-12-34",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar chute, valor float64\n\tvar op string\n\n\tfmt.Scan(&chute, &op, &valor)\n\n\tif chute == valor || (op == \"m\" && valor > chute) || (op == \"M\" && valor < chute) {\n\t\tfmt.Println(\"primeiro\")\n\t} else {\n\t\tfmt.Println(\"segundo\")\n\t}\n}\n",
+            "lines": "16"
+        }
+    ]
+}

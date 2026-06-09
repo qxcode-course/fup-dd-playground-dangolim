@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-07-53",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,363 +37,39 @@\n ) %7B%0A\n-%09var valor, primeiro, segundo int%0A%0A%09fmt.Scan(&valor)%0A%09fmt.Scan(&primeiro)%0A%09fmt.Scan(&segundo)%0A%0A%09dist1 := valor - primeiro%0A%09if dist1 %3C 0 %7B%0A%09%09dist1 = -dist1%0A%09%7D%0A%0A%09dist2 := valor - segundo%0A%09if dist2 %3C 0 %7B%0A%09%09dist2 = -dist2%0A%09%7D%0A%0A%09if dist1 %3C dist2 %7B%0A%09%09fmt.Println(%22primeiro%22)%0A%09%7D else if dist2 %3C dist1 %7B%0A%09%09fmt.Println(%22segundo%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-08-16",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar valor, primeiro, segundo int\n\n\tfmt.Scan(&valor)\n\tfmt.Scan(&primeiro)\n\tfmt.Scan(&segundo)\n\n\tdist1 := valor - primeiro\n\tif dist1 < 0 {\n\t\tdist1 = -dist1\n\t}\n\n\tdist2 := valor - segundo\n\tif dist2 < 0 {\n\t\tdist2 = -dist2\n\t}\n\n\tif dist1 < dist2 {\n\t\tfmt.Println(\"primeiro\")\n\t} else if dist2 < dist1 {\n\t\tfmt.Println(\"segundo\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "29"
+        }
+    ]
+}

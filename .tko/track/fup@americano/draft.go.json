@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-20-54",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,311 +37,39 @@\n ) %7B%0A\n-%09var a, b, c, d int%0A%0A%09fmt.Scan(&a, &b, &c, &d)%0A%0A%09soma := a + b + c + d%0A%0A%09if soma == 0 %7B%0A%09%09fmt.Println(%22nenhum%22)%0A%09%7D else %7B%0A%09%09r := soma %25 4%0A%0A%09%09if r == 1 %7B%0A%09%09%09fmt.Println(%22jog1%22)%0A%09%09%7D else if r == 2 %7B%0A%09%09%09fmt.Println(%22jog2%22)%0A%09%09%7D else if r == 3 %7B%0A%09%09%09fmt.Println(%22jog3%22)%0A%09%09%7D else %7B%0A%09%09%09fmt.Println(%22jog4%22)%0A%09%09%7D%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-21-14",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b, c, d int\n\n\tfmt.Scan(&a, &b, &c, &d)\n\n\tsoma := a + b + c + d\n\n\tif soma == 0 {\n\t\tfmt.Println(\"nenhum\")\n\t} else {\n\t\tr := soma % 4\n\n\t\tif r == 1 {\n\t\t\tfmt.Println(\"jog1\")\n\t\t} else if r == 2 {\n\t\t\tfmt.Println(\"jog2\")\n\t\t} else if r == 3 {\n\t\t\tfmt.Println(\"jog3\")\n\t\t} else {\n\t\t\tfmt.Println(\"jog4\")\n\t\t}\n\t}\n}\n",
+            "lines": "27"
+        }
+    ]
+}

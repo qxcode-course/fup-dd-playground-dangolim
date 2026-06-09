@@ -1,0 +1,95 @@
+[[tests]]
+input = '''
+0 
+'''
+output = '''
+joguem de novo
+'''
+
+[[tests]]
+input = '''
+1
+'''
+output = '''
+a
+'''
+
+[[tests]]
+input = '''
+2
+'''
+output = '''
+b
+'''
+
+[[tests]]
+input = '''
+26
+'''
+output = '''
+z
+'''
+
+[[tests]]
+input = '''
+27
+'''
+output = '''
+a
+'''
+
+[[tests]]
+input = '''
+28
+'''
+output = '''
+b
+'''
+
+[[tests]]
+input = '''
+52
+'''
+output = '''
+z
+'''
+
+[[tests]]
+input = '''
+53
+'''
+output = '''
+a
+'''
+
+[[tests]]
+input = '''
+30
+'''
+output = '''
+d
+'''
+
+[[tests]]
+input = '''
+54
+'''
+output = '''
+b
+'''
+
+[[tests]]
+input = '''
+80
+'''
+output = '''
+b
+'''
+
+[[tests]]
+input = '''
+150
+'''
+output = '''
+t
+'''

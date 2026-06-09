@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-34-31",
+            "content": "@@ -10,28 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-)%0A%0A\n func\n@@ -37,230 +37,39 @@\n ) %7B%0A\n-%09var h, m, s int%0A%09_, err := fmt.Scan(&h, &m, &s)%0A%09if err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09s++%0A%0A%09if s == 60 %7B%0A%09%09s = 0%0A%09%09m++%0A%09%09if m == 60 %7B%0A%09%09%09m = 0%0A%09%09%09h++%0A%09%09%09if h == 24 %7B%0A%09%09%09%09h = 0%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Printf(%22%2502d %2502d %2502d%5Cn%22, h, m, s\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-34-58",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar h, m, s int\n\t_, err := fmt.Scan(&h, &m, &s)\n\tif err != nil {\n\t\treturn\n\t}\n\n\ts++\n\n\tif s == 60 {\n\t\ts = 0\n\t\tm++\n\t\tif m == 60 {\n\t\t\tm = 0\n\t\t\th++\n\t\t\tif h == 24 {\n\t\t\t\th = 0\n\t\t\t}\n\t\t}\n\t}\n\n\tfmt.Printf(\"%02d %02d %02d\\n\", h, m, s)\n}\n",
+            "lines": "29"
+        }
+    ]
+}

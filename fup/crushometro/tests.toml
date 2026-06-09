@@ -1,0 +1,116 @@
+[[tests]]
+input = '''
+Yudi
+Priscilla
+'''
+output = '''
+As chances do crush te dar bola sao: 20%!
+'''
+
+[[tests]]
+input = '''
+Shun
+Hyoga
+'''
+output = '''
+As chances do crush te dar bola sao: 0%!
+'''
+
+[[tests]]
+input = '''
+Kratos
+Athena
+'''
+output = '''
+As chances do crush te dar bola sao: 20%!
+'''
+
+[[tests]]
+input = '''
+Paula
+Paulo
+'''
+output = '''
+As chances do crush te dar bola sao: 100%!
+'''
+
+[[tests]]
+input = '''
+Sabrina
+Sheehan
+'''
+output = '''
+As chances do crush te dar bola sao: 70%!
+'''
+
+[[tests]]
+input = '''
+Cosette
+Caboclos
+'''
+output = '''
+As chances do crush te dar bola sao: 40%!
+'''
+
+[[tests]]
+input = '''
+Ermanoteu
+Helainete
+'''
+output = '''
+As chances do crush te dar bola sao: 80%!
+'''
+
+[[tests]]
+input = '''
+Will
+Ana
+'''
+output = '''
+As chances do crush te dar bola sao: 0%!
+'''
+
+[[tests]]
+input = '''
+Emerson
+Tamires
+'''
+output = '''
+As chances do crush te dar bola sao: 80%!
+'''
+
+[[tests]]
+input = '''
+Eduardo
+Gabriel
+'''
+output = '''
+As chances do crush te dar bola sao: 20%!
+'''
+
+[[tests]]
+input = '''
+Zac
+Zyra
+'''
+output = '''
+As chances do crush te dar bola sao: 40%!
+'''
+
+[[tests]]
+input = '''
+Talyta
+Thanos
+'''
+output = '''
+As chances do crush te dar bola sao: 70%!
+'''
+
+[[tests]]
+input = '''
+Sakura
+Sasuke
+'''
+output = '''
+As chances do crush te dar bola sao: 100%!
+'''

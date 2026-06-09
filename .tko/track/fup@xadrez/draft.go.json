@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-20-06",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,106 +37,39 @@\n ) %7B%0A\n-%09var L, C int%0A%0A%09fmt.Scan(&L, &C)%0A%0A%09if (L+C)%252 == 0 %7B%0A%09%09fmt.Println(1)%0A%09%7D else %7B%0A%09%09fmt.Println(0)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-20-29",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar L, C int\n\n\tfmt.Scan(&L, &C)\n\n\tif (L+C)%2 == 0 {\n\t\tfmt.Println(1)\n\t} else {\n\t\tfmt.Println(0)\n\t}\n}\n",
+            "lines": "15"
+        }
+    ]
+}

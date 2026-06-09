@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_17-58-44",
+            "content": "@@ -10,437 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A%09%22unicode%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09frase, _ := reader.ReadString('%5Cn')%0A%09frase = strings.TrimSpace(frase)%0A%0A%09letraStr, _ := reader.ReadString('%5Cn')%0A%09letraStr = strings.TrimSpace(letraStr)%0A%0A%09letra := unicode.ToLower(rune(letraStr%5B0%5D))%0A%0A%09contador := 0%0A%0A%09for _, c := range frase %7B%0A%09%09if unicode.ToLower(c) == letra %7B%0A%09%09%09contador++%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(contador\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_17-59-10",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n\t\"unicode\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tfrase, _ := reader.ReadString('\\n')\n\tfrase = strings.TrimSpace(frase)\n\n\tletraStr, _ := reader.ReadString('\\n')\n\tletraStr = strings.TrimSpace(letraStr)\n\n\tletra := unicode.ToLower(rune(letraStr[0]))\n\n\tcontador := 0\n\n\tfor _, c := range frase {\n\t\tif unicode.ToLower(c) == letra {\n\t\t\tcontador++\n\t\t}\n\t}\n\n\tfmt.Println(contador)\n}\n",
+            "lines": "31"
+        }
+    ]
+}

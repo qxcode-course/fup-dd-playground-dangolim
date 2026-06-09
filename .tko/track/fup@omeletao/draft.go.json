@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-26-48",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,181 +37,39 @@\n ) %7B%0A\n-%09var a, b, c, d int%0A%0A%09fmt.Scan(&a, &b, &c, &d)%0A%0A%09maior := a%0A%0A%09if b %3E maior %7B%0A%09%09maior = b%0A%09%7D%0A%09if c %3E maior %7B%0A%09%09maior = c%0A%09%7D%0A%09if d %3E maior %7B%0A%09%09maior = d%0A%09%7D%0A%0A%09fmt.Println(maior\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-27-20",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b, c, d int\n\n\tfmt.Scan(&a, &b, &c, &d)\n\n\tmaior := a\n\n\tif b > maior {\n\t\tmaior = b\n\t}\n\tif c > maior {\n\t\tmaior = c\n\t}\n\tif d > maior {\n\t\tmaior = d\n\t}\n\n\tfmt.Println(maior)\n}\n",
+            "lines": "23"
+        }
+    ]
+}

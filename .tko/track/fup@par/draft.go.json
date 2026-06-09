@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-16-57",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,105 +37,39 @@\n ) %7B%0A\n-%09var n int%0A%0A%09fmt.Scan(&n)%0A%0A%09if n%252 == 0 %7B%0A%09%09fmt.Println(%22PAR%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22IMPAR%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-18-19",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\n\tfmt.Scan(&n)\n\n\tif n%2 == 0 {\n\t\tfmt.Println(\"PAR\")\n\t} else {\n\t\tfmt.Println(\"IMPAR\")\n\t}\n}\n",
+            "lines": "15"
+        }
+    ]
+}

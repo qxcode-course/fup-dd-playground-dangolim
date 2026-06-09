@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-05-31_20-09-28",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -17,655 +17,59 @@\n ort \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0Afunc ehVogal(c rune)bool %7B%0A    return c == 'a' %7C%7C c == 'e' %7C%7C c == 'i' %7C%7C c == 'o' %7C%7C c == 'u'%0A%7D%0Afunc main() %7B%0A    reader := bufio.NewReader(os.Stdin)%0A    var n int%0A    fmt.Fscanln(reader, &n)%0A    for i := 0; i %3C n; i++ %7B%0A        var texto string%0A        fmt.Fscanln(reader, &texto)%0A        maior := %22%22%0A        atual := %22%22%0A        for _, c := range texto %7B%0A            if ehVogal(c) %7B%0A                atual += string(c)%0A%0A                if len(atual) %3E len(maior) %7B%0A                    maior = atual%0A                %7D%0A            %7D else %7B%0A                atual =%22%22%0A            %7D%0A        %7D%0A%0A        fmt.Println(maior)%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-03_16-21-17",
+            "content": "package main\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc ehVogal(c rune)bool {\n    return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n}\nfunc main() {\n    reader := bufio.NewReader(os.Stdin)\n    var n int\n    fmt.Fscanln(reader, &n)\n    for i := 0; i < n; i++ {\n        var texto string\n        fmt.Fscanln(reader, &texto)\n        maior := \"\"\n        atual := \"\"\n        for _, c := range texto {\n            if ehVogal(c) {\n                atual += string(c)\n\n                if len(atual) > len(maior) {\n                    maior = atual\n                }\n            } else {\n                atual =\"\"\n            }\n        }\n\n        fmt.Println(maior)\n    }\n}\n",
+            "lines": "33"
         }
     ]
 }

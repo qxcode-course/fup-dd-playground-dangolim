@@ -1,0 +1,44 @@
+[[tests]]
+input = '''
+a
+0
+'''
+output = '''
+a
+'''
+
+[[tests]]
+input = '''
+b
+3
+'''
+output = '''
+e
+'''
+
+[[tests]]
+input = '''
+z
+2
+'''
+output = '''
+b
+'''
+
+[[tests]]
+input = '''
+f
+-3
+'''
+output = '''
+c
+'''
+
+[[tests]]
+input = '''
+b
+-2
+'''
+output = '''
+z
+'''

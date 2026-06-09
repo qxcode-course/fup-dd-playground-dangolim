@@ -1,0 +1,89 @@
+[[tests]]
+input = '''
+c
+100
+'''
+output = '''
+Perfeito
+'''
+
+[[tests]]
+input = '''
+b
+68
+'''
+output = '''
+Fraco, nem passou
+'''
+
+[[tests]]
+input = '''
+c
+160
+'''
+output = '''
+Muito forte, bola fora
+'''
+
+[[tests]]
+input = '''
+b
+99
+'''
+output = '''
+Satisfeito
+'''
+
+[[tests]]
+input = '''
+c
+90
+'''
+output = '''
+Perfeito
+'''
+
+[[tests]]
+input = '''
+c
+87
+'''
+output = '''
+Fraco, nem passou
+'''
+
+[[tests]]
+input = '''
+b
+120
+'''
+output = '''
+Muito forte, bola fora
+'''
+
+[[tests]]
+input = '''
+c
+127
+'''
+output = '''
+Muito forte, bola fora
+'''
+
+[[tests]]
+input = '''
+c
+115
+'''
+output = '''
+Satisfeito
+'''
+
+[[tests]]
+input = '''
+c
+50
+'''
+output = '''
+Fraco, nem passou
+'''

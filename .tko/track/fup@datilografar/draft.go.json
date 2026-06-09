@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_17-26-18",
+            "content": "@@ -10,428 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09var quebrado string%0A%09var numero string%0A%0A%09fmt.Fscan(reader, &quebrado)%0A%09fmt.Fscan(reader, &numero)%0A%0A%09resultado := %22%22%0A%0A%09for _, c := range numero %7B%0A%09%09if string(c) != quebrado %7B%0A%09%09%09resultado += string(c)%0A%09%09%7D%0A%09%7D%0A%0A%09resultado = strings.TrimLeft(resultado, %220%22)%0A%0A%09if resultado == %22%22 %7B%0A%09%09resultado = %220%22%0A%09%7D%0A%0A%09fmt.Println(resultado\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_17-54-01",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tvar quebrado string\n\tvar numero string\n\n\tfmt.Fscan(reader, &quebrado)\n\tfmt.Fscan(reader, &numero)\n\n\tresultado := \"\"\n\n\tfor _, c := range numero {\n\t\tif string(c) != quebrado {\n\t\t\tresultado += string(c)\n\t\t}\n\t}\n\n\tresultado = strings.TrimLeft(resultado, \"0\")\n\n\tif resultado == \"\" {\n\t\tresultado = \"0\"\n\t}\n\n\tfmt.Println(resultado)\n}\n",
+            "lines": "34"
+        }
+    ]
+}

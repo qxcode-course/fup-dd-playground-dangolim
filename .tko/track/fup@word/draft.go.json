@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_16-39-52",
+            "content": "@@ -10,985 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A%09%22unicode%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09texto, _ := reader.ReadString('%5Cn')%0A%09texto = strings.TrimSpace(texto)%0A%0A%09comando, _ := reader.ReadString('%5Cn')%0A%09comando = strings.TrimSpace(comando)%0A%0A%09if comando == %22M%22 %7B%0A%09%09fmt.Println(strings.ToUpper(texto))%0A%0A%09%7D else if comando == %22m%22 %7B%0A%09%09fmt.Println(strings.ToLower(texto))%0A%0A%09%7D else if comando == %22i%22 %7B%0A%0A%09%09for _, c := range texto %7B%0A%0A%09%09%09if unicode.IsUpper(c) %7B%0A%09%09%09%09fmt.Printf(%22%25c%22, unicode.ToLower(c))%0A%09%09%09%7D else if unicode.IsLower(c) %7B%0A%09%09%09%09fmt.Printf(%22%25c%22, unicode.ToUpper(c))%0A%09%09%09%7D else %7B%0A%09%09%09%09fmt.Printf(%22%25c%22, c)%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09fmt.Println()%0A%0A%09%7D else if comando == %22p%22 %7B%0A%0A%09%09palavras := strings.Split(texto, %22 %22)%0A%0A%09%09for i := 0; i %3C len(palavras); i++ %7B%0A%0A%09%09%09p := palavras%5Bi%5D%0A%0A%09%09%09if len(p) == 1 %7B%0A%09%09%09%09palavras%5Bi%5D = strings.ToLower(p)%0A%09%09%09%7D else %7B%0A%09%09%09%09palavras%5Bi%5D = strings.ToUpper(string(p%5B0%5D)) + strings.ToLower(p%5B1:%5D)%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09fmt.Println(strings.Join(palavras, %22 %22))%0A%09%7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_17-00-33",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n\t\"unicode\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttexto, _ := reader.ReadString('\\n')\n\ttexto = strings.TrimSpace(texto)\n\n\tcomando, _ := reader.ReadString('\\n')\n\tcomando = strings.TrimSpace(comando)\n\n\tif comando == \"M\" {\n\t\tfmt.Println(strings.ToUpper(texto))\n\n\t} else if comando == \"m\" {\n\t\tfmt.Println(strings.ToLower(texto))\n\n\t} else if comando == \"i\" {\n\n\t\tfor _, c := range texto {\n\n\t\t\tif unicode.IsUpper(c) {\n\t\t\t\tfmt.Printf(\"%c\", unicode.ToLower(c))\n\t\t\t} else if unicode.IsLower(c) {\n\t\t\t\tfmt.Printf(\"%c\", unicode.ToUpper(c))\n\t\t\t} else {\n\t\t\t\tfmt.Printf(\"%c\", c)\n\t\t\t}\n\t\t}\n\n\t\tfmt.Println()\n\n\t} else if comando == \"p\" {\n\n\t\tpalavras := strings.Split(texto, \" \")\n\n\t\tfor i := 0; i < len(palavras); i++ {\n\n\t\t\tp := palavras[i]\n\n\t\t\tif len(p) == 1 {\n\t\t\t\tpalavras[i] = strings.ToLower(p)\n\t\t\t} else {\n\t\t\t\tpalavras[i] = strings.ToUpper(string(p[0])) + strings.ToLower(p[1:])\n\t\t\t}\n\t\t}\n\n\t\tfmt.Println(strings.Join(palavras, \" \"))\n\t}\n}\n",
+            "lines": "58"
+        }
+    ]
+}

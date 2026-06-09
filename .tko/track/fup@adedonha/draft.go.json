@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-30-04",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,163 +37,39 @@\n ) %7B%0A\n-%09var soma int%0A%0A%09fmt.Scan(&soma)%0A%0A%09if soma == 0 %7B%0A%09%09fmt.Println(%22joguem de novo%22)%0A%09%7D else %7B%0A%09%09letra := 'A' + rune((soma-1)%2526)%0A%09%09fmt.Printf(%22%25c%5Cn%22, letra)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-30-30",
+            "content": "@@ -103,9 +103,9 @@\n ln(%22\n-J\n+j\n ogue\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-03_18-31-08",
+            "content": "@@ -103,9 +103,9 @@\n ln(%22\n-j\n+J\n ogue\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-03_18-31-38",
+            "content": "@@ -103,9 +103,9 @@\n ln(%22\n-J\n+j\n ogue\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-03_18-31-48",
+            "content": "@@ -103,9 +103,9 @@\n ln(%22\n-j\n+J\n ogue\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-03_18-32-33",
+            "content": "@@ -18,18 +18,13 @@\n ort \n-(%0A%09\n %22fmt%22\n-%0A)\n %0A%0Afu\n@@ -53,374 +53,121 @@\n int%0A\n-%09// L%C3%AA a soma dos dedos dos 3 irm%C3%A3os%0A%09_, err := fmt.Scan(&soma)%0A%09if err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09// Se ningu%C3%A9m colocou nenhum dedo%0A%09if soma == 0 %7B%0A%09%09fmt.Println(%22joguem de novo%22)%0A%09%09return%0A%09%7D%0A%0A%09// Mapeia a soma para uma das 26 letras do alfabeto%0A%09// Subtra%C3%ADmos 1 para alinhar com o %C3%ADndice 0 (0 = 'a', 25 = 'z')%0A%09indice := (soma - 1) %25 \n+%0A%09fmt.Scan(&soma)%0A%0A%09if soma == 0 %7B%0A%09%09fmt.Println(%22joguem de novo%22)%0A%09%7D else %7B%0A%09%09letra := 'A' + rune((soma-1)%25\n 26\n+)\n %0A%09\n-%0A%09letra := char(97 + indice)%0A%0A\n %09fmt\n@@ -189,10 +189,13 @@\n  letra)%0A\n+%09%7D%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-03_18-33-29",
+            "content": "@@ -54,16 +54,53 @@\n oma int%0A\n+%09// L%C3%AA a soma dos dedos dos 3 irm%C3%A3os%0A\n %09_, err \n@@ -148,16 +148,51 @@\n urn%0A%09%7D%0A%0A\n+%09// Se ningu%C3%A9m colocou nenhum dedo%0A\n %09if soma\n@@ -244,16 +244,134 @@\n urn%0A%09%7D%0A%0A\n+%09// Mapeia a soma para uma das 26 letras do alfabeto%0A%09// Subtra%C3%ADmos 1 para alinhar com o %C3%ADndice 0 (0 = 'a', 25 = 'z')%0A\n %09indice \n@@ -389,16 +389,18 @@\n 1) %25 26%0A\n+%09%0A\n %09letra :\n@@ -405,12 +405,12 @@\n  := \n-rune\n+char\n (97 \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-03_18-34-22",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar soma int\n\t_, err := fmt.Scan(&soma)\n\tif err != nil {\n\t\treturn\n\t}\n\n\tif soma == 0 {\n\t\tfmt.Println(\"joguem de novo\")\n\t\treturn\n\t}\n\n\tindice := (soma - 1) % 26\n\tletra := rune(97 + indice)\n\n\tfmt.Printf(\"%c\\n\", letra)\n}\n",
+            "lines": "23"
+        }
+    ]
+}

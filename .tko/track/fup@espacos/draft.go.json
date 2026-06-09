@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_17-05-08",
+            "content": "@@ -10,254 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09texto, _ := reader.ReadString('%5Cn')%0A%09texto = strings.TrimSpace(texto)%0A%0A%09palavras := strings.Fields(texto)%0A%0A%09fmt.Println(strings.Join(palavras, %22 %22)\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_17-26-07",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttexto, _ := reader.ReadString('\\n')\n\ttexto = strings.TrimSpace(texto)\n\n\tpalavras := strings.Fields(texto)\n\n\tfmt.Println(strings.Join(palavras, \" \"))\n}\n",
+            "lines": "19"
+        }
+    ]
+}

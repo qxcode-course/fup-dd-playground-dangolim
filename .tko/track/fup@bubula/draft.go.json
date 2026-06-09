@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_17-54-32",
+            "content": "@@ -10,732 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22unicode%22%0A)%0A%0Afunc vogal(c rune) bool %7B%0A%09c = unicode.ToLower(c)%0A%0A%09return c == 'a' %7C%7C c == 'e' %7C%7C c == 'i' %7C%7C c == 'o' %7C%7C c == 'u'%0A%7D%0A%0Afunc gagueja(p string) string %7B%0A%0A%09r := %5B%5Drune(p)%0A%0A%09for i := 0; i %3C len(r)-1; i++ %7B%0A%0A%09%09if vogal(r%5Bi%5D) && !vogal(r%5Bi+1%5D) %7B%0A%0A%09%09%09silaba := string(r%5B:i+1%5D)%0A%0A%09%09%09return silaba + silaba + p%0A%09%09%7D%0A%09%7D%0A%0A%09return p%0A%7D%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09texto, _ := reader.ReadString('%5Cn')%0A%0A%09palavra := %22%22%0A%0A%09for _, c := range texto %7B%0A%0A%09%09if unicode.IsLetter(c) %7B%0A%09%09%09palavra += string(c)%0A%09%09%7D else %7B%0A%0A%09%09%09if palavra != %22%22 %7B%0A%09%09%09%09fmt.Print(gagueja(palavra))%0A%09%09%09%09palavra = %22%22%0A%09%09%09%7D%0A%0A%09%09%09fmt.Printf(%22%25c%22, c)%0A%09%09%7D%0A%09%7D%0A%0A%09if palavra != %22%22 %7B%0A%09%09fmt.Print(gagueja(palavra))%0A%09%7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_17-55-17",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"unicode\"\n)\n\nfunc vogal(c rune) bool {\n\tc = unicode.ToLower(c)\n\n\treturn c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n}\n\nfunc gagueja(p string) string {\n\n\tr := []rune(p)\n\n\tfor i := 0; i < len(r)-1; i++ {\n\n\t\tif vogal(r[i]) && !vogal(r[i+1]) {\n\n\t\t\tsilaba := string(r[:i+1])\n\n\t\t\treturn silaba + silaba + p\n\t\t}\n\t}\n\n\treturn p\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttexto, _ := reader.ReadString('\\n')\n\n\tpalavra := \"\"\n\n\tfor _, c := range texto {\n\n\t\tif unicode.IsLetter(c) {\n\t\t\tpalavra += string(c)\n\t\t} else {\n\n\t\t\tif palavra != \"\" {\n\t\t\t\tfmt.Print(gagueja(palavra))\n\t\t\t\tpalavra = \"\"\n\t\t\t}\n\n\t\t\tfmt.Printf(\"%c\", c)\n\t\t}\n\t}\n\n\tif palavra != \"\" {\n\t\tfmt.Print(gagueja(palavra))\n\t}\n}\n",
+            "lines": "58"
+        }
+    ]
+}

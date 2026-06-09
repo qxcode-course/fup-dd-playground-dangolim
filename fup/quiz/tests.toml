@@ -1,0 +1,65 @@
+[[tests]]
+input = '''
+a
+c
+d
+d
+'''
+output = '''
+Ja ouviu falar
+'''
+
+[[tests]]
+input = '''
+d
+a
+c
+d
+'''
+output = '''
+Super Fa
+'''
+
+[[tests]]
+input = '''
+b
+b
+b
+b
+'''
+output = '''
+Nunca assistiu
+'''
+
+[[tests]]
+input = '''
+d
+b
+b
+b
+'''
+output = '''
+Ja ouviu falar
+'''
+
+[[tests]]
+input = '''
+d
+b
+b
+d
+'''
+output = '''
+Interessado no assunto
+'''
+
+[[tests]]
+input = '''
+d
+b
+c
+d
+'''
+output = '''
+Fa
+'''

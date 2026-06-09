@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_17-59-51",
+            "content": "@@ -10,1055 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22strings%22%0A)%0A%0Afunc ehVogal(c byte) bool %7B%0A%09c = byte(strings.ToLower(string(c))%5B0%5D)%0A%09return c == 'a' %7C%7C c == 'e' %7C%7C c == 'i' %7C%7C c == 'o' %7C%7C c == 'u'%0A%7D%0A%0Afunc contarVogais(nome string) int %7B%0A%09contador := 0%0A%0A%09for i := 0; i %3C len(nome); i++ %7B%0A%09%09if ehVogal(nome%5Bi%5D) %7B%0A%09%09%09contador++%0A%09%09%7D%0A%09%7D%0A%0A%09return contador%0A%7D%0A%0Afunc main() %7B%0A%09var nome1, nome2 string%0A%09fmt.Scanln(&nome1)%0A%09fmt.Scanln(&nome2)%0A%0A%09pontos := 0%0A%0A%09// Primeira letra igual%0A%09if strings.ToLower(string(nome1%5B0%5D)) == strings.ToLower(string(nome2%5B0%5D)) %7B%0A%09%09pontos += 20%0A%09%7D%0A%0A%09// Mesmo tamanho%0A%09if len(nome1) == len(nome2) %7B%0A%09%09pontos += 30%0A%09%7D%0A%0A%09// Mesma quantidade de vogais%0A%09if contarVogais(nome1) == contarVogais(nome2) %7B%0A%09%09pontos += 30%0A%09%7D%0A%0A%09// Verifica %C3%BAltima letra%0A%09final1 := nome1%5Blen(nome1)-1%5D%0A%09final2 := nome2%5Blen(nome2)-1%5D%0A%0A%09if (ehVogal(final1) && ehVogal(final2)) %7C%7C (!ehVogal(final1) && !ehVogal(final2)) %7B%0A%09%09pontos += 20%0A%09%7D else %7B%0A%09%09pontos -= 10%0A%09%7D%0A%0A%09// N%C3%A3o pode ser negativo%0A%09if pontos %3C 0 %7B%0A%09%09pontos = 0%0A%09%7D%0A%0A%09fmt.Printf(%22As chances do crush te dar bola sao: %25d%25%25!%5Cn%22, pontos\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_17-59-57",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"strings\"\n)\n\nfunc ehVogal(c byte) bool {\n\tc = byte(strings.ToLower(string(c))[0])\n\treturn c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n}\n\nfunc contarVogais(nome string) int {\n\tcontador := 0\n\n\tfor i := 0; i < len(nome); i++ {\n\t\tif ehVogal(nome[i]) {\n\t\t\tcontador++\n\t\t}\n\t}\n\n\treturn contador\n}\n\nfunc main() {\n\tvar nome1, nome2 string\n\tfmt.Scanln(&nome1)\n\tfmt.Scanln(&nome2)\n\n\tpontos := 0\n\n\t// Primeira letra igual\n\tif strings.ToLower(string(nome1[0])) == strings.ToLower(string(nome2[0])) {\n\t\tpontos += 20\n\t}\n\n\t// Mesmo tamanho\n\tif len(nome1) == len(nome2) {\n\t\tpontos += 30\n\t}\n\n\t// Mesma quantidade de vogais\n\tif contarVogais(nome1) == contarVogais(nome2) {\n\t\tpontos += 30\n\t}\n\n\t// Verifica \u00faltima letra\n\tfinal1 := nome1[len(nome1)-1]\n\tfinal2 := nome2[len(nome2)-1]\n\n\tif (ehVogal(final1) && ehVogal(final2)) || (!ehVogal(final1) && !ehVogal(final2)) {\n\t\tpontos += 20\n\t} else {\n\t\tpontos -= 10\n\t}\n\n\t// N\u00e3o pode ser negativo\n\tif pontos < 0 {\n\t\tpontos = 0\n\t}\n\n\tfmt.Printf(\"As chances do crush te dar bola sao: %d%%!\\n\", pontos)\n}\n",
+            "lines": "63"
+        }
+    ]
+}

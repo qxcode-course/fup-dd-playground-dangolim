@@ -1,3 +1,14 @@
 {
-    "patches": []
+    "patches": [
+        {
+            "label": "2026-06-03_18-38-41",
+            "content": "@@ -10,28 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-)%0A%0A\n func\n@@ -37,246 +37,32 @@\n ) %7B%0A\n-%09var n1, n2 int%0A%09_, err := fmt.Scan(&n1, &n2)%0A%09if err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09divInteira := n1 / n2%0A%09resto := n1 %25 n2%0A%09divQuebrada := float64(n1) / float64(n2)%0A%0A%09fmt.Println(divInteira)%0A%09fmt.Println(resto)%0A%09fmt.Printf(%22%25.2f%5Cn%22, divQuebrada\n+    fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-39-13",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar n1, n2 int\n\t_, err := fmt.Scan(&n1, &n2)\n\tif err != nil {\n\t\treturn\n\t}\n\n\tdivInteira := n1 / n2\n\tresto := n1 % n2\n\tdivQuebrada := float64(n1) / float64(n2)\n\n\tfmt.Println(divInteira)\n\tfmt.Println(resto)\n\tfmt.Printf(\"%.2f\\n\", divQuebrada)\n}\n",
+            "lines": "21"
+        }
+    ]
 }

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_18-40-54",
+            "content": "@@ -10,28 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-)%0A%0A\n func\n@@ -37,209 +37,39 @@\n ) %7B%0A\n-%09var h, m, d, mes, ano int%0A%09_, err := fmt.Scan(&h, &m, &d, &mes, &ano)%0A%09if err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09anoDoisDigitos := ano %25 100%0A%0A%09fmt.Printf(%22%2502d:%2502d %2502d/%2502d/%2502d%5Cn%22, h, m, d, mes, anoDoisDigitos\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_18-41-51",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar h, m, d, mes, ano int\n\t_, err := fmt.Scan(&h, &m, &d, &mes, &ano)\n\tif err != nil {\n\t\treturn\n\t}\n\n\tanoDoisDigitos := ano % 100\n\n\tfmt.Printf(\"%02d:%02d %02d/%02d/%02d\\n\", h, m, d, mes, anoDoisDigitos)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

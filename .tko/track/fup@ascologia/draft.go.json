@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_17-55-52",
+            "content": "@@ -10,256 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09nome, _ := reader.ReadString('%5Cn')%0A%09nome = strings.TrimSpace(nome)%0A%0A%09soma := 0%0A%0A%09for _, c := range nome %7B%0A%09%09soma += int(c)%0A%09%7D%0A%0A%09fmt.Println(soma %25 50\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_17-56-24",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tnome, _ := reader.ReadString('\\n')\n\tnome = strings.TrimSpace(nome)\n\n\tsoma := 0\n\n\tfor _, c := range nome {\n\t\tsoma += int(c)\n\t}\n\n\tfmt.Println(soma % 50)\n}\n",
+            "lines": "23"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_17-57-19",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,206 +37,39 @@\n ) %7B%0A\n-%09var letra rune%0A%09var rotacao int%0A%0A%09fmt.Scanf(%22%25c%22, &letra)%0A%09fmt.Scan(&rotacao)%0A%0A%09pos := int(letra - 'a')%0A%0A%09pos = (pos + rotacao) %25 26%0A%0A%09if pos %3C 0 %7B%0A%09%09pos += 26%0A%09%7D%0A%0A%09fmt.Printf(%22%25c%5Cn%22, rune(pos)+'a'\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_17-58-14",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar letra rune\n\tvar rotacao int\n\n\tfmt.Scanf(\"%c\", &letra)\n\tfmt.Scan(&rotacao)\n\n\tpos := int(letra - 'a')\n\n\tpos = (pos + rotacao) % 26\n\n\tif pos < 0 {\n\t\tpos += 26\n\t}\n\n\tfmt.Printf(\"%c\\n\", rune(pos)+'a')\n}\n",
+            "lines": "21"
+        }
+    ]
+}
