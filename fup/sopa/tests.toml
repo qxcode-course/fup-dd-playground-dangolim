@@ -1,0 +1,79 @@
+[[tests]]
+input = '''
+1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+6
+'''
+output = '''
+8
+'''
+
+[[tests]]
+input = '''
+50
+'''
+output = '''
+12586269025
+'''
+
+[[tests]]
+input = '''
+2
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+9
+'''
+output = '''
+34
+'''
+
+[[tests]]
+input = '''
+17
+'''
+output = '''
+1597
+'''
+
+[[tests]]
+input = '''
+25
+'''
+output = '''
+75025
+'''
+
+[[tests]]
+input = '''
+33
+'''
+output = '''
+3524578
+'''
+
+[[tests]]
+input = '''
+41
+'''
+output = '''
+165580141
+'''
+
+[[tests]]
+input = '''
+49
+'''
+output = '''
+7778742049
+'''

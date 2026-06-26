@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-18_02-03-56",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,271 +37,39 @@\n ) %7B%0A\n-%09var n int%0A%09fmt.Scan(&n)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09for j := 0; j %3C n-i-1; j++ %7B%0A%09%09%09fmt.Print(%22.%22)%0A%09%09%7D%0A%0A%09%09for j := 0; j %3C= i; j++ %7B%0A%09%09%09if j %3E 0 %7B%0A%09%09%09%09fmt.Print(%22.%22)%0A%09%09%09%7D%0A%09%09%09fmt.Print(n)%0A%09%09%7D%0A%0A%09%09for j := 0; j %3C n-i-1; j++ %7B%0A%09%09%09fmt.Print(%22.%22)%0A%09%09%7D%0A%09%09fmt.Println()%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-18_02-04-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfor j := 0; j < n-i-1; j++ {\n\t\t\tfmt.Print(\".\")\n\t\t}\n\n\t\tfor j := 0; j <= i; j++ {\n\t\t\tif j > 0 {\n\t\t\t\tfmt.Print(\".\")\n\t\t\t}\n\t\t\tfmt.Print(n)\n\t\t}\n\n\t\tfor j := 0; j < n-i-1; j++ {\n\t\t\tfmt.Print(\".\")\n\t\t}\n\t\tfmt.Println()\n\t}\n}\n",
+            "lines": "26"
+        }
+    ]
+}

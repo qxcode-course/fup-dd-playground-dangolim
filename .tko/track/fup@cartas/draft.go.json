@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-18_03-31-41",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,311 +37,38 @@\n ) %7B%0A\n-%09var n, x int%0A%09fmt.Scan(&n)%0A%0A%09fmt.Print(%22%5B%22)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&x)%0A%0A%09%09if i %3E 0 %7B%0A%09%09%09fmt.Print(%22, %22)%0A%09%09%7D%0A%0A%09%09switch x %7B%0A%09%09case 1:%0A%09%09%09fmt.Print(%22A%22)%0A%09%09case 11:%0A%09%09%09fmt.Print(%22J%22)%0A%09%09case 12:%0A%09%09%09fmt.Print(%22Q%22)%0A%09%09case 13:%0A%09%09%09fmt.Print(%22K%22)%0A%09%09default:%0A%09%09%09fmt.Print(x)%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(%22%5D\n+    fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-18_03-32-44",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, x int\n\tfmt.Scan(&n)\n\n\tfmt.Print(\"[\")\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&x)\n\n\t\tif i > 0 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n\n\t\tswitch x {\n\t\tcase 1:\n\t\t\tfmt.Print(\"A\")\n\t\tcase 11:\n\t\t\tfmt.Print(\"J\")\n\t\tcase 12:\n\t\t\tfmt.Print(\"Q\")\n\t\tcase 13:\n\t\t\tfmt.Print(\"K\")\n\t\tdefault:\n\t\t\tfmt.Print(x)\n\t\t}\n\t}\n\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "33"
+        }
+    ]
+}

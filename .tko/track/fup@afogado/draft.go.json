@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-18_02-00-15",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,341 +23,53 @@\n mt%22%0A\n-%0A\n func \n-consegue(P, E, S int) bool %7B%0A%09pos, jump := 0, S%0A%0A%09for jump %3E= 0 %7B%0A%09%09if pos+jump %3E= P %7B%0A%09%09%09return true%0A%09%09%7D%0A%0A%09%09pos += jump%0A%09%09pos -= E%0A%0A%09%09if pos %3C 0 %7B%0A%09%09%09return false%0A%09%09%7D%0A%0A%09%09jump -= 10%0A%09%7D%0A%09return false%0A%7D%0A%0Afunc main() %7B%0A%09var P, E int%0A%09fmt.Scan(&P, &E)%0A%0A%09for s := 0; ; s++ %7B%0A%09%09if consegue(P, E, s) %7B%0A%09%09%09fmt.Println(s)%0A%09%09%09break%0A%09%09%7D%0A%09%7D\n+main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-18_02-01-34",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc consegue(P, E, S int) bool {\n\tpos, jump := 0, S\n\n\tfor jump >= 0 {\n\t\tif pos+jump >= P {\n\t\t\treturn true\n\t\t}\n\n\t\tpos += jump\n\t\tpos -= E\n\n\t\tif pos < 0 {\n\t\t\treturn false\n\t\t}\n\n\t\tjump -= 10\n\t}\n\treturn false\n}\n\nfunc main() {\n\tvar P, E int\n\tfmt.Scan(&P, &E)\n\n\tfor s := 0; ; s++ {\n\t\tif consegue(P, E, s) {\n\t\t\tfmt.Println(s)\n\t\t\tbreak\n\t\t}\n\t}\n}\n",
+            "lines": "35"
+        }
+    ]
+}

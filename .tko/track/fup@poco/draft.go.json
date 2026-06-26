@@ -22,8 +22,18 @@
         },
         {
             "label": "2026-05-31_14-18-40",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar P, S, E int\n\tfmt.Scan(&P, &S, &E)\n\n\tpos := 0\n\n\tfor {\n\t\tfmt.Printf(\"%d %d\\n\", pos, pos+S)\n\n\t\tpos += S\n\t\tif pos >= P {\n\t\t\tbreak\n\t\t}\n\n\t\tpos -= E\n\t\tif pos < 0 {\n\t\t\tbreak\n\t\t}\n\n\t\tS -= 10\n\t}\n}\n",
+            "content": "@@ -83,23 +83,13 @@\n %09pos\n-, salto\n  := 0\n-, S\n %0A%0A%09f\n@@ -97,92 +97,8 @@\n r %7B%0A\n-%09%09top := pos + salto%0A%0A%09%09if top %3E= P %7B%0A%09%09%09fmt.Printf(%22%25d saiu%5Cn%22, pos)%0A%09%09%09break%0A%09%09%7D%0A%0A\n %09%09fm\n@@ -122,19 +122,21 @@\n %22, pos, \n-top\n+pos+S\n )%0A%0A%09%09pos\n@@ -140,32 +140,53 @@\n pos \n++\n = \n-top - E%0A%09%09salto\n+S%0A%09%09if pos %3E= P %7B%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09pos\n  -= \n-10%0A\n+E\n %0A%09%09i\n@@ -204,51 +204,28 @@\n %0A%09%09%09\n-fmt.Printf(%22%25d morreu%5Cn%22, pos)%0A%09%09%09break%0A%09%09%7D\n+break%0A%09%09%7D%0A%0A%09%09S -= 10\n %0A%09%7D%0A\n",
             "lines": "26"
+        },
+        {
+            "label": "2026-06-18_01-59-19",
+            "content": "@@ -228,94 +228,36 @@\n %0A%0A%09%09\n-sal\n+pos = \n to\n+p\n  -\n-= 10%0A%09%09if salto %3C 0 %7B // n%C3%A3o consegue mais saltar%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09pos = top - E\n+ E%0A%09%09salto -= 10%0A\n %0A%09%09i\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-18_01-59-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar P, S, E int\n\tfmt.Scan(&P, &S, &E)\n\n\tpos, salto := 0, S\n\n\tfor {\n\t\ttop := pos + salto\n\n\t\tif top >= P {\n\t\t\tfmt.Printf(\"%d saiu\\n\", pos)\n\t\t\tbreak\n\t\t}\n\n\t\tfmt.Printf(\"%d %d\\n\", pos, top)\n\n\t\tsalto -= 10\n\t\tif salto < 0 { // n\u00e3o consegue mais saltar\n\t\t\tbreak\n\t\t}\n\n\t\tpos = top - E\n\t\tif pos < 0 {\n\t\t\tfmt.Printf(\"%d morreu\\n\", pos)\n\t\t\tbreak\n\t\t}\n\t}\n}\n",
+            "lines": "32"
         }
     ]
 }

@@ -1,0 +1,79 @@
+[[tests]]
+input = '''
+16
+'''
+output = '''
+sim
+'''
+
+[[tests]]
+input = '''
+18
+'''
+output = '''
+nao
+'''
+
+[[tests]]
+input = '''
+81
+'''
+output = '''
+sim
+'''
+
+[[tests]]
+input = '''
+0
+'''
+output = '''
+nao
+'''
+
+[[tests]]
+input = '''
+5
+'''
+output = '''
+nao
+'''
+
+[[tests]]
+input = '''
+1
+'''
+output = '''
+sim
+'''
+
+[[tests]]
+input = '''
+4
+'''
+output = '''
+sim
+'''
+
+[[tests]]
+input = '''
+35
+'''
+output = '''
+nao
+'''
+
+[[tests]]
+input = '''
+140
+'''
+output = '''
+nao
+'''
+
+[[tests]]
+input = '''
+6084
+'''
+output = '''
+sim
+'''

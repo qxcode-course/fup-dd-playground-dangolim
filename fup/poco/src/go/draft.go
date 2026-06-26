@@ -6,21 +6,27 @@ func main() {
 	var P, S, E int
 	fmt.Scan(&P, &S, &E)
 
-	pos := 0
+	pos, salto := 0, S
 
 	for {
-		fmt.Printf("%d %d\n", pos, pos+S)
+		top := pos + salto
 
-		pos += S
-		if pos >= P {
+		if top >= P {
+			fmt.Printf("%d saiu\n", pos)
 			break
 		}
 
-		pos -= E
+		fmt.Printf("%d %d\n", pos, top)
+
+		salto -= 10
+		if salto < 0 { // não consegue mais saltar
+			break
+		}
+
+		pos = top - E
 		if pos < 0 {
+			fmt.Printf("%d morreu\n", pos)
 			break
 		}
-
-		S -= 10
 	}
 }

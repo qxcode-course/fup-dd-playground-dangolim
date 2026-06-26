@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-18_03-21-40",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,500 +23,53 @@\n mt%22%0A\n-%0Afunc abs(x int) int %7B%0A%09if x %3C 0 %7B%0A%09%09return -x%0A%09%7D%0A%09return x%0A%7D%0A%0Afunc main() %7B%0A%09var chico, cebolinha, n int%0A%09fmt.Scan(&chico, &cebolinha, &n)%0A%0A%09total := 0%0A%09var animal string%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&animal)%0A%0A%09%09if animal == %22g%22 %7B%0A%09%09%09total += 2%0A%09%09%7D else %7B%0A%09%09%09total += 4%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(total)%0A%0A%09d1 := abs(chico - total)%0A%09d2 := abs(cebolinha - total)%0A%0A%09if d1 %3C d2 %7B%0A%09%09fmt.Println(%22Chico Bento%22)%0A%09%7D else if d2 %3C d1 %7B%0A%09%09fmt.Println(%22Cebolinha%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-18_03-22-33",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc abs(x int) int {\n\tif x < 0 {\n\t\treturn -x\n\t}\n\treturn x\n}\n\nfunc main() {\n\tvar chico, cebolinha, n int\n\tfmt.Scan(&chico, &cebolinha, &n)\n\n\ttotal := 0\n\tvar animal string\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&animal)\n\n\t\tif animal == \"g\" {\n\t\t\ttotal += 2\n\t\t} else {\n\t\t\ttotal += 4\n\t\t}\n\t}\n\n\tfmt.Println(total)\n\n\td1 := abs(chico - total)\n\td2 := abs(cebolinha - total)\n\n\tif d1 < d2 {\n\t\tfmt.Println(\"Chico Bento\")\n\t} else if d2 < d1 {\n\t\tfmt.Println(\"Cebolinha\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "41"
+        }
+    ]
+}

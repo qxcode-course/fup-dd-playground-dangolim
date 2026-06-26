@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-18_02-08-33",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,218 +37,39 @@\n ) %7B%0A\n-%09var a, b int%0A%09fmt.Scan(&a, &b)%0A%0A%09if b == 0 %7B%0A%09%09if a == 0 %7B%0A%09%09%09fmt.Println(1)%0A%09%09%7D else %7B%0A%09%09%09fmt.Println(0)%0A%09%09%7D%0A%09%09return%0A%09%7D%0A%0A%09cont := 0%0A%09for b %3E 0 %7B%0A%09%09if b%2510 == a %7B%0A%09%09%09cont++%0A%09%09%7D%0A%09%09b /= 10%0A%09%7D%0A%0A%09fmt.Println(cont\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-18_02-09-21",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b int\n\tfmt.Scan(&a, &b)\n\n\tif b == 0 {\n\t\tif a == 0 {\n\t\t\tfmt.Println(1)\n\t\t} else {\n\t\t\tfmt.Println(0)\n\t\t}\n\t\treturn\n\t}\n\n\tcont := 0\n\tfor b > 0 {\n\t\tif b%10 == a {\n\t\t\tcont++\n\t\t}\n\t\tb /= 10\n\t}\n\n\tfmt.Println(cont)\n}\n",
+            "lines": "27"
+        }
+    ]
+}

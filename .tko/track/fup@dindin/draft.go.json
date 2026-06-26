@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-18_03-22-48",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,457 +37,39 @@\n ) %7B%0A\n-%09var n int%0A%09fmt.Scan(&n)%0A%0A%09c, l := 0, 0%0A%09m, t := 0, 0%0A%0A%09var sabor, turno string%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&sabor, &turno)%0A%0A%09%09if sabor == %22c%22 %7B%0A%09%09%09c++%0A%09%09%7D else %7B%0A%09%09%09l++%0A%09%09%7D%0A%0A%09%09if turno == %22m%22 %7B%0A%09%09%09m++%0A%09%09%7D else %7B%0A%09%09%09t++%0A%09%09%7D%0A%09%7D%0A%0A%09if c %3E l %7B%0A%09%09fmt.Println(%22c%22)%0A%09%7D else if l %3E c %7B%0A%09%09fmt.Println(%22l%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D%0A%0A%09if m %3C t %7B%0A%09%09fmt.Println(%22m%22)%0A%09%7D else if t %3C m %7B%0A%09%09fmt.Println(%22t%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-18_03-23-49",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tc, l := 0, 0\n\tm, t := 0, 0\n\n\tvar sabor, turno string\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&sabor, &turno)\n\n\t\tif sabor == \"c\" {\n\t\t\tc++\n\t\t} else {\n\t\t\tl++\n\t\t}\n\n\t\tif turno == \"m\" {\n\t\t\tm++\n\t\t} else {\n\t\t\tt++\n\t\t}\n\t}\n\n\tif c > l {\n\t\tfmt.Println(\"c\")\n\t} else if l > c {\n\t\tfmt.Println(\"l\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n\n\tif m < t {\n\t\tfmt.Println(\"m\")\n\t} else if t < m {\n\t\tfmt.Println(\"t\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "45"
+        }
+    ]
+}

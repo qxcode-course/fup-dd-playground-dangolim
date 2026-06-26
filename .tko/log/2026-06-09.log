@@ -3,3 +3,27 @@
 2026-06-09 17:09:29, MOVE, v:1, k:fup@troco, mode:DOWN
 2026-06-09 17:09:29, MOVE, v:1, k:fup@troco, mode:PICK
 2026-06-09 17:09:31, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:5
+2026-06-09 17:09:29, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:09:29, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:09:29, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:14:14, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:09:31, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:19:01, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:20:36, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:29:13, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:32:47, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:19
+2026-06-09 17:33:06, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:20
+2026-06-09 17:33:52, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:19
+2026-06-09 17:34:00, EXEC, v:1, k:fup@troco, mode:FULL, rate:0
+2026-06-09 17:34:03, EXEC, v:1, k:fup@troco, mode:FREE
+2026-06-09 17:33:13, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:34:03, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:36:40, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:19
+2026-06-09 17:37:26, MOVE, v:1, k:fup@troco, mode:PICK
+2026-06-09 17:37:26, EXEC, v:1, k:fup@troco, mode:FULL, rate:0
+2026-06-09 17:37:26, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:41:33, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:47:18, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:47:48, EXEC, v:1, k:fup@troco, mode:FULL, rate:0, size:31
+2026-06-09 17:47:48, MOVE, v:1, k:fup@troco, mode:EDIT
+2026-06-09 17:47:48, MOVE, v:1, k:fup@troco, mode:EDIT
