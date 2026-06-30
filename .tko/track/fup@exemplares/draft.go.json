@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-26_23-16-01",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,553 +37,39 @@\n ) %7B%0A\n-%09var n int%0A%09fmt.Scan(&n)%0A%0A%09unicos := %5B%5Dint%7B%7D%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09var num int%0A%09%09fmt.Scan(&num)%0A%0A%09%09existe := false%0A%09%09for _, v := range unicos %7B%0A%09%09%09if v == num %7B%0A%09%09%09%09existe = true%0A%09%09%09%09break%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09if !existe %7B%0A%09%09%09unicos = append(unicos, num)%0A%09%09%7D%0A%09%7D%0A%0A%09// Bubble Sort%0A%09for i := 0; i %3C len(unicos); i++ %7B%0A%09%09for j := 0; j %3C len(unicos)-1-i; j++ %7B%0A%09%09%09if unicos%5Bj%5D %3E unicos%5Bj+1%5D %7B%0A%09%09%09%09unicos%5Bj%5D, unicos%5Bj+1%5D = unicos%5Bj+1%5D, unicos%5Bj%5D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09for i, v := range unicos %7B%0A%09%09if i %3E 0 %7B%0A%09%09%09fmt.Print(%22 %22)%0A%09%09%7D%0A%09%09fmt.Print(v)%0A%09%7D%0A%09fmt.Println(\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-26_23-35-39",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tunicos := []int{}\n\n\tfor i := 0; i < n; i++ {\n\t\tvar num int\n\t\tfmt.Scan(&num)\n\n\t\texiste := false\n\t\tfor _, v := range unicos {\n\t\t\tif v == num {\n\t\t\t\texiste = true\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\n\t\tif !existe {\n\t\t\tunicos = append(unicos, num)\n\t\t}\n\t}\n\n\t// Bubble Sort\n\tfor i := 0; i < len(unicos); i++ {\n\t\tfor j := 0; j < len(unicos)-1-i; j++ {\n\t\t\tif unicos[j] > unicos[j+1] {\n\t\t\t\tunicos[j], unicos[j+1] = unicos[j+1], unicos[j]\n\t\t\t}\n\t\t}\n\t}\n\n\tfor i, v := range unicos {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t\tfmt.Print(v)\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "44"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_21-41-30",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,365 +37,39 @@\n ) %7B%0A\n-%09// Cartela fixa da av%C3%B3%0A%09cartela := map%5Bint%5Dbool%7B%0A%09%091: true, 9: true, 27: true, 23: true,%0A%09%0934: true, 20: true, 37: true, 47: true,%0A%09%0930: true, 87: true, 55: true, 69: true,%0A%09%0913: true, 60: true, 99: true, 66: true,%0A%09%7D%0A%0A%09contador := 0%0A%0A%09for i := 0; i %3C 6; i++ %7B%0A%09%09var num int%0A%09%09fmt.Scan(&num)%0A%0A%09%09if cartela%5Bnum%5D %7B%0A%09%09%09contador++%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(contador\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_21-41-56",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\t// Cartela fixa da av\u00f3\n\tcartela := map[int]bool{\n\t\t1: true, 9: true, 27: true, 23: true,\n\t\t34: true, 20: true, 37: true, 47: true,\n\t\t30: true, 87: true, 55: true, 69: true,\n\t\t13: true, 60: true, 99: true, 66: true,\n\t}\n\n\tcontador := 0\n\n\tfor i := 0; i < 6; i++ {\n\t\tvar num int\n\t\tfmt.Scan(&num)\n\n\t\tif cartela[num] {\n\t\t\tcontador++\n\t\t}\n\t}\n\n\tfmt.Println(contador)\n}\n",
+            "lines": "26"
+        }
+    ]
+}

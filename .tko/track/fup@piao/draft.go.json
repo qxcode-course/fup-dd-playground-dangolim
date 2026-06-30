@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_21-39-25",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,686 +23,53 @@\n mt%22%0A\n-%0Afunc abs(x int) int %7B%0A%09if x %3C 0 %7B%0A%09%09return -x%0A%09%7D%0A%09return x%0A%7D%0A%0Afunc main() %7B%0A%09var L, N int%0A%09fmt.Scan(&L, &N)%0A%0A%09ganhador := -1%0A%09melhorDist := L + 1 // maior que qualquer dist%C3%A2ncia v%C3%A1lida%0A%0A%09perdedor := 0%0A%09piorDist := -1%0A%0A%09for i := 0; i %3C N; i++ %7B%0A%09%09var jogada int%0A%09%09fmt.Scan(&jogada)%0A%0A%09%09dist := abs(jogada)%0A%0A%09%09// Verifica ganhador%0A%09%09if dist %3C= L %7B%0A%09%09%09if dist %3C= melhorDist %7B // %3C= garante %C3%BAltimo em empate%0A%09%09%09%09melhorDist = dist%0A%09%09%09%09ganhador = i%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09// Verifica perdedor%0A%09%09if dist %3E= piorDist %7B // %3E= garante %C3%BAltimo em empate%0A%09%09%09piorDist = dist%0A%09%09%09perdedor = i%0A%09%09%7D%0A%09%7D%0A%0A%09if ganhador == -1 %7B%0A%09%09fmt.Println(%22nenhum%22)%0A%09%7D else %7B%0A%09%09fmt.Println(ganhador)%0A%09%7D%0A%0A%09fmt.Println(perdedor\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_21-39-50",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc abs(x int) int {\n\tif x < 0 {\n\t\treturn -x\n\t}\n\treturn x\n}\n\nfunc main() {\n\tvar L, N int\n\tfmt.Scan(&L, &N)\n\n\tganhador := -1\n\tmelhorDist := L + 1 // maior que qualquer dist\u00e2ncia v\u00e1lida\n\n\tperdedor := 0\n\tpiorDist := -1\n\n\tfor i := 0; i < N; i++ {\n\t\tvar jogada int\n\t\tfmt.Scan(&jogada)\n\n\t\tdist := abs(jogada)\n\n\t\t// Verifica ganhador\n\t\tif dist <= L {\n\t\t\tif dist <= melhorDist { // <= garante \u00faltimo em empate\n\t\t\t\tmelhorDist = dist\n\t\t\t\tganhador = i\n\t\t\t}\n\t\t}\n\n\t\t// Verifica perdedor\n\t\tif dist >= piorDist { // >= garante \u00faltimo em empate\n\t\t\tpiorDist = dist\n\t\t\tperdedor = i\n\t\t}\n\t}\n\n\tif ganhador == -1 {\n\t\tfmt.Println(\"nenhum\")\n\t} else {\n\t\tfmt.Println(ganhador)\n\t}\n\n\tfmt.Println(perdedor)\n}\n",
+            "lines": "50"
+        }
+    ]
+}
